@@ -1,0 +1,1965 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdulaziz Badawi | Portfolio</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Outfit:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a
+          href="#"
+          class="logo"
+          style="display: flex; align-items: center; gap: 10px"
+        >
+          <i class="fas fa-user-cog" style="color: var(--neon-blue)"></i>
+          <span class="lang-en">Abdulaziz</span>
+          <span class="lang-ar">Abdulaziz</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#hero" class="nav-link">
+            <i class="fas fa-home"></i> <span class="lang-en">Home</span
+            ><span class="lang-ar">الرئيسية</span>
+          </a>
+          <a href="#about" class="nav-link">
+            <i class="fas fa-user-cog"></i> <span class="lang-en">About</span
+            ><span class="lang-ar">عني</span>
+          </a>
+          <a href="#projects" class="nav-link">
+            <i class="fas fa-rocket"></i> <span class="lang-en">Projects</span
+            ><span class="lang-ar">المشاريع</span>
+          </a>
+          <a href="#experience" class="nav-link">
+            <i class="fas fa-stream"></i> <span class="lang-en">Experience</span
+            ><span class="lang-ar">الخبرات</span>
+          </a>
+          <a href="#skills" class="nav-link">
+            <i class="fas fa-bolt"></i> <span class="lang-en">Skills</span
+            ><span class="lang-ar">المهارات</span>
+          </a>
+          <a href="#education" class="nav-link">
+            <i class="fas fa-graduation-cap"></i>
+            <span class="lang-en">Education</span
+            ><span class="lang-ar">التعليم</span>
+          </a>
+          <a href="#contact" class="nav-link">
+            <i class="fas fa-envelope"></i> <span class="lang-en">Contact</span
+            ><span class="lang-ar">تواصل</span>
+          </a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            id="theme-toggle-btn"
+            class="lang-switcher interactive-tilt"
+            aria-label="Toggle Theme"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+
+          <button
+            id="lang-toggle-btn"
+            class="lang-switcher"
+            title="Change Language"
+          >
+            <span
+              class="lang-en"
+              style="font-family: &quot;Cairo&quot;, sans-serif"
+              >عربي</span
+            >
+            <span
+              class="lang-ar"
+              style="font-family: &quot;Outfit&quot;, sans-serif"
+              >EN</span
+            >
+          </button>
+          <button
+            id="mobile-menu-btn"
+            class="mobile-menu-btn"
+            style="
+              color: var(--neon-blue);
+              border: none;
+              background: transparent;
+            "
+            aria-label="Menu"
+          >
+            <i class="fas fa-bars" style="font-size: 1.8rem"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- 
+           🚀 Hero Section
+        -->
+      <section id="hero" class="section hero">
+        <div class="container">
+          <div class="hero-content-wrapper">
+            <div class="hero-main-flex">
+              <div class="hero-avatar-area">
+                <img
+                  src="Abdulaziz.png"
+                  alt="Abdulaziz Avatar Placeholder"
+                  class="hero-avatar"
+                />
+
+                <!-- Floating Tags -->
+                <div class="floating-tag t-cyber">
+                  <span class="lang-en">IT Support</span
+                  ><span class="lang-ar">دعم فني</span>
+                  <i class="fas fa-headset"></i>
+                </div>
+                <div class="floating-tag t-network">
+                  <span class="lang-en">System Admin</span
+                  ><span class="lang-ar">إدارة أنظمة</span>
+                  <i class="fas fa-server"></i>
+                </div>
+                <div class="floating-tag t-infra">
+                  <span class="lang-en">Troubleshooting</span
+                  ><span class="lang-ar">استكشاف الأعطال</span>
+                  <i class="fas fa-tools"></i>
+                </div>
+              </div>
+
+              <div class="hero-text-area">
+                <div class="hero-subtag lang-ar">
+                  <i class="fas fa-circle" style="font-size: 8px"></i> متاح
+                  للفرص المهنية
+                </div>
+                <div
+                  class="hero-subtag lang-en"
+                  style="color: #10b981; background: rgba(16, 185, 129, 0.1)"
+                >
+                  <i class="fas fa-circle" style="font-size: 8px"></i> Available
+                  for Tech Opportunities
+                </div>
+
+                <h1 class="hero-name lang-ar">عبدالعزيز بدوي</h1>
+                <div
+                  class="typewriter-wrapper lang-ar"
+                  style="
+                    margin-bottom: 25px;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: var(--neon-blue);
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <span class="typewriter-text" id="typewriter-ar"></span
+                  ><span
+                    class="typewriter-cursor"
+                    style="animation: blink 0.7s infinite"
+                    >|</span
+                  >
+                </div>
+
+                <h1 class="hero-name lang-en">Abdulaziz Badawi</h1>
+                <div
+                  class="typewriter-wrapper lang-en"
+                  style="
+                    margin-bottom: 25px;
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: var(--neon-blue);
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                  "
+                >
+                  <span class="typewriter-text" id="typewriter-en"></span
+                  ><span
+                    class="typewriter-cursor"
+                    style="animation: blink 0.7s infinite"
+                    >|</span
+                  >
+                </div>
+
+                <div style="margin-bottom: 35px">
+                  <p class="hero-desc lang-ar">
+                    متخصص في إدارة البنية التحتية التقنية والدعم الفني المتقدم.
+                    أعمل على تقديم حلول تقنية موثوقة ومبتكرة تضمن استمرارية
+                    الأعمال بأعلى معايير الجودة والأمان، بما يتماشى مع متطلبات
+                    التحول الرقمي المتسارع في المملكة العربية السعودية.
+                  </p>
+                  <p class="hero-desc lang-en">
+                    Specialized in managing IT infrastructure and advanced
+                    technical support. I provide reliable and innovative tech
+                    solutions that ensure business continuity with the highest
+                    standards of quality and security, aligning with Saudi
+                    Arabia's rapid digital transformation.
+                  </p>
+                </div>
+
+                <div class="hero-cta">
+                  <a
+                    href="https://www.linkedin.com/in/abdulaziz-t-143438341/"
+                    target="_blank"
+                    class="interactive-btn btn-solid-cyan"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="lang-en">Connect on LinkedIn</span>
+                    <span class="lang-ar">تواصل معي عبر LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px">
+              <a
+                href="#about"
+                style="
+                  color: var(--neon-blue);
+                  font-size: 2rem;
+                  animation: bounce 2s infinite;
+                  display: inline-block;
+                  opacity: 0.8;
+                  transition: opacity 0.3s;
+                "
+                onmouseover="this.style.opacity = '1'"
+                onmouseout="this.style.opacity = '0.8'"
+              >
+                <i class="fas fa-chevron-down"></i>
+              </a>
+              <style>
+                @keyframes bounce {
+                  0%,
+                  20%,
+                  50%,
+                  80%,
+                  100% {
+                    transform: translateY(0);
+                  }
+                  40% {
+                    transform: translateY(-15px);
+                  }
+                  60% {
+                    transform: translateY(-7px);
+                  }
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+           👤 Professional Profile Section
+        -->
+      <section id="about" class="section">
+        <div class="container">
+          <span class="pre-heading lang-ar">من أنا</span>
+          <span class="pre-heading lang-en">Who am I</span>
+          <h2 class="section-heading gradient-text">
+            <i class="fas fa-user-cog"></i>
+            <span class="lang-en">Professional Profile</span>
+            <span class="lang-ar">الملف المهني</span>
+          </h2>
+
+          <div class="about-grid">
+            <!-- Left Column: Code Editor Style Panel -->
+            <div
+              class="glass-panel"
+              style="
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 40px;
+                gap: 25px;
+              "
+            >
+              <h3
+                class="lang-ar"
+                style="font-size: 1.8rem; color: var(--neon-blue); margin: 0"
+              >
+                نبذة تعريفية
+              </h3>
+              <h3
+                class="lang-en"
+                style="font-size: 1.8rem; color: var(--neon-blue); margin: 0"
+              >
+                Professional Summary
+              </h3>
+
+              <p
+                class="lang-ar"
+                style="
+                  color: var(--text-secondary);
+                  line-height: 1.9;
+                  font-size: 1.1rem;
+                  margin: 0;
+                "
+              >
+                أخصائي تقنية معلومات طموح وحاصل على
+                <span style="color: var(--text-primary); font-weight: bold"
+                  >بكالوريوس في نظم المعلومات</span
+                >. أمتلك خبرة عملية عميقة في إدارة الأنظمة، الدعم الفني،
+                واستكشاف الأعطال التقنية المعقدة. أتميز بقدرتي على إدارة
+                المشاريع التقنية بالكامل؛ بدءاً من تحديد المواصفات، وصولاً إلى
+                <span style="color: var(--text-primary); font-weight: bold"
+                  >التركيب الميداني</span
+                >
+                وضمان الامتثال الأمني. أؤمن بأن استمرارية الأعمال تبدأ من بنية
+                تحتية تقنية صلبة وفعالة.
+              </p>
+              <p
+                class="lang-en"
+                style="
+                  color: var(--text-secondary);
+                  line-height: 1.9;
+                  font-size: 1.1rem;
+                  margin: 0;
+                "
+              >
+                A highly motivated IT Specialist with a
+                <span style="color: var(--text-primary); font-weight: bold"
+                  >Bachelor's degree in Information Systems</span
+                >. I possess deep hands-on experience in System Administration,
+                technical support, and advanced troubleshooting. I excel at
+                managing full-cycle IT projects—from defining specifications to
+                <span style="color: var(--text-primary); font-weight: bold"
+                  >on-site deployment</span
+                >
+                and ensuring security compliance. I believe business continuity
+                starts with a solid and efficient IT infrastructure.
+              </p>
+            </div>
+
+            <!-- Right Column: Interactive Highlight Cards -->
+            <div
+              class="about-highlights"
+              style="display: flex; flex-direction: column; gap: 15px"
+            >
+              <div
+                class="highlight-card"
+                style="
+                  background: var(--bg-glass);
+                  border: 1px solid rgba(255, 255, 255, 0.05);
+                  border-radius: var(--border-radius);
+                  padding: 20px;
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+                  transition: var(--transition);
+                "
+              >
+                <div
+                  class="cat-dot dot-yellow"
+                  style="
+                    flex-shrink: 0;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                  "
+                ></div>
+                <div class="h-text">
+                  <h4
+                    class="lang-ar"
+                    style="
+                      font-size: 1.1rem;
+                      color: var(--text-primary);
+                      margin: 0 0 5px 0;
+                    "
+                  >
+                    تفكير استراتيجي
+                  </h4>
+                  <p
+                    class="lang-ar"
+                    style="
+                      font-size: 0.9rem;
+                      color: var(--text-secondary);
+                      margin: 0;
+                    "
+                  >
+                    إدارة مشاريع تقنية من التصميم حتى التنفيذ الميداني
+                  </p>
+                  <h4
+                    class="lang-en"
+                    style="
+                      font-size: 1.1rem;
+                      color: var(--text-primary);
+                      margin: 0 0 5px 0;
+                    "
+                  >
+                    Strategic Thinking
+                  </h4>
+                  <p
+                    class="lang-en"
+                    style="
+                      font-size: 0.9rem;
+                      color: var(--text-secondary);
+                      margin: 0;
+                    "
+                  >
+                    Managing tech projects from design to field execution
+                  </p>
+                </div>
+              </div>
+              <div
+                class="highlight-card"
+                style="
+                  background: var(--bg-glass);
+                  border: 1px solid rgba(255, 255, 255, 0.05);
+                  border-radius: var(--border-radius);
+                  padding: 20px;
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+                  transition: var(--transition);
+                "
+              >
+                <div
+                  class="cat-dot dot-cyan"
+                  style="
+                    flex-shrink: 0;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                  "
+                ></div>
+                <div class="h-text">
+                  <h4
+                    class="lang-ar"
+                    style="
+                      font-size: 1.1rem;
+                      color: var(--text-primary);
+                      margin: 0 0 5px 0;
+                    "
+                  >
+                    حل سريع للمشكلات
+                  </h4>
+                  <p
+                    class="lang-ar"
+                    style="
+                      font-size: 0.9rem;
+                      color: var(--text-secondary);
+                      margin: 0;
+                    "
+                  >
+                    تشخيص وحل الأعطال التقنية المعقدة بكفاءة عالية
+                  </p>
+                  <h4
+                    class="lang-en"
+                    style="
+                      font-size: 1.1rem;
+                      color: var(--text-primary);
+                      margin: 0 0 5px 0;
+                    "
+                  >
+                    Rapid Problem Solving
+                  </h4>
+                  <p
+                    class="lang-en"
+                    style="
+                      font-size: 0.9rem;
+                      color: var(--text-secondary);
+                      margin: 0;
+                    "
+                  >
+                    Diagnosing and resolving complex technical issues
+                    efficiently
+                  </p>
+                </div>
+              </div>
+              <div
+                class="highlight-card"
+                style="
+                  background: var(--bg-glass);
+                  border: 1px solid rgba(255, 255, 255, 0.05);
+                  border-radius: var(--border-radius);
+                  padding: 20px;
+                  display: flex;
+                  align-items: center;
+                  gap: 20px;
+                  transition: var(--transition);
+                "
+              >
+                <div
+                  class="cat-dot dot-green"
+                  style="
+                    flex-shrink: 0;
+                    width: 14px;
+                    height: 14px;
+                    border-radius: 50%;
+                  "
+                ></div>
+                <div class="h-text">
+                  <h4
+                    class="lang-ar"
+                    style="
+                      font-size: 1.1rem;
+                      color: var(--text-primary);
+                      margin: 0 0 5px 0;
+                    "
+                  >
+                    التزام بالجودة
+                  </h4>
+                  <p
+                    class="lang-ar"
+                    style="
+                      font-size: 0.9rem;
+                      color: var(--text-secondary);
+                      margin: 0;
+                    "
+                  >
+                    ضمان الامتثال الأمني وأعلى معايير الأداء
+                  </p>
+                  <h4
+                    class="lang-en"
+                    style="
+                      font-size: 1.1rem;
+                      color: var(--text-primary);
+                      margin: 0 0 5px 0;
+                    "
+                  >
+                    Commitment to Quality
+                  </h4>
+                  <p
+                    class="lang-en"
+                    style="
+                      font-size: 0.9rem;
+                      color: var(--text-secondary);
+                      margin: 0;
+                    "
+                  >
+                    Ensuring security compliance and top performance standards
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+           👔 Experience Section
+        -->
+      <section id="experience" class="section">
+        <div class="container">
+          <span class="pre-heading lang-ar">المسيرة المهنية</span>
+          <span class="pre-heading lang-en">Career Path</span>
+          <h2 class="section-heading gradient-text">
+            <i class="fas fa-briefcase"></i>
+            <span class="lang-en">Professional Experience</span>
+            <span class="lang-ar">الخبرات المهنية</span>
+          </h2>
+
+          <div class="timeline-wrapper">
+            <!-- Job 1 -->
+            <div class="glass-panel experience-card">
+              <div class="timeline-dot"></div>
+              <div
+                class="job-header"
+                style="
+                  position: relative;
+                  z-index: 2;
+                  margin-bottom: 20px;
+                  width: 100%;
+                "
+              >
+                <div class="job-title-area" style="flex-grow: 1; width: 100%">
+                  <div
+                    class="lang-en"
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      flex-wrap: wrap;
+                      gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <h3
+                      style="
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        font-size: 1.4rem;
+                        margin: 0;
+                      "
+                    >
+                      <i
+                        class="fas fa-headset"
+                        style="color: var(--neon-blue)"
+                      ></i>
+                      IT Support Specialist
+                      <span style="color: var(--neon-blue)"
+                        >@ Operating Levels Company</span
+                      >
+                    </h3>
+                    <div
+                      class="job-date"
+                      style="
+                        color: var(--text-secondary);
+                        font-size: 0.95rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        flex-direction: row;
+                        margin: 0;
+                      "
+                    >
+                      <i class="far fa-calendar-alt"></i>
+                      <span>Nov 2024 – Present</span>
+                    </div>
+                  </div>
+                  <div
+                    class="lang-ar"
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      flex-wrap: wrap;
+                      gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <h3
+                      style="
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        font-size: 1.4rem;
+                        margin: 0;
+                      "
+                    >
+                      <i
+                        class="fas fa-headset"
+                        style="color: var(--neon-blue)"
+                      ></i>
+                      أخصائي دعم فني
+                      <span style="color: var(--neon-blue)"
+                        >@ شركة مستويات التشغيل</span
+                      >
+                    </h3>
+                    <div
+                      class="job-date"
+                      style="
+                        color: var(--text-secondary);
+                        font-size: 0.95rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        flex-direction: row;
+                        margin: 0;
+                      "
+                    >
+                      <span>نوفمبر 2024 – الحاضر</span>
+                      <i class="far fa-calendar-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <i class="fas fa-headset watermark-icon-exp"></i>
+              <ul class="job-desc lang-en">
+                <li>
+                  Provide Tier 1 & Tier 2 technical support for hardware,
+                  software, and network-related issues across the organization.
+                </li>
+                <li>
+                  Perform OS installations, patch management, system updates,
+                  and ensure endpoint security compliance for all corporate
+                  devices.
+                </li>
+                <li>
+                  Manage user accounts, access permissions, and role-based
+                  security settings using Active Directory and internal IT
+                  systems.
+                </li>
+                <li>
+                  Troubleshoot LAN connectivity issues, including DNS, DHCP, and
+                  TCP/IP.
+                </li>
+              </ul>
+              <ul class="job-desc lang-ar">
+                <li>
+                  تقديم دعم فني وتقني (Tier 1 & Tier 2) لأعطال الأجهزة،
+                  البرمجيات، ومشاكل الشبكات في جميع أنحاء المنظمة.
+                </li>
+                <li>
+                  تنفيذ عمليات تثبيت أنظمة التشغيل، إدارة التحديثات، وضمان
+                  الامتثال الأمني لنقاط النهاية لجميع أجهزة الشركة.
+                </li>
+                <li>
+                  إدارة حسابات المستخدمين وصلاحيات الوصول وإعدادات الأمان
+                  باستخدام Active Directory والأنظمة الداخلية.
+                </li>
+                <li>
+                  حل أعطال اتصال الشبكات المحلية (LAN) بما في ذلك DNS و DHCP و
+                  TCP/IP.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="glass-panel experience-card">
+              <div class="timeline-dot"></div>
+              <div
+                class="job-header"
+                style="
+                  position: relative;
+                  z-index: 2;
+                  margin-bottom: 20px;
+                  width: 100%;
+                "
+              >
+                <div class="job-title-area" style="flex-grow: 1; width: 100%">
+                  <div
+                    class="lang-en"
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      flex-wrap: wrap;
+                      gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <h3
+                      style="
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        font-size: 1.4rem;
+                        margin: 0;
+                      "
+                    >
+                      <i
+                        class="fas fa-server"
+                        style="color: var(--neon-blue)"
+                      ></i>
+                      System Administrator Trainee
+                      <span style="color: var(--neon-blue)"
+                        >@ Talgo Company</span
+                      >
+                    </h3>
+                    <div
+                      class="job-date"
+                      style="
+                        color: var(--text-secondary);
+                        font-size: 0.95rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        flex-direction: row;
+                        margin: 0;
+                      "
+                    >
+                      <i class="far fa-calendar-alt"></i>
+                      <span>Jul 2025 – Sep 2025</span>
+                    </div>
+                  </div>
+                  <div
+                    class="lang-ar"
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                      flex-wrap: wrap;
+                      gap: 10px;
+                      width: 100%;
+                    "
+                  >
+                    <h3
+                      style="
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        font-size: 1.4rem;
+                        margin: 0;
+                      "
+                    >
+                      <i
+                        class="fas fa-server"
+                        style="color: var(--neon-blue)"
+                      ></i>
+                      متدرب مسؤول أنظمة
+                      <span style="color: var(--neon-blue)">@ شركة تالجو</span>
+                    </h3>
+                    <div
+                      class="job-date"
+                      style="
+                        color: var(--text-secondary);
+                        font-size: 0.95rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        flex-direction: row;
+                        margin: 0;
+                      "
+                    >
+                      <span>يوليو 2025 – سبتمبر 2025</span>
+                      <i class="far fa-calendar-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <i class="fas fa-server watermark-icon-exp"></i>
+              <ul class="job-desc lang-en">
+                <li>
+                  Administer Active Directory, managing user accounts, password
+                  policies, permissions, and basic Group Policy configuration.
+                </li>
+                <li>
+                  Manage Microsoft 365 administration including Exchange Online,
+                  email troubleshooting, and user account management.
+                </li>
+                <li>
+                  Provide technical support via help desk operations using
+                  ticketing systems, ensuring SLA compliance and timely incident
+                  resolution.
+                </li>
+                <li>
+                  Perform network troubleshooting, IP configuration, DNS
+                  resolution, and connectivity testing to maintain reliable
+                  network performance.
+                </li>
+              </ul>
+              <ul class="job-desc lang-ar">
+                <li>
+                  إدارة Active Directory، بما يشمل حسابات المستخدمين، سياسات
+                  كلمات المرور، الصلاحيات، والإعدادات الأساسية لـ Group Policy.
+                </li>
+                <li>
+                  إدارة بيئة Microsoft 365 بما في ذلك Exchange Online، حل مشاكل
+                  البريد الإلكتروني، وإدارة حسابات المستخدمين.
+                </li>
+                <li>
+                  تقديم الدعم الفني عبر عمليات مكتب المساعدة (Help Desk)
+                  باستخدام أنظمة التذاكر، مع ضمان الامتثال لاتفاقية مستوى الخدمة
+                  (SLA) وحل الحوادث في الوقت المناسب.
+                </li>
+                <li>
+                  إجراء استكشاف أخطاء الشبكة، إعدادات IP، حل مشاكل DNS، واختبار
+                  الاتصال للحفاظ على أداء موثوق للشبكة.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+           ⚙️ Skills Section
+        -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="skills-container">
+            <span class="pre-heading lang-ar" style="text-align: center"
+              >كفاءاتي التقنية</span
+            >
+            <span class="pre-heading lang-en" style="text-align: center"
+              >Technical Competencies</span
+            >
+            <h2
+              class="section-heading centered gradient-text"
+              style="
+                color: var(--text-primary) !important;
+                -webkit-text-fill-color: initial;
+              "
+            >
+              <i class="fas fa-bolt"></i>
+              <span class="lang-en">Technical Skills</span>
+              <span class="lang-ar">المهارات التقنية</span>
+            </h2>
+
+            <div class="skills-cloud">
+              <!-- Core Skills -->
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-star"></i>
+                <span class="lang-en">Active Directory</span
+                ><span class="lang-ar"
+                  >إدارة الهوية والصلاحيات (Active Directory)</span
+                ></span
+              >
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-star"></i>
+                <span class="lang-en">Microsoft 365</span
+                ><span class="lang-ar">بيئة Microsoft 365</span></span
+              >
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-star"></i>
+                <span class="lang-en">IT Support (Tier 1/2)</span
+                ><span class="lang-ar">دعم فني متقدم (Tier 1/2)</span></span
+              >
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-star"></i>
+                <span class="lang-en">Networking</span
+                ><span class="lang-ar">إدارة وتجهيز الشبكات</span></span
+              >
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-star"></i>
+                <span class="lang-en">Endpoint Security</span
+                ><span class="lang-ar">حماية نقاط النهاية</span></span
+              >
+
+              <!-- Systems -->
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-server"></i>
+                <span class="lang-en">Windows Server Administration</span
+                ><span class="lang-ar">إدارة خوادم Windows Server</span></span
+              >
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-sitemap"></i>
+                <span class="lang-en">Active Directory</span
+                ><span class="lang-ar"
+                  >إدارة الهوية والصلاحيات (Active Directory)</span
+                ></span
+              >
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-code-branch"></i>
+                <span class="lang-en">Patch Management</span
+                ><span class="lang-ar">إدارة وتطبيق التحديثات</span></span
+              >
+              <span class="skill-tag tag-cyan"
+                ><i class="fas fa-rocket"></i>
+                <span class="lang-en">System Deployment</span
+                ><span class="lang-ar">نشر وتهيئة الأنظمة</span></span
+              >
+
+              <!-- Network -->
+              <span class="skill-tag tag-green"
+                ><i class="fas fa-globe"></i> <span class="lang-en">TCP/IP</span
+                ><span class="lang-ar">بروتوكولات الشبكات (TCP/IP)</span></span
+              >
+              <span class="skill-tag tag-green"
+                ><i class="fas fa-network-wired"></i>
+                <span class="lang-en">DNS / DHCP</span
+                ><span class="lang-ar">خدمات الشبكة (DNS/DHCP)</span></span
+              >
+              <span class="skill-tag tag-green"
+                ><i class="fas fa-wifi"></i>
+                <span class="lang-en">LAN Troubleshooting</span
+                ><span class="lang-ar"
+                  >استكشاف أعطال الشبكات المحلية</span
+                ></span
+              >
+              <span class="skill-tag tag-green"
+                ><i class="fas fa-route"></i>
+                <span class="lang-en">Network Configuration</span
+                ><span class="lang-ar">إعداد وتهيئة الشبكات</span></span
+              >
+
+              <!-- Security -->
+              <span class="skill-tag tag-pink"
+                ><i class="fas fa-shield-virus"></i>
+                <span class="lang-en">Endpoint Security</span
+                ><span class="lang-ar">حماية نقاط النهاية</span></span
+              >
+              <span class="skill-tag tag-pink"
+                ><i class="fas fa-file-contract"></i>
+                <span class="lang-en">Cybersecurity Compliance</span
+                ><span class="lang-ar"
+                  >الامتثال لسياسات الأمن السيبراني</span
+                ></span
+              >
+              <span class="skill-tag tag-pink"
+                ><i class="fas fa-lock"></i>
+                <span class="lang-en">Access Control</span
+                ><span class="lang-ar">التحكم في الوصول والصلاحيات</span></span
+              >
+              <span class="skill-tag tag-pink"
+                ><i class="fas fa-mobile-alt"></i>
+                <span class="lang-en">MDM Policies</span
+                ><span class="lang-ar">إدارة الأجهزة المحمولة (MDM)</span></span
+              >
+
+              <!-- Hardware -->
+              <span class="skill-tag tag-yellow"
+                ><i class="fas fa-tools"></i>
+                <span class="lang-en">Hardware Troubleshooting</span
+                ><span class="lang-ar">تشخيص وإصلاح العتاد</span></span
+              >
+              <span class="skill-tag tag-yellow"
+                ><i class="fas fa-cog"></i>
+                <span class="lang-en">Device Configuration</span
+                ><span class="lang-ar">تجهيز وتهيئة الأجهزة</span></span
+              >
+              <span class="skill-tag tag-yellow"
+                ><i class="fas fa-search"></i>
+                <span class="lang-en">System Diagnostics</span
+                ><span class="lang-ar">فحص الأنظمة واستكشاف الأخطاء</span></span
+              >
+            </div>
+
+            <div class="skills-categories">
+              <div class="cat-card">
+                <div class="cat-dot dot-yellow"></div>
+                <span>Hardware</span>
+              </div>
+              <div class="cat-card">
+                <div class="cat-dot dot-green"></div>
+                <span>Network</span>
+              </div>
+              <div class="cat-card">
+                <div class="cat-dot dot-pink"></div>
+                <span>Security</span>
+              </div>
+              <div class="cat-card">
+                <div class="cat-dot dot-cyan"></div>
+                <span>Systems & Core</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+           💼 Projects Section
+        -->
+      <section id="projects" class="section">
+        <div class="container">
+          <span class="pre-heading lang-ar">أبرز المشاريع</span>
+          <span class="pre-heading lang-en">Featured Work</span>
+          <h2 class="section-heading gradient-text">
+            <i class="fas fa-rocket"></i>
+            <span class="lang-en">Featured Projects</span>
+            <span class="lang-ar">أبرز المشاريع</span>
+          </h2>
+
+          <div class="projects-grid">
+            <!-- Project 1 (New) -->
+            <div class="project-item">
+              <div
+                class="proj-header-row"
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+                  margin-bottom: 20px;
+                "
+              >
+                <i
+                  class="fas fa-building fa-2x"
+                  style="color: var(--neon-blue)"
+                ></i>
+                <div style="flex-grow: 1">
+                  <h3 class="proj-title lang-en" style="margin: 0">
+                    Headquarters IT Setup
+                  </h3>
+                  <h3 class="proj-title lang-ar" style="margin: 0">
+                    التأسيس التقني للمقر الرئيسي
+                  </h3>
+                  <span
+                    class="proj-company lang-en"
+                    style="color: var(--text-secondary); font-size: 0.9rem"
+                    >Operating Levels Company</span
+                  >
+                  <span
+                    class="proj-company lang-ar"
+                    style="color: var(--text-secondary); font-size: 0.9rem"
+                    >شركة مستويات التشغيل</span
+                  >
+                </div>
+              </div>
+
+              <div class="proj-content-cols">
+                <div class="proj-col p-challenge">
+                  <div class="p-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span class="lang-en">Challenge</span
+                    ><span class="lang-ar">التحدي</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Building and outfitting an IT infrastructure from scratch
+                    for the new HQ, guaranteeing best specs at lowest cost and
+                    pre-launch readiness.
+                  </p>
+                  <p class="p-text lang-ar">
+                    بناء وتجهيز بنية تحتية تقنية متكاملة من الصفر لمقر الشركة
+                    الجديد، مع ضمان أفضل المواصفات بأقل تكلفة وجاهزية قبل
+                    الافتتاح.
+                  </p>
+                </div>
+                <div class="proj-col p-solution">
+                  <div class="p-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="lang-en">Solution</span
+                    ><span class="lang-ar">الحل</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Prepared exhaustive technical reports for top management,
+                    managed procurement cycles (research, negotiations,
+                    purchase), deployed field workstations.
+                  </p>
+                  <p class="p-text lang-ar">
+                    إعداد تقرير فني شامل للإدارة العليا، إدارة دورة المشتريات
+                    (بحث، تفاوض، شراء)، التركيب الميداني لمحطات العمل وتثبيت
+                    البرمجيات المخصصة.
+                  </p>
+                </div>
+                <div class="proj-col p-impact">
+                  <div class="p-header">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="lang-en">Impact</span
+                    ><span class="lang-ar">التأثير</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Achieved 100% zero-delay operational readiness upon employee
+                    relocation, providing a stable tech environment supporting
+                    company growth.
+                  </p>
+                  <p class="p-text lang-ar">
+                    جاهزية تشغيلية 100% (Zero-delay) فور انتقال الموظفين، وبيئة
+                    عمل تقنية مستقرة تدعم نمو الشركة.
+                  </p>
+                </div>
+              </div>
+
+              <div class="proj-stats-row">
+                <div class="p-stat">
+                  <h4 class="lang-en">High</h4>
+                  <h4 class="lang-ar">مُحسّن</h4>
+                  <span class="lang-en">Cost Saving</span
+                  ><span class="lang-ar">توفير مالي</span>
+                </div>
+                <div class="p-stat">
+                  <h4 class="lang-en">Zero</h4>
+                  <h4 class="lang-ar">صفر</h4>
+                  <span class="lang-en">Launch Delay</span
+                  ><span class="lang-ar">تأخير لافتتاح</span>
+                </div>
+                <div class="p-stat">
+                  <h4>100%</h4>
+                  <span class="lang-en">Operational Readiness</span
+                  ><span class="lang-ar">جاهزية التشغيل</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 (New) -->
+            <div class="project-item">
+              <div
+                class="proj-header-row"
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+                  margin-bottom: 20px;
+                "
+              >
+                <i
+                  class="fab fa-windows fa-2x"
+                  style="color: var(--neon-blue)"
+                ></i>
+                <div style="flex-grow: 1">
+                  <h3 class="proj-title lang-en" style="margin: 0">
+                    Comprehensive Security Update
+                  </h3>
+                  <h3 class="proj-title lang-ar" style="margin: 0">
+                    التحديث الأمني الشامل
+                  </h3>
+                  <span
+                    class="proj-company lang-en"
+                    style="color: var(--text-secondary); font-size: 0.9rem"
+                    >Talgo - Haramain Railway</span
+                  >
+                  <span
+                    class="proj-company lang-ar"
+                    style="color: var(--text-secondary); font-size: 0.9rem"
+                    >شركة تالجو — قطار الحرمين</span
+                  >
+                </div>
+              </div>
+
+              <div class="proj-content-cols">
+                <div class="proj-col p-challenge">
+                  <div class="p-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span class="lang-en">Challenge</span
+                    ><span class="lang-ar">التحدي</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Executing a mandatory OS update across corporate branches in
+                    KSA and Egypt within a strict timeline based on
+                    cybersecurity directives.
+                  </p>
+                  <p class="p-text lang-ar">
+                    تنفيذ تحديث أمني إجباري لأنظمة التشغيل لفروع الشركة في
+                    السعودية ومصر، بناءً على توجيهات قسم الأمن السيبراني، ضمن
+                    إطار زمني صارم.
+                  </p>
+                </div>
+                <div class="proj-col p-solution">
+                  <div class="p-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="lang-en">Solution</span
+                    ><span class="lang-ar">الحل</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Managed scheduled communication plan with over 60 employees
+                    for physical handover. Performed meticulous BIOS
+                    adjustments, formatted storage drives, and mapped necessary
+                    Hardware pieces.
+                  </p>
+                  <p class="p-text lang-ar">
+                    إدارة خطة تواصل مجدولة مع أكثر من 60 موظفاً لاستلام أجهزتهم.
+                    إجراء تعديلات دقيقة في أنظمة BIOS، التهيئة الكاملة وتركيب
+                    قطع Hardware اللازمة لضمان التوافق.
+                  </p>
+                </div>
+                <div class="proj-col p-impact">
+                  <div class="p-header">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="lang-en">Impact</span
+                    ><span class="lang-ar">التأثير</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Successfully upgraded 100% of devices, achieving full
+                    security compliance and ensuring systemic stability and
+                    optimal performance without disrupting operations flow.
+                  </p>
+                  <p class="p-text lang-ar">
+                    ترقية 100% من الأجهزة بنجاح وتحقيق الامتثال الأمني الكامل،
+                    مع استقرار تام للأنظمة وسرعة أداء دون تعطيل سير العمل.
+                  </p>
+                </div>
+              </div>
+
+              <div class="proj-stats-row">
+                <div class="p-stat">
+                  <h4 class="lang-en">Zero</h4>
+                  <h4 class="lang-ar">صفر</h4>
+                  <span class="lang-en">Downtime</span
+                  ><span class="lang-ar">توقف العمل</span>
+                </div>
+                <div class="p-stat">
+                  <h4>100%</h4>
+                  <span class="lang-en">Compliance Rate</span
+                  ><span class="lang-ar">نسبة الامتثال</span>
+                </div>
+                <div class="p-stat">
+                  <h4>+60</h4>
+                  <span class="lang-en">Upgraded Devices</span
+                  ><span class="lang-ar">أجهزة مرقاة</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item">
+              <div
+                class="proj-header-row"
+                style="
+                  display: flex;
+                  align-items: center;
+                  gap: 15px;
+                  margin-bottom: 20px;
+                "
+              >
+                <i
+                  class="fas fa-desktop fa-2x"
+                  style="color: var(--neon-blue)"
+                ></i>
+                <div style="flex-grow: 1">
+                  <h3 class="proj-title lang-en" style="margin: 0">
+                    Custom PC Builder & Hardware Consultant
+                  </h3>
+                  <h3 class="proj-title lang-ar" style="margin: 0">
+                    مستشار تجميع أجهزة كمبيوتر مخصصة
+                  </h3>
+                  <span
+                    class="proj-company lang-en"
+                    style="color: var(--text-secondary); font-size: 0.9rem"
+                    >Private Tech Consultations</span
+                  >
+                  <span
+                    class="proj-company lang-ar"
+                    style="color: var(--text-secondary); font-size: 0.9rem"
+                    >استشارات تقنية خاصة</span
+                  >
+                </div>
+              </div>
+
+              <div class="proj-content-cols">
+                <div class="proj-col p-challenge">
+                  <div class="p-header">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span class="lang-en">Challenge</span
+                    ><span class="lang-ar">التحدي</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Operating as a personal consultant to build and assemble
+                    over 10 custom PC rigs respecting strict performance-budget
+                    matrices.
+                  </p>
+                  <p class="p-text lang-ar">
+                    العمل كمستشار تقني لبناء وتجميع أكثر من 10 أجهزة كمبيوتر
+                    مخصصة مع الالتزام التام بتلبية متطلبات الأداء والميزانيات
+                    المحددة.
+                  </p>
+                </div>
+                <div class="proj-col p-solution">
+                  <div class="p-header">
+                    <i class="fas fa-lightbulb"></i>
+                    <span class="lang-en">Solution</span
+                    ><span class="lang-ar">الحل</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Consulted thoroughly on part compatibility, executed
+                    professional assembly, neat cable management, applied
+                    precise BIOS updates.
+                  </p>
+                  <p class="p-text lang-ar">
+                    إدارة دورة البناء كاملة: فحص توافق القطع، تحديثات BIOS
+                    الدقيقة، التركيب الاحترافي مع تنظيم مسارات الكابلات، وبناء
+                    هندسة تخزين هجينة (NVMe + HDD).
+                  </p>
+                </div>
+                <div class="proj-col p-impact">
+                  <div class="p-header">
+                    <i class="fas fa-chart-line"></i>
+                    <span class="lang-en">Impact</span
+                    ><span class="lang-ar">التأثير</span>
+                  </div>
+                  <p class="p-text lang-en">
+                    Delivered high-performance, stable systems passing rigorous
+                    stress testing. Showcased advanced Hardware troubleshooting
+                    capabilities.
+                  </p>
+                  <p class="p-text lang-ar">
+                    تسليم أنظمة عالية الاستقرار اجتازت اختبارات الضغط والحرارة
+                    الصارمة، مما صقل مهارات استكشاف الأعطال Hardware بشكل متقدم.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+           🎓 Education & Certs
+        -->
+      <section id="education" class="section">
+        <div class="container">
+          <span class="pre-heading lang-ar">المؤهلات والاعتمادات</span>
+          <span class="pre-heading lang-en">Qualifications</span>
+          <h2 class="section-heading gradient-text">
+            <span class="lang-en">Education & Certifications</span>
+            <span class="lang-ar">التعليم والشهادات</span>
+          </h2>
+
+          <div class="edu-wrap">
+            <div
+              class="glass-panel edu-card"
+              style="position: relative; overflow: hidden"
+            >
+              <i class="fas fa-university watermark-icon-edu"></i>
+              <div class="edu-info">
+                <div class="edu-icon-box" style="width: 80px; height: 80px">
+                  <img
+                    src="taibah-logo.png"
+                    alt="Taibah University"
+                    style="width: 100%"
+                  />
+                </div>
+                <div class="edu-text">
+                  <h3
+                    class="lang-en"
+                    style="
+                      font-size: 1.6rem;
+                      font-weight: bold;
+                      color: var(--text-primary);
+                    "
+                  >
+                    Bachelor of Information Systems
+                  </h3>
+                  <h3
+                    class="lang-ar"
+                    style="
+                      font-size: 1.6rem;
+                      font-weight: bold;
+                      color: var(--text-primary);
+                    "
+                  >
+                    بكالوريوس نظم المعلومات
+                  </h3>
+                  <p
+                    class="lang-en"
+                    style="font-size: 1.1rem; color: var(--text-secondary)"
+                  >
+                    Taibah University - Saudi Arabia
+                  </p>
+                  <p
+                    class="lang-ar"
+                    style="font-size: 1.1rem; color: var(--text-secondary)"
+                  >
+                    جامعة طيبة - المملكة العربية السعودية
+                  </p>
+                </div>
+              </div>
+              <div
+                class="edu-date"
+                style="
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                  color: var(--text-secondary);
+                  padding: 0 30px;
+                "
+              >
+                2025
+              </div>
+            </div>
+          </div>
+
+          <div class="section-subheader">
+            <i class="fas fa-award"></i>
+            <span class="lang-en">Professional Certifications</span>
+            <span class="lang-ar">الشهادات المهنية</span>
+          </div>
+
+          <div class="cert-grid">
+            <a
+              href="https://www.linkedin.com/in/abdulaziz-t-143438341/"
+              target="_blank"
+              class="cert-card"
+            >
+              <div class="cert-icon blue-border">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cisco.svg"
+                  alt="Cisco"
+                />
+              </div>
+              <div class="cert-text">
+                <span style="color: var(--text-secondary); font-size: 0.8rem"
+                  >Cisco</span
+                >
+                <h4 class="lang-en">Cyber Threat Management</h4>
+                <h4 class="lang-ar">Cyber Threat Management</h4>
+                <small class="lang-en"
+                  ><i class="fab fa-linkedin"></i> View Credential on LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+                <small class="lang-ar"
+                  ><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/abdulaziz-t-143438341/"
+              target="_blank"
+              class="cert-card"
+            >
+              <div class="cert-icon blue-border">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg"
+                  alt="Microsoft"
+                />
+              </div>
+              <div class="cert-text">
+                <span style="color: var(--text-secondary); font-size: 0.8rem"
+                  >Microsoft</span
+                >
+                <h4 class="lang-en">Microsoft IT Support Specialist</h4>
+                <h4 class="lang-ar">Microsoft IT Support Specialist</h4>
+                <small class="lang-en"
+                  ><i class="fab fa-linkedin"></i> View Credential on LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+                <small class="lang-ar"
+                  ><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/abdulaziz-t-143438341/"
+              target="_blank"
+              class="cert-card"
+            >
+              <div class="cert-icon yellow-border">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg"
+                  alt="IBM"
+                />
+              </div>
+              <div class="cert-text">
+                <span style="color: var(--text-secondary); font-size: 0.8rem"
+                  >Eyouth & IBM</span
+                >
+                <h4 class="lang-en">Eyouth to IBM Learning Plan</h4>
+                <h4 class="lang-ar">Eyouth to IBM Learning Plan</h4>
+                <small class="lang-en" style="color: #eab308"
+                  ><i class="fab fa-linkedin"></i> View Credential on LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+                <small class="lang-ar" style="color: #eab308"
+                  ><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/abdulaziz-t-143438341/"
+              target="_blank"
+              class="cert-card"
+            >
+              <div class="cert-icon pink-border">
+                <img
+                  src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg"
+                  alt="IBM"
+                />
+              </div>
+              <div class="cert-text">
+                <span style="color: var(--text-secondary); font-size: 0.8rem"
+                  >IBM</span
+                >
+                <h4 class="lang-en">Data Classification using IBM Granite</h4>
+                <h4 class="lang-ar">Data Classification using IBM Granite</h4>
+                <small class="lang-en" style="color: #ec4899"
+                  ><i class="fab fa-linkedin"></i> View Credential on LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+                <small class="lang-ar" style="color: #ec4899"
+                  ><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn
+                  <i class="fas fa-external-link-alt"></i
+                ></small>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+           📞 Contact
+        -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="contact-wrap">
+            <span class="pre-heading lang-ar" style="text-align: center"
+              >لنتواصل</span
+            >
+            <span class="pre-heading lang-en" style="text-align: center"
+              >Let's Connect</span
+            >
+            <h2 class="section-heading gradient-text centered">
+              <span class="lang-en">Get in Touch</span>
+              <span class="lang-ar">تواصل معي</span>
+            </h2>
+
+            <div
+              class="contact-grid"
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 25px;
+                margin: 40px auto 0 auto;
+                max-width: 950px;
+              "
+            >
+              <div
+                class="glass-panel"
+                style="grid-column: 1 / -1; padding: 40px; text-align: center"
+              >
+                <h3
+                  class="lang-ar"
+                  style="
+                    font-size: 2rem;
+                    color: var(--text-primary);
+                    margin-bottom: 15px;
+                  "
+                >
+                  هل لديك فرصة عمل؟
+                </h3>
+                <h3
+                  class="lang-en"
+                  style="
+                    font-size: 2rem;
+                    color: var(--text-primary);
+                    margin-bottom: 15px;
+                  "
+                >
+                  Have an Opportunity?
+                </h3>
+                <p
+                  class="lang-ar"
+                  style="
+                    color: var(--text-secondary);
+                    max-width: 600px;
+                    margin: 0 auto;
+                    font-size: 1.15rem;
+                    line-height: 1.8;
+                  "
+                >
+                  أسعد دائماً بالتواصل لمناقشة الفرص المهنية، تبادل الخبرات،
+                  وتقديم الحلول التقنية المتقدمة.
+                </p>
+                <p
+                  class="lang-en"
+                  style="
+                    color: var(--text-secondary);
+                    max-width: 600px;
+                    margin: 0 auto;
+                    font-size: 1.15rem;
+                    line-height: 1.8;
+                  "
+                >
+                  I'm always happy to connect, discuss professional
+                  opportunities, and provide advanced tech solutions.
+                </p>
+              </div>
+
+              <!-- Email -->
+              <a
+                href="#"
+                id="secure-email"
+                class="glass-panel interactive-card"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 35px;
+                  text-align: center;
+                  gap: 15px;
+                  text-decoration: none;
+                "
+              >
+                <div
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background: rgba(239, 68, 68, 0.1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <i
+                    class="fas fa-envelope"
+                    style="font-size: 2rem; color: #ef4444"
+                  ></i>
+                </div>
+                <span
+                  class="lang-ar"
+                  style="color: var(--text-secondary); font-size: 0.95rem"
+                  >البريد الإلكتروني</span
+                >
+                <span
+                  class="lang-en"
+                  style="color: var(--text-secondary); font-size: 0.95rem"
+                  >Email Address</span
+                >
+                <strong
+                  id="email-display"
+                  style="
+                    color: var(--text-primary);
+                    font-size: 1.1rem;
+                    letter-spacing: 0.5px;
+                    cursor: pointer;
+                  "
+                >
+                  <span class="lang-en">Click to reveal</span>
+                  <span class="lang-ar">انقر للإظهار</span>
+                </strong>
+              </a>
+
+              <!-- Phone -->
+              <a
+                href="#"
+                id="secure-phone"
+                class="glass-panel interactive-card"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 35px;
+                  text-align: center;
+                  gap: 15px;
+                  text-decoration: none;
+                "
+              >
+                <div
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background: rgba(16, 185, 129, 0.1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <i
+                    class="fas fa-phone-alt"
+                    style="font-size: 2rem; color: #10b981"
+                  ></i>
+                </div>
+                <span
+                  class="lang-ar"
+                  style="color: var(--text-secondary); font-size: 0.95rem"
+                  >رقم الجوال</span
+                >
+                <span
+                  class="lang-en"
+                  style="color: var(--text-secondary); font-size: 0.95rem"
+                  >Phone Number</span
+                >
+                <strong
+                  id="phone-display"
+                  style="
+                    color: var(--text-primary);
+                    font-size: 1.1rem;
+                    direction: ltr;
+                    letter-spacing: 1px;
+                    cursor: pointer;
+                  "
+                >
+                  <span class="lang-en">Click to reveal</span>
+                  <span class="lang-ar">انقر للإظهار</span>
+                </strong>
+              </a>
+
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/abdulaziz-t-143438341/"
+                target="_blank"
+                class="glass-panel interactive-card"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 35px;
+                  text-align: center;
+                  gap: 15px;
+                  text-decoration: none;
+                "
+              >
+                <div
+                  style="
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    background: rgba(59, 130, 246, 0.1);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+                  "
+                >
+                  <i
+                    class="fab fa-linkedin"
+                    style="font-size: 2rem; color: var(--neon-blue)"
+                  ></i>
+                </div>
+                <span
+                  class="lang-ar"
+                  style="color: var(--text-secondary); font-size: 0.95rem"
+                  >الشبكة المهنية</span
+                >
+                <span
+                  class="lang-en"
+                  style="color: var(--text-secondary); font-size: 0.95rem"
+                  >Professional Network</span
+                >
+                <strong
+                  style="
+                    color: var(--neon-blue);
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                  "
+                  >LinkedIn Profile</strong
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Mobile FAB -->
+    <a href="mailto:abdulazizta05@gmail.com" class="mobile-fab" id="mobile-fab">
+      <i class="fas fa-envelope"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const html = document.documentElement;
+        const langBtn = document.getElementById("lang-toggle-btn");
+
+        // Language logic
+        langBtn.addEventListener("click", () => {
+          if (html.getAttribute("lang") === "en") {
+            html.setAttribute("lang", "ar");
+            html.setAttribute("dir", "rtl");
+          } else {
+            html.setAttribute("lang", "en");
+            html.setAttribute("dir", "ltr");
+          }
+        });
+
+        // Typewriter effect
+        const titlesAr = [
+          "أخصائي بنية تحتية تقنية",
+          "مختص دعم فني",
+          "مختص أنظمة وحلول تقنية",
+          "مهتم بالذكاء الاصطناعي والتحول الرقمي",
+        ];
+        const titlesEn = [
+          "IT Infrastructure Specialist",
+          "Technical Support Specialist",
+          "Systems & IT Solutions Specialist",
+          "AI & Digital Transformation Enthusiast",
+        ];
+        let titleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeWriter() {
+          const isAr = html.getAttribute("lang") !== "en";
+          const elArray = isAr
+            ? document.querySelectorAll("#typewriter-ar")
+            : document.querySelectorAll("#typewriter-en");
+          const prevElArray = isAr
+            ? document.querySelectorAll("#typewriter-en")
+            : document.querySelectorAll("#typewriter-ar");
+
+          prevElArray.forEach((el) => (el.textContent = "")); // clear other lang
+
+          if (elArray.length > 0) {
+            const titles = isAr ? titlesAr : titlesEn;
+            const currentTitle = titles[titleIndex % titles.length];
+            const el = elArray[0];
+
+            if (isDeleting) {
+              el.textContent = currentTitle.substring(0, charIndex - 1);
+              charIndex--;
+            } else {
+              el.textContent = currentTitle.substring(0, charIndex + 1);
+              charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 40 : 100;
+
+            if (!isDeleting && charIndex === currentTitle.length) {
+              typeSpeed = 2500;
+              isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+              isDeleting = false;
+              titleIndex++;
+              typeSpeed = 500;
+            }
+
+            setTimeout(typeWriter, typeSpeed);
+          }
+        }
+        typeWriter();
+
+        // Theme Toggle Logic
+        const themeBtn = document.getElementById("theme-toggle-btn");
+        const themeIcon = themeBtn.querySelector("i");
+
+        const currentTheme = localStorage.getItem("theme") || "dark";
+        if (currentTheme === "light") {
+          html.setAttribute("data-theme", "light");
+          themeIcon.classList.replace("fa-moon", "fa-sun");
+        }
+
+        themeBtn.addEventListener("click", () => {
+          let theme = html.getAttribute("data-theme");
+          if (theme === "light") {
+            html.removeAttribute("data-theme");
+            localStorage.setItem("theme", "dark");
+            themeIcon.classList.replace("fa-sun", "fa-moon");
+          } else {
+            html.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+            themeIcon.classList.replace("fa-moon", "fa-sun");
+          }
+        });
+
+        // Anti-Scraping Contact Info Logic
+        const secEmail = document.getElementById("secure-email");
+        const emailDisp = document.getElementById("email-display");
+        if (secEmail && emailDisp) {
+          secEmail.addEventListener("click", (e) => {
+            e.preventDefault();
+            const u = "abdulazizta05";
+            const d = "gmail.com";
+            const m = u + "@" + d;
+            window.location.href = "mailto:" + m;
+            emailDisp.innerHTML = `<span style="letter-spacing: 0.5px;">${m}</span>`;
+          });
+        }
+
+        const secPhone = document.getElementById("secure-phone");
+        const phoneDisp = document.getElementById("phone-display");
+        if (secPhone && phoneDisp) {
+          secPhone.addEventListener("click", (e) => {
+            e.preventDefault();
+            const p1 = "+966";
+            const p2 = "59";
+            const p3 = "701";
+            const p4 = "6679";
+            const p = `${p1}${p2}${p3}${p4}`;
+            window.location.href = "tel:" + p;
+            phoneDisp.innerHTML = `<span style="direction: ltr; letter-spacing: 1px;">${p1} ${p2} ${p3} ${p4}</span>`;
+          });
+        }
+
+        // Mobile FAB scroll visibility
+        const mobileFab = document.getElementById("mobile-fab");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) {
+            mobileFab.classList.add("visible");
+          } else {
+            mobileFab.classList.remove("visible");
+          }
+        });
+
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+        const navLinksMenu = document.querySelector(".nav-links");
+        if (mobileMenuBtn && navLinksMenu) {
+          mobileMenuBtn.addEventListener("click", () => {
+            navLinksMenu.classList.toggle("active");
+            const icon = mobileMenuBtn.querySelector("i");
+            if (navLinksMenu.classList.contains("active")) {
+              icon.classList.replace("fa-bars", "fa-times");
+            } else {
+              icon.classList.replace("fa-times", "fa-bars");
+            }
+          });
+
+          document.querySelectorAll(".nav-link").forEach((link) => {
+            link.addEventListener("click", () => {
+              navLinksMenu.classList.remove("active");
+              const icon = mobileMenuBtn.querySelector("i");
+              icon.classList.replace("fa-times", "fa-bars");
+            });
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
