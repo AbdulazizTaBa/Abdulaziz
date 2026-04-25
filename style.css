@@ -1553,4 +1553,16 @@ html[lang="ar"] .mobile-fab {
   .mobile-fab {
     display: flex;
   }
+  
+  .job-title-area h3 {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    line-height: 1.4 !important;
+  }
+  .job-title-area h3 span {
+    display: block !important;
+    width: 100% !important;
+    font-size: 1rem !important;
+    margin-top: 4px !important;
+  }
 }
