@@ -48,7 +48,8 @@
     label('.gallery-nav-btn.next-btn', 'Next step', 'الخطوة التالية');
     label('.modal-view-tabs', 'Project information', 'معلومات المشروع');
     document.getElementById('project-modal').setAttribute('aria-labelledby', ar ? 'modal-title-ar' : 'modal-title-en');
-    const covers = ar ? ['عرض مشروع أتمتة الوظائف', 'عرض مشروع تصنيف البريد', 'عرض مشروع أثر'] : ['View AI Jobs project', 'View AI Email project', 'View Athar project'];
+    label('#athar-project-link', 'Open Athar project link in a new tab', 'فتح رابط مشروع أثر في تبويب جديد');
+    const covers = ar ? ['عرض مشروع أتمتة الوظائف', 'عرض مشروع تصنيف البريد'] : ['View AI Jobs project', 'View AI Email project'];
     document.querySelectorAll('.proj-cover-button').forEach((button, index) => button.setAttribute('aria-label', covers[index]));
     document.querySelectorAll('.gallery-thumb-item').forEach((button, index) => {
       const step = currentActiveProject?.steps[index];

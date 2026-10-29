@@ -30,7 +30,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-        <link rel="stylesheet" href="style.css?v=12.0" />
+        <link rel="stylesheet" href="style.css?v=13.0" />
         <script src="projects.js" defer></script>
         <script src="site.js" defer></script>
     </head>
@@ -189,7 +189,7 @@
 
                         <div class="hero-scroll">
                             <a href="#projects">
-                                <span class="lang-en">Explore portfolio</span><span class="lang-ar">اكتشف أعمالي</span>
+                                <span class="lang-en">My Projects</span><span class="lang-ar">مشاريعي</span>
                                 <span class="scroll-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16m-5-5 5 5 5-5" /></svg></span>
                             </a>
                         </div>
@@ -487,10 +487,10 @@
                             </div>
                         </div>
 
-                        <div class="project-card-3col">
-                            <button type="button" class="proj-cover-button" onclick="openProjectModal('proj3', 'gallery')" aria-label="View Athar project image and details">
-                                <img src="images/projects/athar/cover.png" alt="Athar Platform - AI Heritage Guide" class="proj-cover-img" loading="lazy" decoding="async" width="1314" height="736" />
-                            </button>
+                        <a class="project-card-3col project-card-external" id="athar-project-link" href="https://drive.google.com/file/d/1U5z_OL5Gw1E897Np_T7OzxM2a2Ls25za/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Open Athar project link in a new tab">
+                            <div class="project-link-preview" aria-hidden="true">
+                                <img src="images/projects/athar/cover.png" alt="" class="proj-cover-img" loading="lazy" decoding="async" width="1314" height="736" />
+                            </div>
                             <div class="proj-card-body">
                                 <div class="proj-card-meta">
                                     <span class="lang-ar">ذكاء اصطناعي وتطوير ويب</span>
@@ -504,8 +504,9 @@
                                 <p class="proj-card-desc lang-en">
                                     An interactive web platform and smart exploration experience for Saudi heritage, serving as an AI-powered historical and tourist guide with a robust knowledge base.
                                 </p>
-                                <div class="proj-tech-circles" onclick="event.stopPropagation()">
-                                    <div class="tech-circle-badge" data-tooltip="HTML5" title="HTML5">
+                                <div class="proj-tech-circles">
+                                    <div class="tech-circle-badge" data-tooltip="HTML5" title="HTML5"
+>
                                         <i class="fab fa-html5"></i></div>
                                     <div class="tech-circle-badge" data-tooltip="CSS3" title="CSS3">
                                         <i class="fab fa-css3-alt"></i></div>
@@ -521,14 +522,14 @@
                                         <i class="fas fa-database"></i></div>
                                 </div>
                                 <div class="proj-card-footer">
-                                    <button type="button" class="btn-proj-gallery" onclick="openProjectModal('proj3', 'gallery')">
-                                        <i class="fas fa-images" aria-hidden="true"></i>
-                                        <span class="lang-ar">استعراض صورة وتفاصيل المشروع</span>
-                                        <span class="lang-en">View Project Image & Details</span>
-                                    </button>
+                                    <span class="btn-proj-gallery">
+                                        <i class="fab fa-google-drive" aria-hidden="true"></i>
+                                        <span class="lang-ar">فتح المشروع على Google Drive</span>
+                                        <span class="lang-en">Open project on Google Drive</span>
+                                    </span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
 
                     </div>
                 </div>

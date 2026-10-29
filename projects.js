@@ -101,26 +101,6 @@ const projectData = {
                 descAr: 'تُظهر واجهة محادثة بوت التيليجرام (Alert-Bot)، والتي تتلقى التنبيهات المباشرة فور تسجيل الطلبات: التنبيه الأول إشعار "طلب دعم تقني جديد" يوضح اسم وإيميل المرسل، موضوع المشكلة، والتفاصيل؛ والتنبيه الثاني إشعار "طلب إداري جديد" يحتوي بيانات طلب الإجازة بالكامل، مع تذييل تلقائي يوضح إرسال الرسالة عبر أتمتة n8n.'
             }
         ]
-    },
-    'proj3': {
-        companyAr: 'ذكاء اصطناعي وتطوير ويب',
-        companyEn: 'AI & Web Development',
-        titleAr: 'منصة أثر - دليل التراث بالذكاء الاصطناعي',
-        titleEn: 'Athar Platform - AI Heritage Guide',
-        challengeAr: 'تقديم تجربة سهلة لاستكشاف معلومات التراث السعودي في واجهة تفاعلية واحدة.',
-        challengeEn: 'Make Saudi heritage information easier to explore through one interactive interface.',
-        solutionAr: 'تصميم منصة ويب تجمع واجهة الاستكشاف مع دليل معرفي مدعوم بالذكاء الاصطناعي.',
-        solutionEn: 'Designed a web platform combining an exploration interface with an AI-assisted knowledge guide.',
-        impactAr: 'نموذج مشروع يعرض فكرة المنصة وتجربة الاستكشاف؛ لا تتوفر بيانات منشورة لقياس استخدامه.',
-        impactEn: 'A project concept demonstrating the platform and exploration experience; no public usage metrics are available.',
-        stats: [],
-        steps: [{
-            img: 'images/projects/athar/cover.png',
-            titleAr: '1. واجهة منصة أثر',
-            titleEn: '1. Athar Platform Cover',
-            descAr: 'صورة المشروع المتاحة حالياً. يمكن إضافة صور خطوات التنفيذ لاحقاً بعد مراجعتها للخصوصية.',
-            descEn: 'The currently available project image. More implementation images can be added after a privacy review.'
-        }]
     }
 };
 
