@@ -11,17 +11,18 @@ Use lowercase kebab-case: `images/projects/project-name-here/`
 | File        | Description                              |
 |-------------|------------------------------------------|
 | `cover.png` | Card cover image (displayed in the grid) |
-| `step1.png` | Gallery step 1 image                     |
-| `step2.png` | Gallery step 2 image                     |
-| `step3.png` | Gallery step 3 image                     |
-| `step4.png` | Gallery step 4 image                     |
+| `step1.jpg` | Gallery step 1 image (or another format matching the HTML path) |
+| `step2.jpg` | Gallery step 2 image                     |
+| `step3.jpg` | Gallery step 3 image                     |
+| `step4.jpg` | Gallery step 4 image                     |
 | `README.md` | Image labels and descriptions            |
 
 ### Steps to Add a New Project
 1. Create `images/projects/<project-name>/` folder
-2. Place `cover.png` + `step1-4.png` inside it
+2. Place `cover.png` and the project's step images inside it; use their actual filenames and formats
 3. In `index.html`, add a new `<div class="project-card-3col">` to the `.projects-3col-grid` div
-4. In the `<script>` section, add a new `'projN': { ... }` entry to `projectData`
+4. In `projects.js`, add a new `'projN': { ... }` entry to `projectData`
+5. Review every screenshot for personal data, account identifiers, internal URLs, tokens, and client information before publication. Do not place original certificate files in the public repository.
 
 ---
 

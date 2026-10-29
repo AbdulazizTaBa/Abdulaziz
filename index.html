@@ -1,75 +1,52 @@
 <!doctype html>
 <html lang="en" dir="ltr">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdulaziz Tariq | Portfolio</title>
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css?v=3.0" />
-    <!-- Modern Enterprise Fonts: IBM Plex Sans Arabic (Saudi Arabia Standard) + Plus Jakarta Sans + Inter + Cairo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cairo:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <!-- FontAwesome 6.5.2 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            // Apply saved preferences before the first paint to avoid a language/theme flash.
+            try {
+                const root = document.documentElement;
+                root.lang = localStorage.getItem('language') === 'ar' ? 'ar' : 'en';
+                root.dir = root.lang === 'ar' ? 'rtl' : 'ltr';
+                if (localStorage.getItem('theme') === 'light') root.dataset.theme = 'light';
+            } catch { /* The default English/dark presentation also works without storage. */ }
+        </script>
+        <title>Abdulaziz Tariq | IT, Systems & AI Automation</title>
+        <meta name="description" content="Abdulaziz Tariq's portfolio featuring IT systems, support, and AI automation projects with visual case studies." />
+        <meta name="theme-color" content="#080f1b" />
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Abdulaziz Tariq | IT, Systems & AI Automation" />
+        <meta property="og:description" content="Explore practical IT and AI automation projects by Abdulaziz Tariq." />
+        <meta property="og:image" content="https://abdulaziztaba.github.io/Abdulaziz/images/az-steel-dark.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="canonical" href="https://abdulaziztaba.github.io/Abdulaziz/" />
+        <link id="site-icon" rel="icon" href="images/favicon-dark.png" type="image/png" sizes="64x64" />
 
-<body>
-    <!-- Ambient Tech Badges & Subtle Floating Icons -->
-    <div class="ambient-tech-layer" aria-hidden="true">
-        <!-- Floating Badges -->
-        <div class="ambient-badge" style="top: 15%; left: 4%; animation-delay: 0s;">
-            <i class="fas fa-brain"></i> <span>AI Agents</span>
-        </div>
-        <div class="ambient-badge"
-            style="top: 28%; right: 5%; animation-delay: 2.5s; color: var(--accent-orange); border-color: rgba(249, 115, 22, 0.25); box-shadow: 0 0 15px rgba(249, 115, 22, 0.1);">
-            <i class="fas fa-diagram-project"></i> <span>n8n Workflows</span>
-        </div>
-        <div class="ambient-badge"
-            style="top: 48%; left: 3%; animation-delay: 4.5s; color: var(--accent-purple); border-color: rgba(168, 85, 247, 0.25); box-shadow: 0 0 15px rgba(168, 85, 247, 0.1);">
-            <i class="fas fa-cloud"></i> <span>Hyper-V</span>
-        </div>
-        <div class="ambient-badge"
-            style="top: 65%; right: 4%; animation-delay: 1.5s; color: var(--accent-emerald); border-color: rgba(16, 185, 129, 0.25); box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);">
-            <i class="fas fa-shield-halved"></i> <span>AD Security</span>
-        </div>
-        <div class="ambient-badge"
-            style="top: 82%; left: 5%; animation-delay: 3.5s; color: var(--accent-cyan); border-color: rgba(56, 189, 248, 0.25); box-shadow: 0 0 15px rgba(56, 189, 248, 0.1);">
-            <i class="fas fa-network-wired"></i> <span>VLANs & Wi-Fi 6</span>
-        </div>
-        <div class="ambient-badge"
-            style="top: 93%; right: 7%; animation-delay: 5s; color: var(--accent-amber); border-color: rgba(245, 158, 11, 0.25); box-shadow: 0 0 15px rgba(245, 158, 11, 0.1);">
-            <i class="fas fa-headset"></i> <span>ITIL Helpdesk</span>
-        </div>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-        <!-- Larger Floating Abstract Tech Icons -->
-        <i class="tech-icon-floating fas fa-microchip"
-            style="top: 18%; right: 15%; animation-delay: 1s; font-size: 2.8rem; color: var(--accent-emerald); opacity: 0.12;"></i>
-        <i class="tech-icon-floating fas fa-server"
-            style="top: 38%; left: 12%; animation-delay: 3s; font-size: 3.2rem; color: var(--accent-cyan); opacity: 0.08;"></i>
-        <i class="tech-icon-floating fas fa-code-branch"
-            style="top: 55%; right: 20%; animation-delay: 2s; font-size: 2.5rem; color: var(--accent-purple); opacity: 0.15;"></i>
-        <i class="tech-icon-floating fas fa-robot"
-            style="top: 72%; left: 18%; animation-delay: 4.5s; font-size: 3.8rem; color: var(--accent-orange); opacity: 0.07;"></i>
-        <i class="tech-icon-floating fas fa-ethernet"
-            style="top: 88%; left: 45%; animation-delay: 6s; font-size: 3rem; color: rgba(255, 255, 255, 0.5); opacity: 0.06;"></i>
-    </div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+        <link rel="stylesheet" href="style.css?v=12.0" />
+        <script src="projects.js" defer></script>
+        <script src="site.js" defer></script>
+    </head>
 
-    <!-- Floating Header Navigation -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <!-- Floating Pill Nav -->
-            <div class="nav-pill-dock">
-                <a href="#hero" class="dock-brand-link" title="Abdulaziz Tariq | Home"
-                    aria-label="Abdulaziz Tariq Home">
-                    <img src="images/az-logo.png" alt="AZ Tech Logo" class="dock-brand-logo logo-dark-mode" />
-                    <img src="images/az-logo-light.png" alt="AZ Tech Logo" class="dock-brand-logo logo-light-mode" />
+    <body>
+        <a class="skip-link" href="#main-content"><span class="lang-en">Skip to content</span><span class="lang-ar">تجاوز إلى المحتوى</span></a>
+
+        <header class="navbar">
+            <div class="container nav-container">
+
+                <a href="#hero" class="dock-brand-link" title="Abdulaziz Tariq | Home" aria-label="Abdulaziz Tariq Home">
+                    <img data-src="images/az-steel-dark.png" alt="" class="dock-brand-logo logo-dark-mode" width="1254" height="1254" decoding="async" />
+                    <img data-src="images/az-steel-light.png" alt="" class="dock-brand-logo logo-light-mode" width="1254" height="1254" decoding="async" />
                 </a>
 
-                <nav class="dock-nav-links">
+                <nav class="dock-nav-links" aria-label="Primary navigation">
                     <a href="#about" class="dock-link">
                         <span class="lang-en">About</span>
                         <span class="lang-ar">من أنا</span>
@@ -92,1837 +69,1010 @@
                     </a>
                 </nav>
 
-                <!-- White Pill CTA Button (Matching Image 1) -->
                 <a href="#contact" class="dock-cta-btn">
                     <i class="far fa-envelope"></i>
-                    <span class="lang-en">Work with me</span>
+                    <span class="lang-en dock-cta-full">Work with me</span><span class="lang-en dock-cta-compact">Contact</span>
                     <span class="lang-ar">تواصل معي</span>
                 </a>
-            </div>
 
-            <!-- Circular Action Controls (Matching Image 2) -->
-            <div class="dock-actions-group">
-                <!-- Circular Language Button (Image 2) -->
-                <button id="lang-toggle-btn" class="circular-dock-btn" title="Switch Language"
-                    aria-label="Switch Language">
-                    <span class="lang-en" style="font-weight: 800">AR</span>
-                    <span class="lang-ar" style="font-weight: 800">EN</span>
-                </button>
+                <div class="dock-actions-group">
 
-                <!-- Circular Theme Button (Image 2) -->
-                <button id="theme-toggle-btn" class="circular-dock-btn" title="Toggle Theme" aria-label="Toggle Theme">
-                    <i class="far fa-moon" id="theme-icon"></i>
-                </button>
+                    <button id="lang-toggle-btn" class="circular-dock-btn" title="Switch Language" aria-label="Switch Language">
+                        <span class="lang-en">AR</span>
+                        <span class="lang-ar">EN</span>
+                    </button>
 
-                <!-- Mobile Hamburger -->
-                <button id="mobile-menu-btn" class="circular-dock-btn mobile-menu-btn" aria-label="Open Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
+                    <button id="theme-toggle-btn" class="circular-dock-btn" title="Toggle Theme" aria-label="Toggle Theme">
+                        <i class="far fa-moon" id="theme-icon"></i>
+                    </button>
 
-        <!-- Mobile Dropdown Navigation -->
-        <div id="mobile-nav-drawer" class="mobile-nav-drawer">
-            <a href="#hero" class="mobile-nav-item">
-                <span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span>
-            </a>
-            <a href="#about" class="mobile-nav-item">
-                <span class="lang-en">About</span><span class="lang-ar">من أنا</span>
-            </a>
-            <a href="#experience" class="mobile-nav-item">
-                <span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span>
-            </a>
-            <a href="#projects" class="mobile-nav-item">
-                <span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span>
-            </a>
-            <a href="#skills" class="mobile-nav-item">
-                <span class="lang-en">Skills</span><span class="lang-ar">المهارات</span>
-            </a>
-            <a href="#education" class="mobile-nav-item">
-                <span class="lang-en">Education</span><span class="lang-ar">التعليم والشهادات</span>
-            </a>
-            <a href="#contact" class="mobile-nav-item">
-                <span class="lang-en">Contact</span><span class="lang-ar">تواصل معي</span>
-            </a>
-        </div>
-    </header>
-
-    <main>
-        <!-- 
-           🚀 Hero Section
-        -->
-        <section id="hero" class="section hero">
-            <div class="container">
-                <div class="hero-content-wrapper">
-                    <div class="hero-main-flex">
-                        <div class="hero-logo-area">
-                            <img src="images/az-logo.png" alt="AZ Tech Logo" class="hero-brand-logo logo-dark-mode" />
-                            <img src="images/az-logo-light.png" alt="AZ Tech Logo"
-                                class="hero-brand-logo logo-light-mode" />
-                        </div>
-
-                        <div class="hero-text-area">
-                            <div class="hero-portfolio-pill">
-                                <span class="pill-pulse-dot"></span>
-                                <span class="lang-ar">معرض أعمال</span>
-                                <span class="lang-en">Portfolio</span>
-                            </div>
-                            <h1 class="hero-name lang-ar">عبدالعزيز طارق</h1>
-                            <div class="typewriter-wrapper lang-ar" style="
-                    margin-bottom: 25px;
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    color: var(--neon-blue);
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                  ">
-                                <span class="typewriter-text" id="typewriter-ar"></span><span class="typewriter-cursor"
-                                    style="animation: blink 0.7s infinite">|</span>
-                            </div>
-
-                            <h1 class="hero-name lang-en">Abdulaziz Tariq</h1>
-                            <div class="typewriter-wrapper lang-en" style="
-                    margin-bottom: 25px;
-                    font-size: 1.8rem;
-                    font-weight: 700;
-                    color: var(--neon-blue);
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                  ">
-                                <span class="typewriter-text" id="typewriter-en"></span><span class="typewriter-cursor"
-                                    style="animation: blink 0.7s infinite">|</span>
-                            </div>
-
-                            <div style="margin-bottom: 35px">
-                                <p class="hero-desc lang-ar">
-                                    متخصص في إدارة البنية التحتية التقنية والدعم الفني المتقدم.
-                                    أعمل على تقديم حلول تقنية موثوقة ومبتكرة تضمن استمرارية
-                                    الأعمال بأعلى معايير الجودة والأمان، بما يتماشى مع متطلبات
-                                    التحول الرقمي المتسارع في المملكة العربية السعودية.
-                                </p>
-                                <p class="hero-desc lang-en">
-                                    Specialized in managing IT infrastructure and advanced
-                                    technical support. I provide reliable and innovative tech
-                                    solutions that ensure business continuity with the highest
-                                    standards of quality and security, aligning with Saudi
-                                    Arabia's rapid digital transformation.
-                                </p>
-                            </div>
-
-                            <div class="hero-cta" style="display: flex; gap: 15px; flex-wrap: wrap;">
-                                <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank"
-                                    rel="noopener noreferrer" class="interactive-btn btn-solid-cyan">
-                                    <i class="fab fa-linkedin-in"></i>
-                                    <span class="lang-en">Connect on LinkedIn</span>
-                                    <span class="lang-ar">تواصل معي عبر LinkedIn</span>
-                                </a>
-                                <a href="https://x.com/RealAzTech" target="_blank" rel="noopener noreferrer"
-                                    class="interactive-btn btn-outline-cyan"
-                                    style="display: inline-flex; align-items: center; gap: 8px;">
-                                    <svg style="width: 1.1rem; height: 1.1rem; fill: currentColor; display: inline-block; vertical-align: middle;"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                    </svg>
-                                    <span class="lang-en">Follow on X</span>
-                                    <span class="lang-ar">حسابي في منصة X</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="text-align: center; margin-top: 50px">
-                        <a href="#about" style="
-                  color: var(--neon-blue);
-                  font-size: 2rem;
-                  animation: bounce 2s infinite;
-                  display: inline-block;
-                  opacity: 0.8;
-                  transition: opacity 0.3s;
-                " onmouseover="this.style.opacity = '1'" onmouseout="this.style.opacity = '0.8'">
-                            <i class="fas fa-chevron-down"></i>
-                        </a>
-                    </div>
+                    <button id="mobile-menu-btn" class="circular-dock-btn mobile-menu-btn" aria-label="Open menu" aria-controls="mobile-nav-drawer" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
             </div>
-        </section>
 
-        <!-- 
-           👤 Professional Profile Section
-        -->
-        <section id="about" class="section about-section-revamped">
-            <div class="container">
-                <div class="section-header-area">
-                    <span class="pre-heading lang-ar">النبذة المهنية</span>
-                    <span class="pre-heading lang-en">Professional Profile</span>
-                    <h2 class="section-heading gradient-text">
-                        <i class="fas fa-user-tie"></i>
-                        <span class="lang-en">Who am I</span>
-                        <span class="lang-ar">من أنا</span>
-                    </h2>
-                </div>
+            <nav id="mobile-nav-drawer" class="mobile-nav-drawer" aria-label="Mobile navigation">
+                <a href="#hero" class="mobile-nav-item">
+                    <span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span>
+                </a>
+                <a href="#about" class="mobile-nav-item">
+                    <span class="lang-en">About</span><span class="lang-ar">من أنا</span>
+                </a>
+                <a href="#experience" class="mobile-nav-item">
+                    <span class="lang-en">Experience</span><span class="lang-ar">الخبرات</span>
+                </a>
+                <a href="#projects" class="mobile-nav-item">
+                    <span class="lang-en">Projects</span><span class="lang-ar">المشاريع</span>
+                </a>
+                <a href="#skills" class="mobile-nav-item">
+                    <span class="lang-en">Skills</span><span class="lang-ar">المهارات</span>
+                </a>
+                <a href="#education" class="mobile-nav-item">
+                    <span class="lang-en">Education</span><span class="lang-ar">التعليم والشهادات</span>
+                </a>
+                <a href="#contact" class="mobile-nav-item">
+                    <span class="lang-en">Contact</span><span class="lang-ar">تواصل معي</span>
+                </a>
+            </nav>
+        </header>
 
-                <div class="about-card-clean glass-panel">
-                    <i class="fas fa-terminal watermark-icon-about" aria-hidden="true"></i>
-                    <div class="about-card-inner">
-                        <div class="about-tagline-wrap">
-                            <span class="about-badge-pill">
-                                <i class="fas fa-file-alt"></i>
-                                <span class="lang-ar">الملخص المهني</span>
-                                <span class="lang-en">Summary</span>
-                            </span>
-                        </div>
+        <main id="main-content" tabindex="-1">
 
-                        <h3 class="about-lead-title lang-ar">
-                            أخصائي تقنية معلومات وإدارة أنظمة | مهتم بالذكاء الاصطناعي والأتمتة الذكية.
-                        </h3>
-                        <h3 class="about-lead-title lang-en">
-                            IT Specialist &amp; Systems Administrator | Passionate about AI &amp; Smart Automation.
-                        </h3>
+            <section id="hero" class="section hero">
+                <div class="container">
+                    <div>
+                        <div class="hero-main-flex">
+                            <div class="hero-logo-area">
+                                <svg class="circuit-art" viewBox="0 0 600 500" fill="none" aria-hidden="true"><path d="M10 340 170 180H290L410 60H570M35 380H210L330 260H590M70 420H300L390 330H570M30 100H90L150 160H270M420 460V420L550 290V160" stroke="currentColor"/><path d="M110 320 300 130H420L230 320Z" fill="currentColor" fill-opacity=".08" stroke="currentColor"/><g fill="currentColor"><circle cx="30" cy="100" r="3"/><circle cx="420" cy="460" r="3"/><circle cx="570" cy="60" r="3"/></g></svg>
+                                <div class="code-note" aria-hidden="true">&gt; support()<span>&gt; secure()</span><span>&gt; connect()</span>&gt; automate()</div>
+                                <img data-src="images/az-steel-dark.png" alt="AZ circuit emblem" class="hero-brand-logo logo-dark-mode" width="1254" height="1254" fetchpriority="high" decoding="async" />
+                                <img data-src="images/az-steel-light.png" alt="AZ circuit emblem" class="hero-brand-logo logo-light-mode" width="1254" height="1254" fetchpriority="high" decoding="async" />
+                                <div class="hero-tech-tags" role="group" aria-label="Technical specialties">
+                                    <div class="ambient-badge"><i class="fas fa-headset"></i> <span dir="ltr">ITIL Helpdesk</span></div>
+                                    <div class="ambient-badge"><i class="fas fa-shield-halved"></i> <span dir="ltr">AD Security</span></div>
+                                    <div class="ambient-badge"><i class="fas fa-network-wired"></i> <span dir="ltr">VLANs &amp; Wi-Fi 6</span></div>
+                                    <div class="ambient-badge"><i class="fas fa-server"></i> <span dir="ltr">Hyper-V</span></div>
+                                    <div class="ambient-badge ambient-badge-secondary"><i class="fas fa-brain"></i> <span dir="ltr">AI Agents</span></div>
+                                    <div class="ambient-badge ambient-badge-secondary"><i class="fas fa-diagram-project"></i> <span dir="ltr">n8n Workflows</span></div>
+                                </div>
+                            </div>
 
-                        <div class="about-body-text">
-                            <p class="lang-ar">
-                                أخصائي تقنية معلومات طموح حاصل على درجة البكالوريوس في نظم المعلومات الحاسوبية، مع خبرة
-                                عملية مثبتة في الدعم الفني (IT Support)، إدارة الأنظمة (System Administration)، والتشخيص
-                                المتقدم للمشكلات التقنية وحلها (Technical Troubleshooting). أمتلك مهارات راسخة في صيانة
-                                العتاد والبرمجيات، مراقبة أداء الشبكات، إدارة الدليل النشط (Active Directory)، وتعزيز
-                                أمن نقاط النهاية (Endpoint Security).
-                            </p>
-                            <p class="lang-ar">
-                                أتمتع بقدرات عالية في حل المشكلات، والتواصل الفعّال، والعمل الجماعي مع مرونة استثنائية
-                                في التكيف مع البيئات التقنية سريعة التطور. كما أهتم بتوظيف أدوات الذكاء الاصطناعي
-                                الحديثة وأتمتة المهام لتسريع استكشاف الأعطال ورفع الكفاءة التشغيلية، بهدف المساهمة في
-                                بناء بنية تحتية تقنية متينة وضمان استمرارية الأعمال وسلاستها.
-                            </p>
+                            <div class="hero-text-area">
+                                <div class="hero-portfolio-pill">
+                                    <span class="pill-pulse-dot"></span>
+                                    <span class="lang-ar">معرض أعمال</span>
+                                    <span class="lang-en">Portfolio</span>
+                                </div>
+                                <h1 class="hero-name lang-ar">عبدالعزيز <span>طارق</span></h1>
+                                <div class="typewriter-wrapper lang-ar">
+                                    <span>أخصائي تقنية معلومات وإدارة أنظمة</span>
+                                </div>
 
-                            <p class="lang-en">
-                                Motivated IT Specialist with a Bachelor's degree in Computer Information Systems and
-                                proven hands-on experience in IT Support, System Administration, and Technical
-                                Troubleshooting. Skilled in hardware and software maintenance, network monitoring,
-                                Active Directory management, and endpoint security. Demonstrates strong problem-solving,
-                                communication, and teamwork abilities, with adaptability in fast-paced technical
-                                environments.
-                            </p>
-                            <p class="lang-en">
-                                Forward-thinking in leveraging modern AI tools and automated workflows to accelerate
-                                technical troubleshooting and optimize routine IT operations. Career-oriented towards IT
-                                Support and System Administration roles, aiming to contribute expertise in maintaining
-                                robust IT infrastructure, minimizing downtime, and ensuring seamless business
-                                continuity.
-                            </p>
-                        </div>
+                                <h1 class="hero-name lang-en">Abdulaziz <span>Tariq</span></h1>
+                                <div class="typewriter-wrapper lang-en">
+                                    <span>IT Specialist &amp; Systems Administrator</span>
+                                </div>
 
-                        <div class="about-focus-pills">
-                            <div class="focus-pill"><i class="fas fa-server"></i> <span class="lang-ar">إدارة الأنظمة
-                                    والشبكات</span><span class="lang-en">Systems & Networks</span></div>
-                            <div class="focus-pill"><i class="fas fa-headset"></i> <span class="lang-ar">الدعم الفني
-                                    المتقدم</span><span class="lang-en">Tier 1 & Tier 2 Support</span></div>
-                            <div class="focus-pill"><i class="fas fa-robot"></i> <span class="lang-ar">الأتمتة والذكاء
-                                    الاصطناعي</span><span class="lang-en">AI & Workflow Automation</span></div>
-                            <div class="focus-pill"><i class="fas fa-shield-alt"></i> <span class="lang-ar">أمن الهويات
-                                    والوصول</span><span class="lang-en">Identity & Access Security</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-           💼 Professional Experience Section
-        -->
-        <section id="experience" class="section experience-section">
-            <div class="container">
-                <div class="section-header-area">
-                    <span class="pre-heading lang-ar">المسيرة المهنية</span>
-                    <span class="pre-heading lang-en">Career Path</span>
-                    <h2 class="section-heading gradient-text">
-                        <i class="fas fa-briefcase"></i>
-                        <span class="lang-en">Experience</span>
-                        <span class="lang-ar">الخبرات المهنية</span>
-                    </h2>
-                </div>
-
-                <div class="timeline-container">
-                    <!-- Experience 1: Oswah Community -->
-                    <div class="timeline-item glass-panel exp-panel">
-                        <i class="fas fa-users watermark-icon-exp" aria-hidden="true"></i>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">
-                            <span class="lang-ar">مايو 2026 - حتى الآن</span>
-                            <span class="lang-en">May 2026 – Present</span>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="exp-card-header">
                                 <div>
-                                    <h3 class="timeline-title lang-ar">دعم فني</h3>
-                                    <h3 class="timeline-title lang-en">IT Support</h3>
-                                    <h4 class="timeline-company lang-ar"><i class="fas fa-users"></i> مجتمع أسوة</h4>
-                                    <h4 class="timeline-company lang-en"><i class="fas fa-users"></i> Oswah Community
-                                    </h4>
+                                    <p class="hero-desc lang-ar">
+                                        متخصص في إدارة البنية التحتية التقنية والدعم الفني المتقدم.
+                                        أعمل على تقديم حلول تقنية موثوقة ومبتكرة تضمن استمرارية
+                                        الأعمال بأعلى معايير الجودة والأمان، بما يتماشى مع متطلبات
+                                        التحول الرقمي المتسارع في المملكة العربية السعودية.
+                                    </p>
+                                    <p class="hero-desc lang-en">
+                                        Specialized in managing IT infrastructure and advanced
+                                        technical support. I provide reliable and innovative tech
+                                        solutions that ensure business continuity with the highest
+                                        standards of quality and security, aligning with Saudi
+                                        Arabia's rapid digital transformation.
+                                    </p>
                                 </div>
-                                <div class="exp-icon-badge" title="Oswah Community">
-                                    <i class="fas fa-users"></i>
-                                </div>
-                            </div>
-                            <ul class="timeline-desc">
-                                <li class="lang-ar">تقديم الدعم التقني للبوابة الداخلية للموظفين والموقع العام لضمان
-                                    جاهزية واستقرار الأنظمة.</li>
-                                <li class="lang-en">Providing technical support for the internal employee portal and
-                                    public website to ensure system readiness and stability.</li>
-                                <li class="lang-ar">حل مشكلات تسجيل الدخول وتصحيح صلاحيات وحسابات المستخدمين بشكل فوري.
-                                </li>
-                                <li class="lang-en">Instantly resolving login issues and correcting user accounts and
-                                    permissions.</li>
-                                <li class="lang-ar">متابعة سجلات الأخطاء (Error Logs) وتشخيص الأعطال التقنية لرفع
-                                    موثوقية المنصات.</li>
-                                <li class="lang-en">Monitoring error logs and diagnosing technical faults to increase
-                                    platform reliability.</li>
-                                <li class="lang-ar">إدارة نماذج التواصل وضبط أداء الشات بوت (Chatbot) لأتمتة وتسهيل الرد
-                                    على الاستفسارات.</li>
-                                <li class="lang-en">Managing contact forms and tuning chatbot performance to automate
-                                    and facilitate query responses.</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Experience 2: Operating Levels Co. -->
-                    <div class="timeline-item glass-panel exp-panel">
-                        <i class="fas fa-building watermark-icon-exp" aria-hidden="true"></i>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">
-                            <span class="lang-ar">أكتوبر 2025 - حتى الآن</span>
-                            <span class="lang-en">October 2025 – Present</span>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="exp-card-header">
-                                <div>
-                                    <h3 class="timeline-title lang-ar">أخصائي تقنية معلومات</h3>
-                                    <h3 class="timeline-title lang-en">IT Support Specialist</h3>
-                                    <h4 class="timeline-company lang-ar"><i class="fas fa-building"></i> شركة مستويات
-                                        التشغيل | السعودية</h4>
-                                    <h4 class="timeline-company lang-en"><i class="fas fa-building"></i> Operating
-                                        Levels Company | Saudi Arabia</h4>
-                                </div>
-                                <div class="exp-icon-badge" title="Operating Levels">
-                                    <i class="fas fa-building"></i>
+                                <div class="hero-cta">
+                                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="interactive-btn btn-solid-cyan">
+                                        <i class="fab fa-linkedin-in"></i>
+                                        <span class="lang-en">Connect on LinkedIn</span>
+                                        <span class="lang-ar">تواصل معي عبر LinkedIn</span>
+                                    </a>
+                                    <a href="https://x.com/RealAzTech" target="_blank" rel="noopener noreferrer" class="interactive-btn btn-outline-cyan">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                        </svg>
+                                        <span class="lang-en">Follow on X</span>
+                                        <span class="lang-ar">حسابي في منصة X</span>
+                                    </a>
                                 </div>
                             </div>
-                            <ul class="timeline-desc">
-                                <li class="lang-ar">إدارة التأسيس التقني الكامل للمقر الجديد للشركة، بما في ذلك
-                                    المشتريات واختيار الموردين ونشر محطات العمل بكفاءة.</li>
-                                <li class="lang-en">Led the full IT setup for the company's new headquarters, managing
-                                    procurement, vendor selection, and workstation deployment efficiently.</li>
-                                <li class="lang-ar">ضمان الجاهزية التشغيلية دون تأخير عبر التخطيط الاستراتيجي لاقتناء
-                                    الأجهزة وتركيبها وتهيئتها لجميع الأقسام.</li>
-                                <li class="lang-en">Ensured zero-delay operational readiness by strategically planning
-                                    hardware acquisition, installation, and configuration for all departments.</li>
-                                <li class="lang-ar">تحسين أداء النظام ورضا المستخدمين من خلال استكشاف أخطاء الأجهزة
-                                    والبرامج وإصلاحها بشكل استباقي عبر كافة الأقسام.</li>
-                                <li class="lang-en">Enhanced system performance and user satisfaction by troubleshooting
-                                    hardware and software issues proactively across all departments.</li>
-                                <li class="lang-ar">تقديم الدعم الفني من المستوى الأول والثاني لمشاكل الأجهزة والبرامج
-                                    والشبكات في جميع أنحاء المنظمة.</li>
-                                <li class="lang-en">Provide Tier 1 & Tier 2 technical support for hardware, software,
-                                    and network-related issues across the organization.</li>
-                                <li class="lang-ar">إجراء عمليات تثبيت أنظمة التشغيل، وإدارة التحديثات (Patch
-                                    Management)، وضمان الامتثال لأمن نقاط النهاية لجميع أجهزة الشركة.</li>
-                                <li class="lang-en">Perform OS installations, patch management, system updates, and
-                                    ensure endpoint security compliance for all corporate devices.</li>
-                                <li class="lang-ar">إدارة حسابات المستخدمين وصلاحيات الوصول وإعدادات الأمان المستندة إلى
-                                    الأدوار باستخدام الدليل النشط (Active Directory).</li>
-                                <li class="lang-en">Manage user accounts, access permissions, and role-based security
-                                    settings using Active Directory and internal IT systems.</li>
-                                <li class="lang-ar">استكشاف أعطال اتصال الشبكة المحلية (LAN) وإصلاحها، بما في ذلك DNS
-                                    وDHCP وTCP/IP.</li>
-                                <li class="lang-en">Troubleshoot LAN connectivity issues, including DNS, DHCP, and
-                                    TCP/IP.</li>
-                            </ul>
                         </div>
-                    </div>
 
-                    <!-- Experience 3: Talgo Company -->
-                    <div class="timeline-item glass-panel exp-panel">
-                        <i class="fas fa-train watermark-icon-exp" aria-hidden="true"></i>
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">
-                            <span class="lang-ar">يوليو 2025 - سبتمبر 2025</span>
-                            <span class="lang-en">July 2025 – September 2025</span>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="exp-card-header">
-                                <div>
-                                    <h3 class="timeline-title lang-ar">متدرب إدارة أنظمة</h3>
-                                    <h3 class="timeline-title lang-en">System Administrator Trainee</h3>
-                                    <h4 class="timeline-company lang-ar"><i class="fas fa-train"></i> شركة تالقو – مشروع
-                                        قطار الحرمين السريع | السعودية</h4>
-                                    <h4 class="timeline-company lang-en"><i class="fas fa-train"></i> Talgo Company –
-                                        Haramain High-Speed Railway Project | Saudi Arabia</h4>
-                                </div>
-                                <div class="exp-icon-badge" title="Talgo Company">
-                                    <i class="fas fa-train"></i>
-                                </div>
-                            </div>
-                            <ul class="timeline-desc">
-                                <li class="lang-ar">قيادة الترقية إلى نظام Windows 11 في جميع الفروع، مع إجراء تدقيق
-                                    للأجهزة وترقيات فعالة لحل مشكلات التوافق.</li>
-                                <li class="lang-en">Led Windows 11 migration across all branches, performing hardware
-                                    audits and cost-effective upgrades to resolve compatibility bottlenecks.</li>
-                                <li class="lang-ar">إكمال التهيئة التقنية الشاملة للموظفين الجدد، بما في ذلك إعداد
-                                    الأجهزة وربطها بالمجال (Domain Join) قبل الموعد المحدد.</li>
-                                <li class="lang-en">Completed full IT onboarding for new employees, including
-                                    workstation setup, domain joining, and system configuration ahead of schedule.</li>
-                                <li class="lang-ar">تحسين أمن وإدارة الأجهزة المحمولة من خلال تطبيق سياسات إدارة الأجهزة
-                                    المحمولة (MDM) لجميع أجهزة الشركة.</li>
-                                <li class="lang-en">Improved mobile device security and management by implementing
-                                    Mobile Device Management (MDM) policies for all corporate devices.</li>
-                                <li class="lang-ar">إدارة الدليل النشط (Active Directory)، وإدارة حسابات المستخدمين
-                                    وسياسات كلمات المرور وصلاحيات الوصول والتهيئة الأساسية لسياسة المجموعة (Group
-                                    Policy).</li>
-                                <li class="lang-en">Administer Active Directory, managing user accounts, password
-                                    policies, permissions, and basic Group Policy configuration.</li>
-                                <li class="lang-ar">إدارة Microsoft 365، بما في ذلك Exchange Online، واستكشاف أخطاء
-                                    البريد الإلكتروني وإصلاحها، وإدارة حسابات المستخدمين.</li>
-                                <li class="lang-en">Manage Microsoft 365 administration including Exchange Online, email
-                                    troubleshooting, and user account management.</li>
-                                <li class="lang-ar">تقديم الدعم الفني عبر عمليات مكتب المساعدة باستخدام أنظمة التذاكر،
-                                    وضمان الالتزام باتفاقية مستوى الخدمة (SLA) وحل الحوادث في الوقت المناسب.</li>
-                                <li class="lang-en">Provide technical support via help desk operations using ticketing
-                                    systems, ensuring SLA compliance and timely incident resolution.</li>
-                                <li class="lang-ar">إجراء استكشاف أخطاء الشبكة، وتكوين IP، واختبار الاتصال للحفاظ على
-                                    أداء موثوق للشبكة.</li>
-                                <li class="lang-en">Perform network troubleshooting, IP configuration, DNS resolution,
-                                    and connectivity testing to maintain reliable network performance.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-           🚀 Practical Projects Section
-        -->
-        <section id="projects" class="section projects-section-revamped">
-            <div class="container">
-                <div class="section-header-area">
-                    <span class="pre-heading lang-ar">المشاريع العملية</span>
-                    <span class="pre-heading lang-en">Practical Projects</span>
-                    <h2 class="section-heading gradient-text">
-                        <span class="heading-tech-icon"><i class="fas fa-cubes-stacked"></i></span>
-                        <span class="lang-en">Practical Projects</span>
-                        <span class="lang-ar">المشاريع العملية</span>
-                    </h2>
-                    <p class="section-subtext lang-en">
-                        Hands-on implementations and enterprise simulations showcasing IT infrastructure, systems
-                        administration, and smart automation.
-                    </p>
-                    <p class="section-subtext lang-ar">
-                        نماذج واقعية توضح توظيف أحدث الأدوات والتقنيات لبناء حلول مرنة، ذكية، وقابلة للتطوير.
-                    </p>
-                </div>
-
-                <!-- 3-Column Projects Grid (3 per row on desktop) -->
-                <div class="projects-3col-grid">
-
-                    <!-- Card 1: AI Jobs Automation Pipeline -->
-                    <div class="project-card-3col">
-                        <div class="proj-cover-container" onclick="openProjectModal('proj1', 'gallery')">
-                            <img src="images/projects/ai-jobs-pipeline/cover.png"
-                                alt="AI Jobs Automation Pipeline" class="proj-cover-img" loading="lazy" />
-                        </div>
-                        <div class="proj-card-body">
-                            <div class="proj-card-meta">
-                                <span style="font-size: 1rem; line-height: 1;">🤖</span>
-                                <span class="lang-ar">ذكاء اصطناعي وأتمتة</span>
-                                <span class="lang-en">AI &amp; Automation</span>
-                            </div>
-                            <h3 class="proj-card-title lang-ar">سير عمل أتمتة البحث عن الوظائف بالذكاء الاصطناعي</h3>
-                            <h3 class="proj-card-title lang-en">AI Jobs Automation Pipeline</h3>
-                            <p class="proj-card-desc lang-ar">
-                                سير عمل n8n مجدول يسحب إعلانات الوظائف وملف السيرة الذاتية، ويمررهما لنموذج AI لمقارنة
-                                المهارات وترتيبها، ثم يسجل النتائج في Google Sheets ويرسل تنبيهات Telegram فورية.
-                            </p>
-                            <p class="proj-card-desc lang-en">
-                                A scheduled n8n workflow that fetches job listings, downloads &amp; extracts the CV/PDF, then
-                                passes both to an AI model for skills comparison and ranking, logging results to Google
-                                Sheets and sending instant Telegram alerts.
-                            </p>
-                            <div class="proj-tech-circles" onclick="event.stopPropagation()">
-                                <div class="tech-circle-badge" data-tooltip="n8n Workflows" title="n8n Workflows"
-                                    style="border-color: rgba(251, 146, 60, 0.5); color: #fb923c;">
-                                    <i class="fas fa-diagram-project"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="AI Model" title="AI Model"
-                                    style="border-color: rgba(56, 189, 248, 0.5); color: #38bdf8;">
-                                    <i class="fas fa-robot"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Docker" title="Docker">
-                                    <i class="fab fa-docker"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="ngrok Tunnel" title="ngrok Tunnel">
-                                    <i class="fas fa-network-wired"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="REST API" title="REST API">
-                                    <i class="fas fa-bolt"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="MCP Tools" title="MCP Tools">
-                                    <i class="fas fa-plug"></i></div>
-                            </div>
-                            <div class="proj-card-footer">
-                                <button class="btn-proj-gallery"
-                                    onclick="openProjectModal('proj1', 'gallery'); event.stopPropagation();">
-                                    <i class="fas fa-images"></i>
-                                    <span class="lang-ar">استعراض صور وتفاصيل المشروع</span>
-                                    <span class="lang-en">View Project Images & Details</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: AI Email Filtering & Automation Pipeline -->
-                    <div class="project-card-3col">
-                        <div class="proj-cover-container" onclick="openProjectModal('proj2', 'gallery')">
-                            <img src="images/projects/ai-email-filtering/cover.png"
-                                alt="AI Email Filtering & Automation Pipeline" class="proj-cover-img" loading="lazy" />
-                        </div>
-                        <div class="proj-card-body">
-                            <div class="proj-card-meta">
-                                <span style="font-size: 1rem; line-height: 1;">📧</span>
-                                <span class="lang-ar">ذكاء اصطناعي وأتمتة</span>
-                                <span class="lang-en">AI &amp; Automation</span>
-                            </div>
-                            <h3 class="proj-card-title lang-ar">نظام أتمتة وتصنيف البريد الإلكتروني بالذكاء الاصطناعي</h3>
-                            <h3 class="proj-card-title lang-en">AI Email Filtering &amp; Automation Pipeline</h3>
-                            <p class="proj-card-desc lang-ar">
-                                نظام أتمتة عبر n8n يبدأ بمشغل بريد Gmail Trigger، يقوم بتحليل محتوى الرسائل وتصنيفها عبر الذكاء الاصطناعي، ثم توجيهها (Switch) لتسجيلها في Google Sheets وإرسال تنبيه في قناة Telegram الخاصة بالقسم المعني (تقني، إداري، أخرى).
-                            </p>
-                            <p class="proj-card-desc lang-en">
-                                An n8n automation system powered by Gmail Trigger that analyzes incoming emails with AI, routing them via a Switch node to dedicated Google Sheets tabs and firing instant Telegram alerts to the relevant department (Tech, Admin, Other).
-                            </p>
-                            <div class="proj-tech-circles" onclick="event.stopPropagation()">
-                                <div class="tech-circle-badge" data-tooltip="n8n Workflows" title="n8n Workflows"
-                                    style="border-color: rgba(251, 146, 60, 0.5); color: #fb923c;">
-                                    <i class="fas fa-diagram-project"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="AI Classifier" title="AI Classifier"
-                                    style="border-color: rgba(56, 189, 248, 0.5); color: #38bdf8;">
-                                    <i class="fas fa-robot"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Gmail Trigger" title="Gmail Trigger"
-                                    style="border-color: rgba(239, 68, 68, 0.5); color: #ef4444;">
-                                    <i class="fas fa-envelope"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Google Sheets" title="Google Sheets"
-                                    style="border-color: rgba(16, 185, 129, 0.5); color: #10b981;">
-                                    <i class="fas fa-table"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Telegram Alerts" title="Telegram Alerts"
-                                    style="border-color: rgba(2, 132, 199, 0.5); color: #38bdf8;">
-                                    <i class="fab fa-telegram"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Switch Router" title="Switch Router">
-                                    <i class="fas fa-shuffle"></i></div>
-                            </div>
-                            <div class="proj-card-footer">
-                                <button class="btn-proj-gallery"
-                                    onclick="openProjectModal('proj2', 'gallery'); event.stopPropagation();">
-                                    <i class="fas fa-images"></i>
-                                    <span class="lang-ar">استعراض صور وتفاصيل المشروع</span>
-                                    <span class="lang-en">View Project Images & Details</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Athar Platform -->
-                    <div class="project-card-3col">
-                        <div class="proj-cover-container">
-                            <a href="https://drive.google.com/file/d/1U5z_OL5Gw1E897Np_T7OzxM2a2Ls25za/view" target="_blank" rel="noopener noreferrer">
-                                <img src="images/projects/athar/cover.png"
-                                    alt="Athar Platform - AI Heritage Guide" class="proj-cover-img" loading="lazy" />
+                        <div class="hero-scroll">
+                            <a href="#projects">
+                                <span class="lang-en">Explore portfolio</span><span class="lang-ar">اكتشف أعمالي</span>
+                                <span class="scroll-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16m-5-5 5 5 5-5" /></svg></span>
                             </a>
                         </div>
-                        <div class="proj-card-body">
-                            <div class="proj-card-meta">
-                                <span style="font-size: 1rem; line-height: 1;">🏛️</span>
-                                <span class="lang-ar">ذكاء اصطناعي وتطوير ويب</span>
-                                <span class="lang-en">AI &amp; Web Development</span>
-                            </div>
-                            <h3 class="proj-card-title lang-ar">منصة أثر - دليل التراث بالذكاء الاصطناعي</h3>
-                            <h3 class="proj-card-title lang-en">Athar Platform - AI Heritage Guide</h3>
-                            <p class="proj-card-desc lang-ar">
-                                منصة ويب تفاعلية وتجربة استكشاف ذكية للتراث السعودي، تعمل كدليل سياحي وتاريخي مدعوم بالذكاء الاصطناعي وقاعدة معرفة.
-                            </p>
-                            <p class="proj-card-desc lang-en">
-                                An interactive web platform and smart exploration experience for Saudi heritage, serving as an AI-powered historical and tourist guide with a robust knowledge base.
-                            </p>
-                            <div class="proj-tech-circles" onclick="event.stopPropagation()">
-                                <div class="tech-circle-badge" data-tooltip="HTML5" title="HTML5"
-                                    style="border-color: rgba(227, 79, 38, 0.5); color: #e34f26;">
-                                    <i class="fab fa-html5"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="CSS3" title="CSS3"
-                                    style="border-color: rgba(21, 114, 182, 0.5); color: #1572b6;">
-                                    <i class="fab fa-css3-alt"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="JavaScript" title="JavaScript"
-                                    style="border-color: rgba(247, 223, 30, 0.5); color: #f7df1e;">
-                                    <i class="fab fa-js"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Node.js" title="Node.js"
-                                    style="border-color: rgba(51, 153, 51, 0.5); color: #339933;">
-                                    <i class="fab fa-node-js"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Express.js" title="Express.js"
-                                    style="border-color: rgba(255, 255, 255, 0.5); color: #fff;">
-                                    <i class="fas fa-server"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Gemini" title="Gemini"
-                                    style="border-color: rgba(142, 49, 235, 0.5); color: #8e31eb;">
-                                    <i class="fas fa-brain"></i></div>
-                                <div class="tech-circle-badge" data-tooltip="Knowledge Base" title="Knowledge Base"
-                                    style="border-color: rgba(255, 186, 0, 0.5); color: #ffba00;">
-                                    <i class="fas fa-database"></i></div>
-                            </div>
-                            <div class="proj-card-footer">
-                                <a href="https://drive.google.com/file/d/1U5z_OL5Gw1E897Np_T7OzxM2a2Ls25za/view" target="_blank" rel="noopener noreferrer" class="btn-proj-gallery" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px;">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    <span class="lang-ar">عرض المشروع</span>
-                                    <span class="lang-en">View Project</span>
-                                </a>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="skills" class="section skills-section-compact">
-            <div class="container">
-                <div class="section-header-area">
-                    <span class="pre-heading lang-ar">الكفاءات والتقنيات</span>
-                    <span class="pre-heading lang-en">Competencies &amp; Stacks</span>
-                    <h2 class="section-heading gradient-text">
-                        <i class="fas fa-bolt"></i>
-                        <span class="lang-ar">المهارات</span>
-                        <span class="lang-en">Skills</span>
-                    </h2>
-                    <p class="section-subtext lang-en">Core technical proficiencies spanning AI agents, workflow
-                        automation, enterprise systems, and infrastructure.</p>
-                    <p class="section-subtext lang-ar">منظومة مهاراتي التقنية في هندسة الذكاء الاصطناعي، الأتمتة، إدارة
-                        الأنظمة، والدعم الفني.</p>
-                </div>
-
-                <div class="skills-pro-grid">
-
-                    <!-- Card 1: AI & AGENTS -->
-                    <div class="skill-pro-card" data-accent="purple">
-                        <div class="skill-pro-header">
-                            <div class="skill-pro-icon-wrap purple-icon">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="skill-pro-title">
-                                <span class="lang-en">AI &amp; Agents</span>
-                                <span class="lang-ar">الذكاء الاصطناعي والوكلاء</span>
-                            </div>
-                        </div>
-                        <div class="skill-pro-tags">
-                            <span class="skill-pro-pill">AI Agents</span>
-                            <span class="skill-pro-pill">Agentic Workflows</span>
-                            <span class="skill-pro-pill">Prompt Engineering</span>
-                            <span class="skill-pro-pill">Claude &amp; Claude Code</span>
-                            <span class="skill-pro-pill">MCP Protocol</span>
-                            <span class="skill-pro-pill">NLP &amp; LLMs</span>
-                            <span class="skill-pro-pill">API</span>
-                        </div>
+            <section id="about" class="section">
+                <div class="container">
+                    <div class="section-header-area">
+                        <span class="pre-heading lang-ar">النبذة المهنية</span>
+                        <span class="pre-heading lang-en">Professional Profile</span>
+                        <h2 class="section-heading gradient-text">
+                            <span class="lang-en">Who am I</span>
+                            <span class="lang-ar">من أنا</span>
+                        </h2>
                     </div>
 
-                    <!-- Card 2: AUTOMATION -->
-                    <div class="skill-pro-card" data-accent="orange">
-                        <div class="skill-pro-header">
-                            <div class="skill-pro-icon-wrap orange-icon">
-                                <i class="fas fa-diagram-project"></i>
-                            </div>
-                            <div class="skill-pro-title">
-                                <span class="lang-en">Automation &amp; Integration</span>
-                                <span class="lang-ar">الأتمتة وتكامل الأنظمة</span>
-                            </div>
-                        </div>
-                        <div class="skill-pro-tags">
-                            <span class="skill-pro-pill">n8n Workflows</span>
-                            <span class="skill-pro-pill">Webhooks</span>
-                            <span class="skill-pro-pill">REST APIs &amp; JSON</span>
-                            <span class="skill-pro-pill">OAuth 2.0</span>
-                            <span class="skill-pro-pill">Google Cloud</span>
-                            <span class="skill-pro-pill">Docker</span>
-                            <span class="skill-pro-pill">MCP Protocol</span>
-                            <span class="skill-pro-pill">API</span>
-                        </div>
-                    </div>
+                    <div class="about-card-clean glass-panel">
+                        <div class="about-card-inner">
 
-                    <!-- Card 3: SYSADMIN -->
-                    <div class="skill-pro-card" data-accent="blue">
-                        <div class="skill-pro-header">
-                            <div class="skill-pro-icon-wrap blue-icon">
-                                <i class="fas fa-server"></i>
-                            </div>
-                            <div class="skill-pro-title">
-                                <span class="lang-en">System Administration</span>
-                                <span class="lang-ar">إدارة الأنظمة والخوادم</span>
-                            </div>
-                        </div>
-                        <div class="skill-pro-tags">
-                            <span class="skill-pro-pill">Active Directory</span>
-                            <span class="skill-pro-pill">Group Policy (GPOs)</span>
-                            <span class="skill-pro-pill">Windows Server 2019/2022</span>
-                            <span class="skill-pro-pill">Microsoft 365 Admin</span>
-                            <span class="skill-pro-pill">Hyper-V</span>
-                            <span class="skill-pro-pill">PowerShell</span>
-                        </div>
-                    </div>
+                            <h3 class="about-lead-title lang-ar">
+                                أخصائي تقنية معلومات وإدارة أنظمة | مهتم بالذكاء الاصطناعي والأتمتة الذكية.
+                            </h3>
+                            <h3 class="about-lead-title lang-en">
+                                IT Specialist &amp; Systems Administrator | Passionate about AI &amp; Smart Automation.
+                            </h3>
 
-                    <!-- Card 4: SUPPORT & HARDWARE -->
-                    <div class="skill-pro-card" data-accent="green">
-                        <div class="skill-pro-header">
-                            <div class="skill-pro-icon-wrap green-icon">
-                                <i class="fas fa-headset"></i>
-                            </div>
-                            <div class="skill-pro-title">
-                                <span class="lang-en">Technical Support &amp; Hardware</span>
-                                <span class="lang-ar">الدعم الفني والعتاد</span>
-                            </div>
-                        </div>
-                        <div class="skill-pro-tags">
-                            <span class="skill-pro-pill">Hardware Diagnostics</span>
-                            <span class="skill-pro-pill">Tier 1 &amp; 2 Support</span>
-                            <span class="skill-pro-pill">ITIL Service Desk</span>
-                            <span class="skill-pro-pill">OS Deployment (WDS)</span>
-                            <span class="skill-pro-pill">Windows 11 Migration</span>
-                            <span class="skill-pro-pill">MDM</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 5: NETWORKING -->
-                    <div class="skill-pro-card" data-accent="cyan">
-                        <div class="skill-pro-header">
-                            <div class="skill-pro-icon-wrap cyan-icon">
-                                <i class="fas fa-network-wired"></i>
-                            </div>
-                            <div class="skill-pro-title">
-                                <span class="lang-en">Networking &amp; Security</span>
-                                <span class="lang-ar">الشبكات والأمن</span>
-                            </div>
-                        </div>
-                        <div class="skill-pro-tags">
-                            <span class="skill-pro-pill">TCP/IP &amp; Subnetting</span>
-                            <span class="skill-pro-pill">DNS &amp; DHCP</span>
-                            <span class="skill-pro-pill">VLAN Segmentation</span>
-                            <span class="skill-pro-pill">Wi-Fi 6 Enterprise</span>
-                            <span class="skill-pro-pill">Endpoint Security</span>
-                            <span class="skill-pro-pill">Wireshark</span>
-                        </div>
-                    </div>
-
-                    <!-- Card 6: PROBLEM SOLVING -->
-                    <div class="skill-pro-card" data-accent="amber">
-                        <div class="skill-pro-header">
-                            <div class="skill-pro-icon-wrap amber-icon">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="skill-pro-title">
-                                <span class="lang-en">Problem Solving</span>
-                                <span class="lang-ar">حل المشكلات</span>
-                            </div>
-                        </div>
-                        <div class="skill-pro-tags">
-                            <span class="skill-pro-pill">Technical Troubleshooting</span>
-                            <span class="skill-pro-pill">Root Cause Analysis</span>
-                            <span class="skill-pro-pill">Incident Resolution</span>
-                            <span class="skill-pro-pill">Risk Mitigation</span>
-                            <span class="skill-pro-pill">Business Continuity</span>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-           🎓 Education & Certifications Section
-        -->
-        <section id="education" class="section">
-            <div class="container">
-                <span class="pre-heading lang-ar">المؤهلات والاعتمادات</span>
-                <span class="pre-heading lang-en">Qualifications</span>
-                <h2 class="section-heading gradient-text">
-                    <span class="lang-en">Education & Certifications</span>
-                    <span class="lang-ar">التعليم والشهادات</span>
-                </h2>
-
-                <div class="edu-wrap">
-                    <div class="glass-panel edu-card" style="position: relative; overflow: hidden">
-                        <i class="fas fa-university watermark-icon-edu"></i>
-                        <div class="edu-info">
-                            <div class="edu-icon-box" style="width: 80px; height: 80px">
-                                <img src="images/taibah-logo.png" alt="Taibah University" class="univ-logo-img"
-                                    style="width: 100%" />
-                            </div>
-                            <div class="edu-text">
-                                <h3 class="lang-en" style="
-                      font-size: 1.6rem;
-                      font-weight: bold;
-                      color: var(--text-primary);
-                    ">
-                                    Bachelor of Information Systems
-                                </h3>
-                                <h3 class="lang-ar" style="
-                      font-size: 1.6rem;
-                      font-weight: bold;
-                      color: var(--text-primary);
-                    ">
-                                    بكالوريوس نظم المعلومات
-                                </h3>
-                                <p class="lang-en" style="font-size: 1.1rem; color: var(--text-secondary)">
-                                    Taibah University - Saudi Arabia
+                            <div class="about-body-text">
+                                <p class="lang-ar">
+                                    أخصائي تقنية معلومات حاصل على بكالوريوس نظم المعلومات الحاسوبية، بخبرة في الدعم الفني
+                                    وإدارة الأنظمة وتشخيص الأعطال. تشمل مهاراتي صيانة الأجهزة والبرمجيات، مراقبة الشبكات،
+                                    إدارة Active Directory وأمن نقاط النهاية.
                                 </p>
-                                <p class="lang-ar" style="font-size: 1.1rem; color: var(--text-secondary)">
-                                    جامعة طيبة - المملكة العربية السعودية
+                                <p class="lang-ar">
+                                    أجمع بين حل المشكلات والتواصل والعمل الجماعي، مع قدرة على التكيف مع البيئات التقنية
+                                    المتغيرة. أهتم بتوظيف الذكاء الاصطناعي وأتمتة المهام لرفع الكفاءة التشغيلية وضمان
+                                    استمرارية الأعمال.
+                                </p>
+
+                                <p class="lang-en">
+                                    IT specialist with a bachelor's degree in Computer Information Systems and experience
+                                    in IT support, system administration, and troubleshooting. Skilled in hardware and
+                                    software maintenance, network monitoring, Active Directory, and endpoint security.
+                                </p>
+                                <p class="lang-en">
+                                    I combine problem-solving, communication, and teamwork with adaptability in changing
+                                    technical environments. I am interested in using AI tools and task automation to
+                                    improve operational efficiency and support business continuity.
                                 </p>
                             </div>
-                        </div>
-                        <div class="edu-date">
-                            <i class="fas fa-graduation-cap"></i>
-                            <span>2025</span>
+
+                            <div class="about-focus-pills">
+                                <div class="focus-pill"><i class="fas fa-server"></i> <span class="lang-ar">إدارة الأنظمة
+                                        والشبكات</span><span class="lang-en">Systems & Networks</span></div>
+                                <div class="focus-pill"><i class="fas fa-headset"></i> <span class="lang-ar">الدعم الفني
+                                        المتقدم</span><span class="lang-en">Tier 1 & Tier 2 Support</span></div>
+                                <div class="focus-pill"><i class="fas fa-robot"></i> <span class="lang-ar">الأتمتة والذكاء
+                                        الاصطناعي</span><span class="lang-en">AI & Workflow Automation</span></div>
+                                <div class="focus-pill"><i class="fas fa-shield-alt"></i> <span class="lang-ar">أمن الهويات
+                                        والوصول</span><span class="lang-en">Identity & Access Security</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="section-subheader">
-                    <i class="fas fa-award"></i>
-                    <span class="lang-en">Professional Certifications</span>
-                    <span class="lang-ar">الشهادات المهنية</span>
-                </div>
-
-                <div class="cert-grid">
-                    <!-- Bootcamp 1: AI Agents Engineering -->
-                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="cert-card" style="border-color: rgba(168, 85, 247, 0.3);">
-                        <div class="cert-icon"
-                            style="border: 2px solid rgba(168, 85, 247, 0.4); background: rgba(168, 85, 247, 0.1); overflow: hidden; display: flex; align-items: center; justify-content: center;">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAA8CAYAAAA9vgdnAAACxUlEQVR4Aeya32oTQRTGz5mkqSBiIoJX2g0iigiW6AMkaC4EIT5CvKxo9QUkf3wBFS+87CN4JzUtSS9EhSp5gya5sWjVtiYY0Z0xXmx6cLOTE7NQNpyBj/2Ynflm5zfnIuxGQQhtubrfWn7UM4Gqfm+EsIwvItNZL17prBubMp1XRd/EgI5QYARkR65bYJAjExgCgxAgVipDYBACxEplCAxCgFipDC6M2p0vZY4uds3x893fEKRLe3rBllN/8C3pPdPi1ksn066VOQINBW9e4FXHCpysq1u1rLUyFGKJo3M9N3mh60KQzvZdx5bT78MQBkDcQVQllhTcgjENB2M4WVqBHcaYdWbutpq5HU2xIYFB4E0Fg+TMhBUY5BgFhsAgBIi1VoZGzHH0JhVvvz4xB0F6l4w1bTk3nqdaB88UbyLqHEfGQOVgXoBzzRNOVkLHV6ww8s9SDY4+JQB2EipQ2/Nqz5ZDt9FM53Y3T+cbHAECgQgjm4npJifrbTrXssIYmT7DnQKDHK7AEBiEALFSGQKDECBWKkNgEALERroyEMyu0bBhk3Jx7A8zj8fhwfCeYIrr+zPXX3xwrmVt2kzn2f8AiDSMKTiOnCowCJZIw6jd/ZxdW/pat2l1aWfsG3SPR6RhKI3O4FNA1ioE8hkCrC3SMKw7+4+bAoNAExgCgxAgViqDC+NetVvnCDC2QDJ91qC6zMmZdMzaySOloJfQXv/qqfn7vNz9orUyEDHLkW/3/3QgQJKTM+mY3hw6thfRf+/9UmqRlWvQUSBtSEBgDFEACIzowyA7CNFKZRCYAkNgEALEWivj6cOjyBEYt00y/dboDU7OpGMKH3/cLmz/BJtuDsawckvHylYY/l3Ndo/AIOcrMAQGIUCsVIbAIASIlcoQGIQAsVIZYcMwoB6D1pUgGcAVsmZo1gXd1MZUbILBGO6CfwAAAP//lnDXugAAAAZJREFUAwBeMLbnNSqIigAAAABJRU5ErkJggg=="
-                                alt="ihashplus" class="hashplus-logo-img" />
-                        </div>
-                        <div class="cert-text">
-                            <span style="color: #c084fc; font-weight: 700; font-size: 0.82rem;">
-                                <span class="lang-ar">هاش بلس</span>
-                                <span class="lang-en">ihashplus</span>
-                            </span>
-                            <h4 class="lang-en">AI Agents Engineering Bootcamp</h4>
-                            <h4 class="lang-ar">معسكر هندسة الوكلاء بالذكاء الاصطناعي</h4>
-                            <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 4px 0;">
-                                <span class="lang-ar">تصميم الوكلاء، سير العمل المؤتمت، وتكامل الأدوات عبر MCP و Claude
-                                    Code</span>
-                                <span class="lang-en">Agentic workflows, prompt engineering, and MCP tool integration
-                                    with Claude</span>
-                            </p>
-                            <small class="lang-ar" style="color: #c084fc;"><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                            <small class="lang-en" style="color: #c084fc;"><i class="fab fa-linkedin"></i> View Credential on LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                        </div>
-                    </a>
-
-                    <!-- Bootcamp 2: n8n & Smart Systems -->
-                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="cert-card" style="border-color: rgba(251, 146, 60, 0.3);">
-                        <div class="cert-icon"
-                            style="border: 2px solid rgba(251, 146, 60, 0.4); background: rgba(251, 146, 60, 0.1); overflow: hidden; display: flex; align-items: center; justify-content: center;">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAA8CAYAAAA9vgdnAAACxUlEQVR4Aeya32oTQRTGz5mkqSBiIoJX2g0iigiW6AMkaC4EIT5CvKxo9QUkf3wBFS+87CN4JzUtSS9EhSp5gya5sWjVtiYY0Z0xXmx6cLOTE7NQNpyBj/2Ynflm5zfnIuxGQQhtubrfWn7UM4Gqfm+EsIwvItNZL17prBubMp1XRd/EgI5QYARkR65bYJAjExgCgxAgVipDYBACxEplCAxCgFipDC6M2p0vZY4uds3x893fEKRLe3rBllN/8C3pPdPi1ksn066VOQINBW9e4FXHCpysq1u1rLUyFGKJo3M9N3mh60KQzvZdx5bT78MQBkDcQVQllhTcgjENB2M4WVqBHcaYdWbutpq5HU2xIYFB4E0Fg+TMhBUY5BgFhsAgBIi1VoZGzHH0JhVvvz4xB0F6l4w1bTk3nqdaB88UbyLqHEfGQOVgXoBzzRNOVkLHV6ww8s9SDY4+JQB2EipQ2/Nqz5ZDt9FM53Y3T+cbHAECgQgjm4npJifrbTrXssIYmT7DnQKDHK7AEBiEALFSGQKDECBWKkNgEALERroyEMyu0bBhk3Jx7A8zj8fhwfCeYIrr+zPXX3xwrmVt2kzn2f8AiDSMKTiOnCowCJZIw6jd/ZxdW/pat2l1aWfsG3SPR6RhKI3O4FNA1ioE8hkCrC3SMKw7+4+bAoNAExgCgxAgViqDC+NetVvnCDC2QDJ91qC6zMmZdMzaySOloJfQXv/qqfn7vNz9orUyEDHLkW/3/3QgQJKTM+mY3hw6thfRf+/9UmqRlWvQUSBtSEBgDFEACIzowyA7CNFKZRCYAkNgEALEWivj6cOjyBEYt00y/dboDU7OpGMKH3/cLmz/BJtuDsawckvHylYY/l3Ndo/AIOcrMAQGIUCsVIbAIASIlcoQGIQAsVIZYcMwoB6D1pUgGcAVsmZo1gXd1MZUbILBGO6CfwAAAP//lnDXugAAAAZJREFUAwBeMLbnNSqIigAAAABJRU5ErkJggg=="
-                                alt="ihashplus" class="hashplus-logo-img" />
-                        </div>
-                        <div class="cert-text">
-                            <span style="color: #fb923c; font-weight: 700; font-size: 0.82rem;">
-                                <span class="lang-ar">هاش بلس</span>
-                                <span class="lang-en">ihashplus</span>
-                            </span>
-                            <h4 class="lang-en">n8n Automation & Smart Systems Bootcamp</h4>
-                            <h4 class="lang-ar">معسكر الأتمتة وبناء الأنظمة الذكية (n8n)</h4>
-                            <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 4px 0;">
-                                <span class="lang-ar">بناء مسارات العمل Nodes، تكامل APIs، Webhooks، ونشر بيئة
-                                    n8n</span>
-                                <span class="lang-en">Building workflow nodes, API webhooks, Google Cloud OAuth & n8n
-                                    self-hosting</span>
-                            </p>
-                            <small class="lang-ar" style="color: #fb923c;"><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                            <small class="lang-en" style="color: #fb923c;"><i class="fab fa-linkedin"></i> View Credential on LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                        </div>
-                    </a>
-                    <!-- Cert: AWS Certified AI Practitioner -->
-                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-icon blue-border">
-                            <img src="images/وزارة الاتصالات وتقنية المعلومات.png" alt="MCIT" class="mcit-logo-img" />
-                        </div>
-                        <div class="cert-text">
-                            <span style="color: var(--text-secondary); font-size: 0.8rem">
-                                <span class="lang-en">MCIT & AWS</span>
-                                <span class="lang-ar">وزارة الاتصالات وتقنية المعلومات</span>
-                            </span>
-                            <h4 class="lang-en">AWS Certified AI Practitioner</h4>
-                            <h4 class="lang-ar">AWS Certified AI Practitioner</h4>
-                            <small class="lang-en"><i class="fab fa-linkedin"></i> View Credential on LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                            <small class="lang-ar"><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                        </div>
-                    </a>
-
-                    <!-- Cert 1: Microsoft IT Support Specialist -->
-                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-icon blue-border">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg"
-                                alt="Microsoft" />
-                        </div>
-                        <div class="cert-text">
-                            <span style="color: var(--text-secondary); font-size: 0.8rem">Microsoft</span>
-                            <h4 class="lang-en">Microsoft IT Support Specialist</h4>
-                            <h4 class="lang-ar">Microsoft IT Support Specialist</h4>
-                            <small class="lang-en"><i class="fab fa-linkedin"></i> View Credential on LinkedIn <i
-                                    class="fas fa-external-link-alt"></i></small>
-                            <small class="lang-ar"><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn <i
-                                    class="fas fa-external-link-alt"></i></small>
-                        </div>
-                    </a>
-
-                    <!-- Cert 2: Cisco Cyber Threat Management -->
-                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-icon blue-border">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cisco.svg" alt="Cisco" />
-                        </div>
-                        <div class="cert-text">
-                            <span style="color: var(--text-secondary); font-size: 0.8rem">Cisco</span>
-                            <h4 class="lang-en">Cyber Threat Management</h4>
-                            <h4 class="lang-ar">Cyber Threat Management</h4>
-                            <small class="lang-en"><i class="fab fa-linkedin"></i> View Credential on LinkedIn <i
-                                    class="fas fa-external-link-alt"></i></small>
-                            <small class="lang-ar"><i class="fab fa-linkedin"></i> عرض الاعتماد في LinkedIn <i
-                                    class="fas fa-external-link-alt"></i></small>
-                        </div>
-                    </a>
-
-                    <!-- Cert 3: Eyouth Learning Plan -->
-                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-icon yellow-border">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg" alt="IBM" />
-                        </div>
-                        <div class="cert-text">
-                            <span style="color: var(--text-secondary); font-size: 0.8rem">Eyouth & IBM</span>
-                            <h4 class="lang-en">Eyouth to IBM Learning Plan</h4>
-                            <h4 class="lang-ar">Eyouth to IBM Learning Plan</h4>
-                            <small class="lang-en" style="color: #eab308"><i class="fab fa-linkedin"></i> View
-                                Credential on LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                            <small class="lang-ar" style="color: #eab308"><i class="fab fa-linkedin"></i> عرض الاعتماد
-                                في LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                        </div>
-                    </a>
-
-                    <!-- Cert 4: IBM Granite -->
-                    <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="cert-card">
-                        <div class="cert-icon pink-border">
-                            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg" alt="IBM" />
-                        </div>
-                        <div class="cert-text">
-                            <span style="color: var(--text-secondary); font-size: 0.8rem">IBM</span>
-                            <h4 class="lang-en">Data Classification using IBM Granite</h4>
-                            <h4 class="lang-ar">Data Classification using IBM Granite</h4>
-                            <small class="lang-en" style="color: #ec4899"><i class="fab fa-linkedin"></i> View
-                                Credential on LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                            <small class="lang-ar" style="color: #ec4899"><i class="fab fa-linkedin"></i> عرض الاعتماد
-                                في LinkedIn <i class="fas fa-external-link-alt"></i></small>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 
-           📞 Contact
-        -->
-        <section id="contact" class="section">
-            <div class="container">
-                <div class="contact-wrap">
-                    <span class="pre-heading lang-ar">لنتواصل</span>
-                    <span class="pre-heading lang-en">Let's Connect</span>
-                    <h2 class="section-heading gradient-text">
-                        <span class="lang-en">Get in Touch</span>
-                        <span class="lang-ar">تواصل معي</span>
-                    </h2>
-
-                    <div class="contact-grid" style="
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-                gap: 22px;
-                margin: 40px auto 0 auto;
-                max-width: 1120px;
-              ">
-                        <div class="glass-panel" style="grid-column: 1 / -1; padding: 40px; text-align: center">
-                            <h3 class="lang-ar" style="
-                    font-size: 2rem;
-                    color: var(--text-primary);
-                    margin-bottom: 15px;
-                  ">
-                                هل لديك فرصة عمل؟
-                            </h3>
-                            <h3 class="lang-en" style="
-                    font-size: 2rem;
-                    color: var(--text-primary);
-                    margin-bottom: 15px;
-                  ">
-                                Have an Opportunity?
-                            </h3>
-                            <p class="lang-ar" style="
-                    color: var(--text-secondary);
-                    max-width: 600px;
-                    margin: 0 auto;
-                    font-size: 1.15rem;
-                    line-height: 1.8;
-                  ">
-                                أسعد دائماً بالتواصل لمناقشة الفرص المهنية، تبادل الخبرات،
-                                وتقديم الحلول التقنية المتقدمة.
-                            </p>
-                            <p class="lang-en" style="
-                    color: var(--text-secondary);
-                    max-width: 600px;
-                    margin: 0 auto;
-                    font-size: 1.15rem;
-                    line-height: 1.8;
-                  ">
-                                I'm always happy to connect, discuss professional
-                                opportunities, and provide advanced tech solutions.
-                            </p>
-                        </div>
-
-                        <!-- Email -->
-                        <a href="#" id="secure-email" class="glass-panel interactive-card" style="
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 35px;
-                  text-align: center;
-                  gap: 15px;
-                  text-decoration: none;
-                ">
-                            <div style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 50%;
-                    background: rgba(239, 68, 68, 0.1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 10px;
-                  ">
-                                <i class="fas fa-envelope" style="font-size: 2rem; color: #ef4444"></i>
-                            </div>
-                            <span class="lang-ar" style="color: var(--text-secondary); font-size: 0.95rem">البريد
-                                الإلكتروني</span>
-                            <span class="lang-en" style="color: var(--text-secondary); font-size: 0.95rem">Email
-                                Address</span>
-                            <strong id="email-display" style="
-                    color: var(--text-primary);
-                    font-size: 1.1rem;
-                    letter-spacing: 0.5px;
-                    cursor: pointer;
-                  ">
-                                <span class="lang-en">Click to reveal</span>
-                                <span class="lang-ar">انقر للإظهار</span>
-                            </strong>
-                        </a>
-
-                        <!-- Phone -->
-                        <a href="#" id="secure-phone" class="glass-panel interactive-card" style="
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 35px;
-                  text-align: center;
-                  gap: 15px;
-                  text-decoration: none;
-                ">
-                            <div style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 50%;
-                    background: rgba(16, 185, 129, 0.1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 10px;
-                  ">
-                                <i class="fas fa-phone-alt" style="font-size: 2rem; color: #10b981"></i>
-                            </div>
-                            <span class="lang-ar" style="color: var(--text-secondary); font-size: 0.95rem">رقم
-                                الجوال</span>
-                            <span class="lang-en" style="color: var(--text-secondary); font-size: 0.95rem">Phone
-                                Number</span>
-                            <strong id="phone-display" style="
-                    color: var(--text-primary);
-                    font-size: 1.1rem;
-                    direction: ltr;
-                    letter-spacing: 1px;
-                    cursor: pointer;
-                  ">
-                                <span class="lang-en">Click to reveal</span>
-                                <span class="lang-ar">انقر للإظهار</span>
-                            </strong>
-                        </a>
-
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank"
-                            rel="noopener noreferrer" class="glass-panel interactive-card linkedin-contact-card" style="
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 35px;
-                  text-align: center;
-                  gap: 15px;
-                  text-decoration: none;
-                ">
-                            <div style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 50%;
-                    background: rgba(10, 102, 194, 0.12);
-                    border: 1px solid rgba(10, 102, 194, 0.35);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 10px;
-                    box-shadow: 0 4px 16px rgba(10, 102, 194, 0.15);
-                  ">
-                                <i class="fab fa-linkedin-in" style="font-size: 2.2rem; color: #0a66c2"></i>
-                            </div>
-                            <span class="lang-ar" style="color: var(--text-secondary); font-size: 0.95rem">الشبكة
-                                المهنية</span>
-                            <span class="lang-en" style="color: var(--text-secondary); font-size: 0.95rem">Professional
-                                Network</span>
-                            <strong style="
-                    color: #0a66c2;
-                    font-size: 1.15rem;
-                    font-weight: 700;
-                    letter-spacing: 0.3px;
-                  ">LinkedIn Profile</strong>
-                        </a>
-
-                        <!-- X (Twitter) -->
-                        <a href="https://x.com/RealAzTech" target="_blank" rel="noopener noreferrer" class="glass-panel interactive-card" style="
-                  display: flex;
-                  flex-direction: column;
-                  align-items: center;
-                  justify-content: center;
-                  padding: 35px;
-                  text-align: center;
-                  gap: 15px;
-                  text-decoration: none;
-                ">
-                            <div style="
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 50%;
-                    background: rgba(255, 255, 255, 0.08);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-bottom: 10px;
-                  ">
-                                <svg style="width: 2.2rem; height: 2.2rem; fill: var(--text-primary);"
-                                    viewBox="0 0 24 24">
-                                    <path
-                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                </svg>
-                            </div>
-                            <span class="lang-ar" style="color: var(--text-secondary); font-size: 0.95rem">منصة X</span>
-                            <span class="lang-en" style="color: var(--text-secondary); font-size: 0.95rem">X
-                                Platform</span>
-                            <strong style="
-                    color: var(--text-primary);
-                    font-size: 1.1rem;
-                    font-weight: 700;
-                    direction: ltr;
-                    display: inline-block;
-                    unicode-bidi: embed;
-                  ">@RealAzTech</strong>
-                        </a>
+            <section id="experience" class="section">
+                <div class="container">
+                    <div class="section-header-area">
+                        <span class="pre-heading lang-ar">المسيرة المهنية</span>
+                        <span class="pre-heading lang-en">Career Path</span>
+                        <h2 class="section-heading gradient-text">
+                            <span class="lang-en">Experience</span>
+                            <span class="lang-ar">الخبرات المهنية</span>
+                        </h2>
                     </div>
-                </div>
-            </div>
-        </section>
-    </main>
 
-    <!-- Mobile FAB -->
-    <a href="mailto:abdulazizta05@gmail.com" class="mobile-fab" id="mobile-fab">
-        <i class="fas fa-envelope"></i>
-    </a>
+                    <div class="timeline-container">
 
-    <!-- Project Modal & Interactive Large Gallery -->
-    <div id="project-modal" class="custom-modal">
-        <div class="modal-content tech-modal-content">
-            <!-- Ambient Tech Decor Specifically for Modal Content -->
-            <div class="modal-tech-decor" aria-hidden="true">
-                <i class="fas fa-server modal-tech-icon" style="top: 8%; right: 4%; animation-delay: 0s;"></i>
-                <i class="fas fa-network-wired modal-tech-icon" style="bottom: 14%; left: 4%; animation-delay: 2s;"></i>
-                <i class="fas fa-microchip modal-tech-icon" style="top: 48%; left: 3%; animation-delay: 4s;"></i>
-                <i class="fas fa-shield-halved modal-tech-icon"
-                    style="bottom: 8%; right: 5%; animation-delay: 1.5s;"></i>
-                <i class="fas fa-diagram-project modal-tech-icon" style="top: 14%; left: 10%; animation-delay: 3s;"></i>
-                <i class="fas fa-robot modal-tech-icon" style="top: 66%; right: 4%; animation-delay: 5s;"></i>
-            </div>
-
-            <button class="close-modal" id="close-modal-btn" aria-label="Close modal">
-                <i class="fas fa-times"></i>
-            </button>
-            <div class="modal-header">
-                <div id="modal-company-badge" class="modal-badge-meta"></div>
-                <h2 id="modal-title-en" class="gradient-text lang-en"
-                    style="margin:0; font-size: 1.7rem; position: relative; z-index: 2;">Project Title</h2>
-                <h2 id="modal-title-ar" class="gradient-text lang-ar"
-                    style="margin:0; font-size: 1.7rem; position: relative; z-index: 2;">عنوان المشروع</h2>
-
-                <!-- Modal View Mode Switcher -->
-                <div class="modal-view-tabs" role="tablist">
-                    <button class="modal-tab-btn active" id="tab-btn-gallery" onclick="switchModalTab('gallery')">
-                        <i class="fas fa-images"></i>
-                        <span class="lang-ar">معرض الصور والشاشات التفاعلي</span>
-                        <span class="lang-en">Visual Proof & Gallery</span>
-                    </button>
-                    <button class="modal-tab-btn" id="tab-btn-details" onclick="switchModalTab('details')">
-                        <i class="fas fa-file-lines"></i>
-                        <span class="lang-ar">تفاصيل ودراسة الحالة</span>
-                        <span class="lang-en">Case Study & Details</span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="modal-body" style="position: relative; z-index: 2;">
-                <!-- Tab 1: Large Organized Visual Gallery (Active by Default) -->
-                <div id="modal-tab-gallery-view" class="modal-tab-panel active">
-                    <div class="gallery-main-showcase">
-                        <!-- Big Stage Container -->
-                        <div class="gallery-stage-container">
-                            <!-- Floating Top Overlays -->
-                            <div class="gallery-top-bar">
-                                <div class="gallery-counter-pill">
-                                    <i class="fas fa-camera"></i>
-                                    <span id="gallery-counter-text">1 / 1</span>
+                        <div class="timeline-item glass-panel">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span class="lang-ar">مايو 2026 - حتى الآن</span>
+                                <span class="lang-en">May 2026 – Present</span>
+                            </div>
+                            <div class="timeline-content">
+                                <i class="fas fa-users watermark-icon-exp" aria-hidden="true"></i>
+                                <div class="exp-card-header">
+                                    <div>
+                                        <h3 class="timeline-title lang-ar">دعم فني</h3>
+                                        <h3 class="timeline-title lang-en">IT Support</h3>
+                                        <h4 class="timeline-company lang-ar">مجتمع أسوة | عن بُعد</h4>
+                                        <h4 class="timeline-company lang-en">Oswah Community | Remote
+                                        </h4>
+                                    </div>
+                                    <div class="company-logo company-logo-oswah" aria-hidden="true">
+                                        <svg viewBox="60 496 1142 288" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><image href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E" data-src="images/oswah-community-logo.png" width="1254" height="1254" /></svg>
+                                    </div>
                                 </div>
-                                <button class="gallery-zoom-pill" onclick="zoomCurrentGalleryImage()"
-                                    title="عرض بالحجم الكامل">
-                                    <i class="fas fa-expand"></i>
+                                <ul class="timeline-desc">
+                                    <li class="lang-ar">تقديم الدعم التقني للبوابة الداخلية للموظفين والموقع العام لضمان
+                                        جاهزية واستقرار الأنظمة.</li>
+                                    <li class="lang-en">Providing technical support for the internal employee portal and
+                                        public website to ensure system readiness and stability.</li>
+                                    <li class="lang-ar">حل مشكلات تسجيل الدخول وتصحيح صلاحيات وحسابات المستخدمين بشكل فوري.
+                                    </li>
+                                    <li class="lang-en">Instantly resolving login issues and correcting user accounts and
+                                        permissions.</li>
+                                    <li class="lang-ar">متابعة سجلات الأخطاء (Error Logs) وتشخيص الأعطال التقنية لرفع
+                                        موثوقية المنصات.</li>
+                                    <li class="lang-en">Monitoring error logs and diagnosing technical faults to increase
+                                        platform reliability.</li>
+                                    <li class="lang-ar">إدارة نماذج التواصل وضبط أداء الشات بوت (Chatbot) لأتمتة وتسهيل الرد
+                                        على الاستفسارات.</li>
+                                    <li class="lang-en">Managing contact forms and tuning chatbot performance to automate
+                                        and facilitate query responses.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-panel">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span class="lang-ar">أكتوبر 2025 - حتى الآن</span>
+                                <span class="lang-en">October 2025 – Present</span>
+                            </div>
+                            <div class="timeline-content">
+                                <i class="fas fa-building watermark-icon-exp" aria-hidden="true"></i>
+                                <div class="exp-card-header">
+                                    <div>
+                                        <h3 class="timeline-title lang-ar">أخصائي تقنية معلومات</h3>
+                                        <h3 class="timeline-title lang-en">IT Support Specialist</h3>
+                                        <h4 class="timeline-company lang-ar">شركة مستويات
+                                            التشغيل | السعودية، المدينة المنورة</h4>
+                                        <h4 class="timeline-company lang-en">Operating
+                                            Levels Company | Saudi Arabia, Madinah</h4>
+                                    </div>
+                                    <div class="company-logo company-logo-operating" aria-hidden="true">
+                                        <svg viewBox="78 116 1110 1030" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><image href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'/%3E" data-src="images/operating-levels-logo.png" width="1254" height="1254" /></svg>
+                                    </div>
+                                </div>
+                                <ul class="timeline-desc">
+                                    <li class="lang-ar">قدت التأسيس التقني للمقر الجديد، من المشتريات واختيار الموردين إلى تجهيز محطات العمل وتهيئة الأجهزة لجميع الأقسام، لضمان الجاهزية التشغيلية دون تأخير.</li>
+                                    <li class="lang-en">Led the new headquarters’ IT setup—from procurement and vendor selection to workstation deployment and configuration—ensuring operational readiness without delay.</li>
+                                    <li class="lang-ar">قدمت دعمًا فنيًا من المستويين الأول والثاني للأجهزة والبرامج والشبكات، وحللت الأعطال استباقيًا لتحسين الأداء وتجربة المستخدم.</li>
+                                    <li class="lang-en">Delivered Tier 1 and Tier 2 hardware, software, and network support, proactively resolving issues to improve performance and user experience.</li>
+                                    <li class="lang-ar">أدرت تثبيت أنظمة التشغيل والتحديثات والامتثال لأمن نقاط النهاية على أجهزة الشركة.</li>
+                                    <li class="lang-en">Managed OS installations, patches, updates, and endpoint security compliance across corporate devices.</li>
+                                    <li class="lang-ar">أدرت حسابات المستخدمين وصلاحياتهم عبر Active Directory، وشخصت مشكلات الشبكة المحلية وDNS وDHCP وTCP/IP.</li>
+                                    <li class="lang-en">Administered Active Directory accounts and role-based permissions, and troubleshot LAN, DNS, DHCP, and TCP/IP connectivity.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item glass-panel">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">
+                                <span class="lang-ar">يوليو 2025 - سبتمبر 2025</span>
+                                <span class="lang-en">July 2025 – September 2025</span>
+                            </div>
+                            <div class="timeline-content">
+                                <i class="fas fa-train watermark-icon-exp" aria-hidden="true"></i>
+                                <div class="exp-card-header">
+                                    <div>
+                                        <h3 class="timeline-title lang-ar">متدرب إدارة أنظمة</h3>
+                                        <h3 class="timeline-title lang-en">System Administrator Trainee</h3>
+                                        <h4 class="timeline-company lang-ar">شركة تالقو – مشروع
+                                            قطار الحرمين السريع | السعودية، المدينة المنورة</h4>
+                                        <h4 class="timeline-company lang-en">Talgo Company –
+                                            Haramain High-Speed Railway Project | Saudi Arabia, Madinah</h4>
+                                    </div>
+                                    <div class="company-logo company-logo-talgo" aria-hidden="true">
+                                        <img src="images/talgo-logo.png" alt="" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <ul class="timeline-desc">
+                                    <li class="lang-ar">قدت ترقية Windows 11 في جميع الفروع، مع تدقيق الأجهزة وترقيتها بتكلفة مناسبة لمعالجة مشكلات التوافق.</li>
+                                    <li class="lang-en">Led Windows 11 migration across branches, using hardware audits and cost-effective upgrades to resolve compatibility issues.</li>
+                                    <li class="lang-ar">أنجزت التهيئة التقنية للموظفين الجدد قبل الموعد، بما يشمل تجهيز محطات العمل وربطها بالمجال وضبط الأنظمة.</li>
+                                    <li class="lang-en">Completed employee IT onboarding ahead of schedule, including workstation setup, domain joining, and system configuration.</li>
+                                    <li class="lang-ar">طبقت سياسات MDM، وأدرت حسابات Active Directory وكلمات المرور والصلاحيات وGroup Policy الأساسية، إلى جانب Microsoft 365 وExchange Online.</li>
+                                    <li class="lang-en">Implemented MDM policies and administered Active Directory accounts, password policies, permissions, basic Group Policy, Microsoft 365, and Exchange Online.</li>
+                                    <li class="lang-ar">قدمت دعم مكتب المساعدة عبر التذاكر وفق اتفاقيات SLA، وشخصت مشكلات إعداد IP وDNS واتصال الشبكة.</li>
+                                    <li class="lang-en">Delivered ticket-based help desk support within SLA targets and troubleshot IP configuration, DNS, and network connectivity.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <div class="container">
+                    <div class="section-header-area">
+                        <span class="pre-heading lang-ar">المشاريع العملية</span>
+                        <span class="pre-heading lang-en">Practical Projects</span>
+                        <h2 class="section-heading gradient-text">
+                            <span class="lang-en">Practical Projects</span>
+                            <span class="lang-ar">المشاريع العملية</span>
+                        </h2>
+                        <p class="section-subtext lang-en">
+                            Hands-on implementations and enterprise simulations showcasing IT infrastructure, systems
+                            administration, and smart automation.
+                        </p>
+                        <p class="section-subtext lang-ar">
+                            نماذج واقعية توضح توظيف أحدث الأدوات والتقنيات لبناء حلول مرنة، ذكية، وقابلة للتطوير.
+                        </p>
+                    </div>
+
+                    <div class="projects-3col-grid">
+
+                        <div class="project-card-3col">
+                            <button type="button" class="proj-cover-button" onclick="openProjectModal('proj1', 'gallery')" aria-label="View AI Jobs project images and details">
+                                <img src="images/projects/ai-jobs-pipeline/cover.png" alt="AI Jobs Automation Pipeline" class="proj-cover-img" loading="lazy" decoding="async" width="1580" height="888" />
+                            </button>
+                            <div class="proj-card-body">
+                                <div class="proj-card-meta">
+                                    <span class="lang-ar">ذكاء اصطناعي وأتمتة</span>
+                                    <span class="lang-en">AI &amp; Automation</span>
+                                </div>
+                                <h3 class="proj-card-title lang-ar">سير عمل أتمتة البحث عن الوظائف بالذكاء الاصطناعي</h3>
+                                <h3 class="proj-card-title lang-en">AI Jobs Automation Pipeline</h3>
+                                <p class="proj-card-desc lang-ar">
+                                    سير عمل n8n مجدول يسحب إعلانات الوظائف وملف السيرة الذاتية، ويمررهما لنموذج AI لمقارنة
+                                    المهارات وترتيبها، ثم يسجل النتائج في Google Sheets ويرسل تنبيهات Telegram فورية.
+                                </p>
+                                <p class="proj-card-desc lang-en">
+                                    A scheduled n8n workflow that fetches job listings, downloads &amp; extracts the CV/PDF, then
+                                    passes both to an AI model for skills comparison and ranking, logging results to Google
+                                    Sheets and sending instant Telegram alerts.
+                                </p>
+                                <div class="proj-tech-circles" onclick="event.stopPropagation()">
+                                    <div class="tech-circle-badge" data-tooltip="n8n Workflows" title="n8n Workflows">
+                                        <i class="fas fa-diagram-project"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="AI Model" title="AI Model">
+                                        <i class="fas fa-robot"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Docker" title="Docker">
+                                        <i class="fab fa-docker"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="ngrok Tunnel" title="ngrok Tunnel">
+                                        <i class="fas fa-network-wired"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="REST API" title="REST API">
+                                        <i class="fas fa-bolt"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="MCP Tools" title="MCP Tools">
+                                        <i class="fas fa-plug"></i></div>
+                                </div>
+                                <div class="proj-card-footer">
+                                    <button class="btn-proj-gallery" onclick="openProjectModal('proj1', 'gallery'); event.stopPropagation();">
+                                        <i class="fas fa-images"></i>
+                                        <span class="lang-ar">استعراض صور وتفاصيل المشروع</span>
+                                        <span class="lang-en">View Project Images & Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card-3col">
+                            <button type="button" class="proj-cover-button" onclick="openProjectModal('proj2', 'gallery')" aria-label="View AI Email Filtering project images and details">
+                                <img src="images/projects/ai-email-filtering/cover.png" alt="AI Email Filtering & Automation Pipeline" class="proj-cover-img" loading="lazy" decoding="async" width="828" height="646" />
+                            </button>
+                            <div class="proj-card-body">
+                                <div class="proj-card-meta">
+                                    <span class="lang-ar">ذكاء اصطناعي وأتمتة</span>
+                                    <span class="lang-en">AI &amp; Automation</span>
+                                </div>
+                                <h3 class="proj-card-title lang-ar">نظام أتمتة وتصنيف البريد الإلكتروني بالذكاء الاصطناعي</h3>
+                                <h3 class="proj-card-title lang-en">AI Email Filtering &amp; Automation Pipeline</h3>
+                                <p class="proj-card-desc lang-ar">
+                                    نظام أتمتة عبر n8n يبدأ بمشغل بريد Gmail Trigger، يقوم بتحليل محتوى الرسائل وتصنيفها عبر الذكاء الاصطناعي، ثم توجيهها (Switch) لتسجيلها في Google Sheets وإرسال تنبيه في قناة Telegram الخاصة بالقسم المعني (تقني، إداري، أخرى).
+                                </p>
+                                <p class="proj-card-desc lang-en">
+                                    An n8n automation system powered by Gmail Trigger that analyzes incoming emails with AI, routing them via a Switch node to dedicated Google Sheets tabs and firing instant Telegram alerts to the relevant department (Tech, Admin, Other).
+                                </p>
+                                <div class="proj-tech-circles" onclick="event.stopPropagation()">
+                                    <div class="tech-circle-badge" data-tooltip="n8n Workflows" title="n8n Workflows">
+                                        <i class="fas fa-diagram-project"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="AI Classifier" title="AI Classifier">
+                                        <i class="fas fa-robot"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Gmail Trigger" title="Gmail Trigger">
+                                        <i class="fas fa-envelope"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Google Sheets" title="Google Sheets">
+                                        <i class="fas fa-table"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Telegram Alerts" title="Telegram Alerts">
+                                        <i class="fab fa-telegram"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Switch Router" title="Switch Router">
+                                        <i class="fas fa-shuffle"></i></div>
+                                </div>
+                                <div class="proj-card-footer">
+                                    <button class="btn-proj-gallery" onclick="openProjectModal('proj2', 'gallery'); event.stopPropagation();">
+                                        <i class="fas fa-images"></i>
+                                        <span class="lang-ar">استعراض صور وتفاصيل المشروع</span>
+                                        <span class="lang-en">View Project Images & Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card-3col">
+                            <button type="button" class="proj-cover-button" onclick="openProjectModal('proj3', 'gallery')" aria-label="View Athar project image and details">
+                                <img src="images/projects/athar/cover.png" alt="Athar Platform - AI Heritage Guide" class="proj-cover-img" loading="lazy" decoding="async" width="1314" height="736" />
+                            </button>
+                            <div class="proj-card-body">
+                                <div class="proj-card-meta">
+                                    <span class="lang-ar">ذكاء اصطناعي وتطوير ويب</span>
+                                    <span class="lang-en">AI &amp; Web Development</span>
+                                </div>
+                                <h3 class="proj-card-title lang-ar">منصة أثر - دليل التراث بالذكاء الاصطناعي</h3>
+                                <h3 class="proj-card-title lang-en">Athar Platform - AI Heritage Guide</h3>
+                                <p class="proj-card-desc lang-ar">
+                                    منصة ويب تفاعلية وتجربة استكشاف ذكية للتراث السعودي، تعمل كدليل سياحي وتاريخي مدعوم بالذكاء الاصطناعي وقاعدة معرفة.
+                                </p>
+                                <p class="proj-card-desc lang-en">
+                                    An interactive web platform and smart exploration experience for Saudi heritage, serving as an AI-powered historical and tourist guide with a robust knowledge base.
+                                </p>
+                                <div class="proj-tech-circles" onclick="event.stopPropagation()">
+                                    <div class="tech-circle-badge" data-tooltip="HTML5" title="HTML5">
+                                        <i class="fab fa-html5"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="CSS3" title="CSS3">
+                                        <i class="fab fa-css3-alt"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="JavaScript" title="JavaScript">
+                                        <i class="fab fa-js"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Node.js" title="Node.js">
+                                        <i class="fab fa-node-js"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Express.js" title="Express.js">
+                                        <i class="fas fa-server"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Gemini" title="Gemini">
+                                        <i class="fas fa-brain"></i></div>
+                                    <div class="tech-circle-badge" data-tooltip="Knowledge Base" title="Knowledge Base">
+                                        <i class="fas fa-database"></i></div>
+                                </div>
+                                <div class="proj-card-footer">
+                                    <button type="button" class="btn-proj-gallery" onclick="openProjectModal('proj3', 'gallery')">
+                                        <i class="fas fa-images" aria-hidden="true"></i>
+                                        <span class="lang-ar">استعراض صورة وتفاصيل المشروع</span>
+                                        <span class="lang-en">View Project Image & Details</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="section">
+                <div class="container">
+                    <div class="section-header-area">
+                        <span class="pre-heading lang-ar">الكفاءات والتقنيات</span>
+                        <span class="pre-heading lang-en">Competencies &amp; Stacks</span>
+                        <h2 class="section-heading gradient-text">
+                            <span class="lang-ar">المهارات</span>
+                            <span class="lang-en">Skills</span>
+                        </h2>
+                        <p class="section-subtext lang-en">Core technical proficiencies spanning AI agents, workflow
+                            automation, enterprise systems, and infrastructure.</p>
+                        <p class="section-subtext lang-ar">منظومة مهاراتي التقنية في هندسة الذكاء الاصطناعي، الأتمتة، إدارة
+                            الأنظمة، والدعم الفني.</p>
+                    </div>
+
+                    <div class="skills-pro-grid">
+
+                        <div class="skill-pro-card">
+                            <div class="skill-pro-header">
+                                <div class="skill-pro-icon-wrap">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="skill-pro-title">
+                                    <span class="lang-en">AI &amp; Agents</span>
+                                    <span class="lang-ar">الذكاء الاصطناعي والوكلاء</span>
+                                </div>
+                            </div>
+                            <div class="skill-pro-tags">
+                                <span class="skill-pro-pill">AI Agents</span>
+                                <span class="skill-pro-pill">Agentic Workflows</span>
+                                <span class="skill-pro-pill">Prompt Engineering</span>
+                                <span class="skill-pro-pill">Claude &amp; Claude Code</span>
+                                <span class="skill-pro-pill">MCP Protocol</span>
+                                <span class="skill-pro-pill">NLP &amp; LLMs</span>
+                                <span class="skill-pro-pill">API</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-pro-card">
+                            <div class="skill-pro-header">
+                                <div class="skill-pro-icon-wrap">
+                                    <i class="fas fa-diagram-project"></i>
+                                </div>
+                                <div class="skill-pro-title">
+                                    <span class="lang-en">Automation &amp; Integration</span>
+                                    <span class="lang-ar">الأتمتة وتكامل الأنظمة</span>
+                                </div>
+                            </div>
+                            <div class="skill-pro-tags">
+                                <span class="skill-pro-pill">n8n Workflows</span>
+                                <span class="skill-pro-pill">Webhooks</span>
+                                <span class="skill-pro-pill">REST APIs &amp; JSON</span>
+                                <span class="skill-pro-pill">OAuth 2.0</span>
+                                <span class="skill-pro-pill">Google Cloud</span>
+                                <span class="skill-pro-pill">Docker</span>
+                                <span class="skill-pro-pill">MCP Protocol</span>
+                                <span class="skill-pro-pill">API</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-pro-card">
+                            <div class="skill-pro-header">
+                                <div class="skill-pro-icon-wrap">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="skill-pro-title">
+                                    <span class="lang-en">System Administration</span>
+                                    <span class="lang-ar">إدارة الأنظمة والخوادم</span>
+                                </div>
+                            </div>
+                            <div class="skill-pro-tags">
+                                <span class="skill-pro-pill">Active Directory</span>
+                                <span class="skill-pro-pill">Group Policy (GPOs)</span>
+                                <span class="skill-pro-pill">Windows Server 2019/2022</span>
+                                <span class="skill-pro-pill">Microsoft 365 Admin</span>
+                                <span class="skill-pro-pill">Hyper-V</span>
+                                <span class="skill-pro-pill">PowerShell</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-pro-card">
+                            <div class="skill-pro-header">
+                                <div class="skill-pro-icon-wrap">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div class="skill-pro-title">
+                                    <span class="lang-en">Technical Support &amp; Hardware</span>
+                                    <span class="lang-ar">الدعم الفني والعتاد</span>
+                                </div>
+                            </div>
+                            <div class="skill-pro-tags">
+                                <span class="skill-pro-pill">Hardware Diagnostics</span>
+                                <span class="skill-pro-pill">Tier 1 &amp; 2 Support</span>
+                                <span class="skill-pro-pill">ITIL Service Desk</span>
+                                <span class="skill-pro-pill">OS Deployment (WDS)</span>
+                                <span class="skill-pro-pill">Windows 11 Migration</span>
+                                <span class="skill-pro-pill">MDM</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-pro-card">
+                            <div class="skill-pro-header">
+                                <div class="skill-pro-icon-wrap">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="skill-pro-title">
+                                    <span class="lang-en">Networking &amp; Security</span>
+                                    <span class="lang-ar">الشبكات والأمن</span>
+                                </div>
+                            </div>
+                            <div class="skill-pro-tags">
+                                <span class="skill-pro-pill">TCP/IP &amp; Subnetting</span>
+                                <span class="skill-pro-pill">DNS &amp; DHCP</span>
+                                <span class="skill-pro-pill">VLAN Segmentation</span>
+                                <span class="skill-pro-pill">Wi-Fi 6 Enterprise</span>
+                                <span class="skill-pro-pill">Endpoint Security</span>
+                                <span class="skill-pro-pill">Wireshark</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-pro-card">
+                            <div class="skill-pro-header">
+                                <div class="skill-pro-icon-wrap">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="skill-pro-title">
+                                    <span class="lang-en">Problem Solving</span>
+                                    <span class="lang-ar">حل المشكلات</span>
+                                </div>
+                            </div>
+                            <div class="skill-pro-tags">
+                                <span class="skill-pro-pill">Technical Troubleshooting</span>
+                                <span class="skill-pro-pill">Root Cause Analysis</span>
+                                <span class="skill-pro-pill">Incident Resolution</span>
+                                <span class="skill-pro-pill">Risk Mitigation</span>
+                                <span class="skill-pro-pill">Business Continuity</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="education" class="section">
+                <div class="container">
+                    <span class="pre-heading lang-ar">المؤهلات والاعتمادات</span>
+                    <span class="pre-heading lang-en">Qualifications</span>
+                    <h2 class="section-heading gradient-text">
+                        <span class="lang-en">Education & Certifications</span>
+                        <span class="lang-ar">التعليم والشهادات</span>
+                    </h2>
+
+                    <div class="edu-wrap">
+                        <div class="glass-panel edu-card">
+                            <i class="fas fa-university watermark-icon-edu"></i>
+                            <div class="edu-info">
+                                <div class="edu-icon-box">
+                                    <img loading="lazy" decoding="async" src="images/taibah-logo.png" alt="Taibah University" class="univ-logo-img"/>
+                                </div>
+                                <div class="edu-text">
+                                    <h3 class="lang-en">
+                                        Bachelor of Information Systems
+                                    </h3>
+                                    <h3 class="lang-ar">
+                                        بكالوريوس نظم المعلومات
+                                    </h3>
+                                    <p class="lang-en">
+                                        Taibah University - Saudi Arabia
+                                    </p>
+                                    <p class="lang-ar">
+                                        جامعة طيبة - المملكة العربية السعودية
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="edu-date">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-panel glass-panel">
+                        <div class="section-subheader">
+                            <i class="fas fa-award"></i>
+                            <span class="lang-en">Professional Certifications</span>
+                            <span class="lang-ar">الشهادات المهنية</span>
+                        </div>
+
+                        <div class="cert-grid">
+
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <img loading="lazy" decoding="async" src="images/hashplus-logo.png" alt="ihashplus" />
+                                </div>
+                                <div class="cert-text">
+                                    <span>
+                                        <span class="lang-ar">هاش بلس</span>
+                                        <span class="lang-en">ihashplus</span>
+                                    </span>
+                                    <h4 class="lang-en">AI Agents Engineering Bootcamp</h4>
+                                    <h4 class="lang-ar">معسكر هندسة الوكلاء بالذكاء الاصطناعي</h4>
+                                    <p>
+                                        <span class="lang-ar">تصميم الوكلاء، سير العمل المؤتمت، وتكامل الأدوات عبر MCP و Claude
+                                            Code</span>
+                                        <span class="lang-en">Agentic workflows, prompt engineering, and MCP tool integration
+                                            with Claude</span>
+                                    </p>
+                                    <small class="lang-ar cert-verification">إثبات الشهادة متاح عند الطلب</small>
+                                    <small class="lang-en cert-verification">Credential verification available on request</small>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <img loading="lazy" decoding="async" src="images/hashplus-logo.png" alt="ihashplus" />
+                                </div>
+                                <div class="cert-text">
+                                    <span>
+                                        <span class="lang-ar">هاش بلس</span>
+                                        <span class="lang-en">ihashplus</span>
+                                    </span>
+                                    <h4 class="lang-en">n8n Automation & Smart Systems Bootcamp</h4>
+                                    <h4 class="lang-ar">معسكر الأتمتة وبناء الأنظمة الذكية (n8n)</h4>
+                                    <p>
+                                        <span class="lang-ar">بناء مسارات العمل Nodes، تكامل APIs، Webhooks، ونشر بيئة
+                                            n8n</span>
+                                        <span class="lang-en">Building workflow nodes, API webhooks, Google Cloud OAuth & n8n
+                                            self-hosting</span>
+                                    </p>
+                                    <small class="lang-ar cert-verification">إثبات الشهادة متاح عند الطلب</small>
+                                    <small class="lang-en cert-verification">Credential verification available on request</small>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <img loading="lazy" decoding="async" src="images/وزارة الاتصالات وتقنية المعلومات.png" alt="MCIT" />
+                                </div>
+                                <div class="cert-text">
+                                    <span>
+                                        <span class="lang-en">MCIT & AWS</span>
+                                        <span class="lang-ar">وزارة الاتصالات وتقنية المعلومات</span>
+                                    </span>
+                                    <h4 class="lang-en">AWS Certified AI Practitioner</h4>
+                                    <h4 class="lang-ar">AWS Certified AI Practitioner</h4>
+                                    <small class="lang-en cert-verification">Credential verification available on request</small>
+                                    <small class="lang-ar cert-verification">إثبات الشهادة متاح عند الطلب</small>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/microsoft.svg" alt="Microsoft" />
+                                </div>
+                                <div class="cert-text">
+                                    <span>Microsoft</span>
+                                    <h4 class="lang-en">Microsoft IT Support Specialist</h4>
+                                    <h4 class="lang-ar">Microsoft IT Support Specialist</h4>
+                                    <small class="lang-en cert-verification">Credential verification available on request</small>
+                                    <small class="lang-ar cert-verification">إثبات الشهادة متاح عند الطلب</small>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cisco.svg" alt="Cisco" />
+                                </div>
+                                <div class="cert-text">
+                                    <span>Cisco</span>
+                                    <h4 class="lang-en">Cyber Threat Management</h4>
+                                    <h4 class="lang-ar">Cyber Threat Management</h4>
+                                    <small class="lang-en cert-verification">Credential verification available on request</small>
+                                    <small class="lang-ar cert-verification">إثبات الشهادة متاح عند الطلب</small>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg" alt="IBM" />
+                                </div>
+                                <div class="cert-text">
+                                    <span>Eyouth & IBM</span>
+                                    <h4 class="lang-en">Eyouth to IBM Learning Plan</h4>
+                                    <h4 class="lang-ar">Eyouth to IBM Learning Plan</h4>
+                                    <small class="lang-en cert-verification">Credential verification available on request</small>
+                                    <small class="lang-ar cert-verification">إثبات الشهادة متاح عند الطلب</small>
+                                </div>
+                            </div>
+
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <img loading="lazy" decoding="async" src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/ibm.svg" alt="IBM" />
+                                </div>
+                                <div class="cert-text">
+                                    <span>IBM</span>
+                                    <h4 class="lang-en">Data Classification using IBM Granite</h4>
+                                    <h4 class="lang-ar">Data Classification using IBM Granite</h4>
+                                    <small class="lang-en cert-verification">Credential verification available on request</small>
+                                    <small class="lang-ar cert-verification">إثبات الشهادة متاح عند الطلب</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <div class="container">
+                    <div class="contact-wrap">
+                        <span class="pre-heading lang-ar">لنتواصل</span>
+                        <span class="pre-heading lang-en">Let's Connect</span>
+                        <h2 class="section-heading gradient-text">
+                            <span class="lang-en">Get in Touch</span>
+                            <span class="lang-ar">تواصل معي</span>
+                        </h2>
+
+                        <div class="contact-grid">
+                            <div class="glass-panel">
+                                <h3 class="lang-ar">
+                                    هل لديك فرصة عمل؟
+                                </h3>
+                                <h3 class="lang-en">
+                                    Have an Opportunity?
+                                </h3>
+                                <p class="lang-ar">
+                                    أسعد دائماً بالتواصل لمناقشة الفرص المهنية، تبادل الخبرات،
+                                    وتقديم الحلول التقنية المتقدمة.
+                                </p>
+                                <p class="lang-en">
+                                    I'm always happy to connect, discuss professional
+                                    opportunities, and provide advanced tech solutions.
+                                </p>
+                            </div>
+
+                            <a href="mailto:abdulazizta05@gmail.com" class="glass-panel interactive-card">
+                                <div>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <span class="lang-ar">البريد
+                                    الإلكتروني</span>
+                                <span class="lang-en">Email
+                                    Address</span>
+                                <strong>
+                                    abdulazizta05@gmail.com
+                                </strong>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/abdulaziztariqba" target="_blank" rel="noopener noreferrer" class="glass-panel interactive-card">
+                                <div>
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <span class="lang-ar">الشبكة
+                                    المهنية</span>
+                                <span class="lang-en">Professional
+                                    Network</span>
+                                <strong>LinkedIn Profile</strong>
+                            </a>
+
+                            <a href="https://x.com/RealAzTech" target="_blank" rel="noopener noreferrer" class="glass-panel interactive-card">
+                                <div>
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </div>
+                                <span class="lang-ar">منصة X</span>
+                                <span class="lang-en">X
+                                    Platform</span>
+                                <strong>@RealAzTech</strong>
+                            </a>
+
+                            <button type="button" id="phone-contact" class="glass-panel interactive-card">
+                                <div><i class="fas fa-phone" aria-hidden="true"></i></div>
+                                <span class="lang-ar">رقم الجوال</span>
+                                <span class="lang-en">Mobile</span>
+                                <strong><span class="lang-ar">إظهار الرقم</span><span class="lang-en">Show number</span></strong>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <a href="mailto:abdulazizta05@gmail.com" class="mobile-fab" id="mobile-fab" aria-label="Email Abdulaziz Tariq">
+            <i class="fas fa-envelope"></i>
+        </a>
+
+        <div id="project-modal" class="custom-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-en">
+            <div class="tech-modal-content">
+
+                <button class="close-modal" id="close-modal-btn" aria-label="Close modal">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-header">
+                    <div id="modal-company-badge" class="modal-badge-meta"></div>
+                    <h2 id="modal-title-en" class="gradient-text lang-en">Project Title</h2>
+                    <h2 id="modal-title-ar" class="gradient-text lang-ar">عنوان المشروع</h2>
+
+                    <div class="modal-view-tabs" role="tablist" aria-label="Project information">
+                        <button class="modal-tab-btn active" id="tab-btn-gallery" type="button" role="tab" aria-controls="modal-tab-gallery-view" aria-selected="true" onclick="switchModalTab('gallery')">
+                            <i class="fas fa-images"></i>
+                            <span class="lang-ar">معرض الصور والشاشات التفاعلي</span>
+                            <span class="lang-en">Visual Proof & Gallery</span>
+                        </button>
+                        <button class="modal-tab-btn" id="tab-btn-details" type="button" role="tab" aria-controls="modal-tab-details-view" aria-selected="false" onclick="switchModalTab('details')">
+                            <i class="fas fa-file-lines"></i>
+                            <span class="lang-ar">تفاصيل ودراسة الحالة</span>
+                            <span class="lang-en">Case Study & Details</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+
+                    <div id="modal-tab-gallery-view" role="tabpanel" aria-labelledby="tab-btn-gallery">
+                        <div>
+
+                            <div class="gallery-stage-container">
+
+                                <div class="gallery-top-bar">
+                                    <div class="gallery-counter-pill">
+                                        <i class="fas fa-camera"></i>
+                                        <span id="gallery-counter-text" aria-live="polite" aria-atomic="true">1 / 1</span>
+                                    </div>
+                                    <button class="gallery-zoom-pill" type="button" onclick="zoomCurrentGalleryImage()" aria-label="Enlarge current project image">
+                                        <i class="fas fa-expand"></i>
+                                        <span class="lang-en">Enlarge image</span><span class="lang-ar">تكبير الصورة</span>
+                                    </button>
+                                </div>
+
+                                <button class="gallery-image-button" type="button" onclick="zoomCurrentGalleryImage()" aria-label="Enlarge current project image">
+                                    <img id="gallery-stage-img" alt="Project step image" class="gallery-stage-img" />
+                                </button>
+
+                                <button class="gallery-nav-btn prev-btn" onclick="navigateGalleryStep(-1)" aria-label="Previous step">
+                                    <i class="fas fa-chevron-left gallery-prev-icon"></i>
+                                    <i class="fas fa-chevron-right gallery-next-icon"></i>
+                                </button>
+                                <button class="gallery-nav-btn next-btn" onclick="navigateGalleryStep(1)" aria-label="Next step">
+                                    <i class="fas fa-chevron-right gallery-next-icon"></i>
+                                    <i class="fas fa-chevron-left gallery-prev-icon"></i>
                                 </button>
                             </div>
 
-                            <!-- Large Image -->
-                            <img id="gallery-stage-img" src="" alt="Project Step Large View" class="gallery-stage-img"
-                                onclick="zoomCurrentGalleryImage()" />
+                            <div class="gallery-step-caption">
+                                <h3 id="gallery-step-title-en" class="gallery-step-title gradient-text lang-en"></h3>
+                                <h3 id="gallery-step-title-ar" class="gallery-step-title gradient-text lang-ar"></h3>
+                                <p id="gallery-step-desc-en" class="gallery-step-desc lang-en"></p>
+                                <p id="gallery-step-desc-ar" class="gallery-step-desc lang-ar"></p>
+                            </div>
 
-                            <!-- Floating Prev / Next Navigation Arrows (RTL-aware) -->
-                            <button class="gallery-nav-btn prev-btn" onclick="navigateGalleryStep(-1)"
-                                aria-label="Previous step">
-                                <i class="fas fa-chevron-left gallery-prev-icon"></i>
-                                <i class="fas fa-chevron-right gallery-next-icon" style="display:none"></i>
-                            </button>
-                            <button class="gallery-nav-btn next-btn" onclick="navigateGalleryStep(1)"
-                                aria-label="Next step">
-                                <i class="fas fa-chevron-right gallery-next-icon"></i>
-                                <i class="fas fa-chevron-left gallery-prev-icon" style="display:none"></i>
-                            </button>
-                        </div>
+                            <div class="gallery-thumbs-header">
+                                <span class="lang-ar">
+                                    <i class="fas fa-layer-group"></i> جميع صور وخطوات
+                                    التنفيذ الميداني:
+                                </span>
+                                <span class="lang-en">
+                                    <i class="fas fa-layer-group"></i> All Implementation
+                                    Steps & Proof:
+                                </span>
+                            </div>
+                            <div id="gallery-thumbs-strip" class="gallery-thumbnails-strip">
 
-                        <!-- Step Caption & Technical Details -->
-                        <div class="gallery-step-caption">
-                            <h3 id="gallery-step-title-en" class="gallery-step-title gradient-text lang-en"></h3>
-                            <h3 id="gallery-step-title-ar" class="gallery-step-title gradient-text lang-ar"></h3>
-                            <p id="gallery-step-desc-en" class="gallery-step-desc lang-en"></p>
-                            <p id="gallery-step-desc-ar" class="gallery-step-desc lang-ar"></p>
-                        </div>
-
-                        <!-- Thumbnail Strip -->
-                        <div class="gallery-thumbs-header">
-                            <span class="lang-ar"
-                                style="font-size: 0.88rem; font-weight: 700; color: var(--text-secondary); display: flex; align-items: center; gap: 6px;">
-                                <i class="fas fa-layer-group" style="color: var(--accent-cyan);"></i> جميع صور وخطوات
-                                التنفيذ الميداني:
-                            </span>
-                            <span class="lang-en"
-                                style="font-size: 0.88rem; font-weight: 700; color: var(--text-secondary); display: flex; align-items: center; gap: 6px;">
-                                <i class="fas fa-layer-group" style="color: var(--accent-cyan);"></i> All Implementation
-                                Steps & Proof:
-                            </span>
-                        </div>
-                        <div id="gallery-thumbs-strip" class="gallery-thumbnails-strip">
-                            <!-- Thumbnails injected dynamically -->
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Tab 2: Case Study & Deep Technical Details -->
-                <div id="modal-tab-details-view" class="modal-tab-panel" style="display: none;">
-                    <!-- 3-Column Bento Summary: Challenge, Solution, Impact & Stats -->
-                    <div class="modal-bento-summary">
-                        <div class="modal-summary-card challenge-box">
-                            <div class="modal-box-header">
-                                <i class="fas fa-triangle-exclamation"></i>
-                                <span class="lang-ar">التحدي والهدف</span>
-                                <span class="lang-en">The Challenge</span>
-                            </div>
-                            <p id="modal-challenge-text-ar" class="modal-box-text lang-ar"></p>
-                            <p id="modal-challenge-text-en" class="modal-box-text lang-en"></p>
-                        </div>
+                    <div id="modal-tab-details-view" role="tabpanel" aria-labelledby="tab-btn-details" hidden>
 
-                        <div class="modal-summary-card solution-box">
-                            <div class="modal-box-header">
-                                <i class="fas fa-lightbulb"></i>
-                                <span class="lang-ar">الحل التقني المنفذ</span>
-                                <span class="lang-en">The Technical Solution</span>
+                        <div class="modal-bento-summary">
+                            <div class="modal-summary-card">
+                                <div class="modal-box-header">
+                                    <i class="fas fa-triangle-exclamation"></i>
+                                    <span class="lang-ar">التحدي والهدف</span>
+                                    <span class="lang-en">The Challenge</span>
+                                </div>
+                                <p id="modal-challenge-text-ar" class="lang-ar"></p>
+                                <p id="modal-challenge-text-en" class="lang-en"></p>
                             </div>
-                            <p id="modal-solution-text-ar" class="modal-box-text lang-ar"></p>
-                            <p id="modal-solution-text-en" class="modal-box-text lang-en"></p>
-                        </div>
 
-                        <div class="modal-summary-card impact-box">
-                            <div class="modal-box-header">
-                                <i class="fas fa-chart-line"></i>
-                                <span class="lang-ar">الأثر وأبرز النتائج</span>
-                                <span class="lang-en">Impact & Key Results</span>
+                            <div class="modal-summary-card">
+                                <div class="modal-box-header">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span class="lang-ar">الحل التقني المنفذ</span>
+                                    <span class="lang-en">The Technical Solution</span>
+                                </div>
+                                <p id="modal-solution-text-ar" class="lang-ar"></p>
+                                <p id="modal-solution-text-en" class="lang-en"></p>
                             </div>
-                            <p id="modal-impact-text-ar" class="modal-box-text lang-ar"></p>
-                            <p id="modal-impact-text-en" class="modal-box-text lang-en"></p>
-                            <div id="modal-stats-chips" class="modal-stats-chips"></div>
+
+                            <div class="modal-summary-card">
+                                <div class="modal-box-header">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span class="lang-ar">الأثر وأبرز النتائج</span>
+                                    <span class="lang-en">Impact & Key Results</span>
+                                </div>
+                                <p id="modal-impact-text-ar" class="lang-ar"></p>
+                                <p id="modal-impact-text-en" class="lang-en"></p>
+                                <div id="modal-stats-chips" class="modal-stats-chips"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Image Lightbox Modal -->
-    <div id="image-lightbox" class="image-lightbox lightbox-overlay" onclick="closeLightbox(event)">
-        <button class="close-lightbox-btn lightbox-close" onclick="closeLightbox(event)" aria-label="Close image">
-            <i class="fas fa-times"></i>
-        </button>
-        <img id="lightbox-img" src="" alt="Enlarged View" class="lightbox-image" />
-    </div>
+        <div id="image-lightbox" class="image-lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-hint">
+            <div class="lightbox-shell">
+                <div class="lightbox-header">
+                    <div class="lightbox-heading">
+                        <span id="lightbox-counter" aria-live="polite"></span>
+                        <h2 id="lightbox-title"></h2>
+                    </div>
+                    <button class="close-lightbox-btn" id="close-lightbox-btn" type="button" aria-label="Close image">
+                        <i class="fas fa-times" aria-hidden="true"></i><span class="lang-en">Close</span><span class="lang-ar">إغلاق</span>
+                    </button>
+                </div>
+                <div class="lightbox-toolbar">
+                    <div class="lightbox-zoom-controls" role="group" aria-label="Image zoom">
+                        <button id="lightbox-zoom-out" type="button" aria-label="Zoom out"><i class="fas fa-minus" aria-hidden="true"></i></button>
+                        <output id="lightbox-zoom-status" aria-live="polite" dir="ltr"></output>
+                        <button id="lightbox-zoom-in" type="button" aria-label="Zoom in"><i class="fas fa-plus" aria-hidden="true"></i></button>
+                        <button id="lightbox-fit" type="button"><span class="lang-en">Fit screen</span><span class="lang-ar">ملاءمة الشاشة</span></button>
+                    </div>
+                    <a id="lightbox-original" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i><span class="lang-en">Open original</span><span class="lang-ar">فتح الأصلية</span></a>
+                </div>
+                <div id="lightbox-viewport" class="lightbox-viewport" tabindex="0" aria-label="Project image; scroll to explore when zoomed">
+                    <div id="lightbox-canvas" class="lightbox-canvas">
+                        <img id="lightbox-img" alt="Enlarged project image" class="lightbox-image" draggable="false" />
+                    </div>
+                    <p id="lightbox-load-status" class="lightbox-load-status" role="status" hidden></p>
+                </div>
+                <div class="lightbox-footer">
+                    <button id="lightbox-prev" class="lightbox-nav" type="button" aria-label="Previous image"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                    <p id="lightbox-hint"><span class="lang-en">Zoom with + and −, then scroll to explore. Press Esc to close.</span><span class="lang-ar">كبّر باستخدام + و − ثم مرّر لقراءة التفاصيل. اضغط Esc للإغلاق.</span></p>
+                    <button id="lightbox-next" class="lightbox-nav" type="button" aria-label="Next image"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div>
 
-    <!-- Scripts -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const html = document.documentElement;
-            const langBtn = document.getElementById("lang-toggle-btn");
-
-            // Language logic
-            langBtn.addEventListener("click", () => {
-                if (html.getAttribute("lang") === "en") {
-                    html.setAttribute("lang", "ar");
-                    html.setAttribute("dir", "rtl");
-                } else {
-                    html.setAttribute("lang", "en");
-                    html.setAttribute("dir", "ltr");
-                }
-                charIndex = 0;
-                isDeleting = false;
-            });
-
-            // Continuous Typewriter Effect
-            const titlesAr = [
-                "أخصائي تقنية معلومات",
-                "أخصائي دعم فني",
-                "مسؤول نظم",
-                "تشخيص وحل المشكلات التقنية",
-                "مهتم بالذكاء الاصطناعي والأتمتة",
-            ];
-            const titlesEn = [
-                "IT Specialist",
-                "Technical Support Specialist",
-                "System Administrator",
-                "Technical Troubleshooting",
-                "AI & Automation Enthusiast",
-            ];
-            let titleIndex = 0;
-            let charIndex = 0;
-            let isDeleting = false;
-
-            function typeWriter() {
-                const isAr = html.getAttribute("lang") !== "en";
-                const elArray = isAr
-                    ? document.querySelectorAll("#typewriter-ar")
-                    : document.querySelectorAll("#typewriter-en");
-                const prevElArray = isAr
-                    ? document.querySelectorAll("#typewriter-en")
-                    : document.querySelectorAll("#typewriter-ar");
-
-                prevElArray.forEach((el) => (el.textContent = "")); // clear other lang
-
-                if (elArray.length > 0) {
-                    const titles = isAr ? titlesAr : titlesEn;
-                    const currentTitle = titles[titleIndex % titles.length];
-                    const el = elArray[0];
-
-                    if (isDeleting) {
-                        el.textContent = currentTitle.substring(0, charIndex - 1);
-                        charIndex--;
-                    } else {
-                        el.textContent = currentTitle.substring(0, charIndex + 1);
-                        charIndex++;
-                    }
-
-                    // Fluid, continuous speeds: no long halting
-                    let typeSpeed = isDeleting ? 25 : 60;
-
-                    if (!isDeleting && charIndex >= currentTitle.length) {
-                        typeSpeed = 1200; // Brief pause to read, then immediately continues
-                        isDeleting = true;
-                    } else if (isDeleting && charIndex <= 0) {
-                        isDeleting = false;
-                        charIndex = 0;
-                        titleIndex = (titleIndex + 1) % titles.length;
-                        typeSpeed = 200; // Quick transition to start next title
-                    }
-
-                    setTimeout(typeWriter, typeSpeed);
-                }
-            }
-            typeWriter();
-
-            // Theme Toggle Logic
-            const themeBtn = document.getElementById("theme-toggle-btn");
-            const themeIcon = themeBtn.querySelector("i");
-
-            const currentTheme = localStorage.getItem("theme") || "dark";
-            if (currentTheme === "light") {
-                html.setAttribute("data-theme", "light");
-                if (themeIcon) themeIcon.className = "fas fa-sun";
-            } else {
-                if (themeIcon) themeIcon.className = "far fa-moon";
-            }
-
-            themeBtn.addEventListener("click", () => {
-                let theme = html.getAttribute("data-theme");
-                if (theme === "light") {
-                    html.removeAttribute("data-theme");
-                    localStorage.setItem("theme", "dark");
-                    if (themeIcon) themeIcon.className = "far fa-moon";
-                } else {
-                    html.setAttribute("data-theme", "light");
-                    localStorage.setItem("theme", "light");
-                    if (themeIcon) themeIcon.className = "fas fa-sun";
-                }
-            });
-
-            // Anti-Scraping Contact Info Logic
-            const secEmail = document.getElementById("secure-email");
-            const emailDisp = document.getElementById("email-display");
-            if (secEmail && emailDisp) {
-                secEmail.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const u = "abdulazizta05";
-                    const d = "gmail.com";
-                    const m = u + "@" + d;
-                    window.location.href = "mailto:" + m;
-                    emailDisp.innerHTML = `<span style="letter-spacing: 0.5px;">${m}</span>`;
-                });
-            }
-
-            const secPhone = document.getElementById("secure-phone");
-            const phoneDisp = document.getElementById("phone-display");
-            if (secPhone && phoneDisp) {
-                secPhone.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    const p1 = "+966";
-                    const p2 = "59";
-                    const p3 = "701";
-                    const p4 = "6679";
-                    const p = `${p1}${p2}${p3}${p4}`;
-                    window.location.href = "tel:" + p;
-                    phoneDisp.innerHTML = `<span style="direction: ltr; letter-spacing: 1px;">${p1} ${p2} ${p3} ${p4}</span>`;
-                });
-            }
-
-            // Mobile FAB scroll visibility
-            const mobileFab = document.getElementById("mobile-fab");
-            window.addEventListener("scroll", () => {
-                if (window.scrollY > 300) {
-                    mobileFab.classList.add("visible");
-                } else {
-                    mobileFab.classList.remove("visible");
-                }
-            });
-
-            // Mobile Menu Drawer Logic
-            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
-            const mobileDrawer = document.getElementById("mobile-nav-drawer");
-            if (mobileMenuBtn && mobileDrawer) {
-                const closeMobileMenu = () => {
-                    mobileDrawer.classList.remove("open");
-                    const icon = mobileMenuBtn.querySelector("i");
-                    if (icon) icon.className = "fas fa-bars";
-                };
-
-                mobileMenuBtn.addEventListener("click", (e) => {
-                    e.stopPropagation();
-                    mobileDrawer.classList.toggle("open");
-                    const icon = mobileMenuBtn.querySelector("i");
-                    if (mobileDrawer.classList.contains("open")) {
-                        icon.className = "fas fa-times";
-                    } else {
-                        icon.className = "fas fa-bars";
-                    }
-                });
-
-                document.querySelectorAll(".mobile-nav-item").forEach((link) => {
-                    link.addEventListener("click", () => {
-                        closeMobileMenu();
-                    });
-                });
-
-                // Close menu when clicking anywhere outside on the screen
-                document.addEventListener("click", (e) => {
-                    if (mobileDrawer.classList.contains("open") &&
-                        !mobileDrawer.contains(e.target) &&
-                        !mobileMenuBtn.contains(e.target)) {
-                        closeMobileMenu();
-                    }
-                });
-
-                // Close menu automatically on scroll so it never floats down
-                window.addEventListener("scroll", () => {
-                    if (mobileDrawer.classList.contains("open")) {
-                        closeMobileMenu();
-                    }
-                }, { passive: true });
-            }
-        });
-
-        // Project Modal Logic & Real Project Data
-        const projectData = {
-            'proj1': {
-                companyAr: 'ذكاء اصطناعي وأتمتة',
-                companyEn: 'AI & Automation',
-                titleAr: 'سير عمل أتمتة البحث عن الوظائف بالذكاء الاصطناعي',
-                titleEn: 'AI Jobs Automation Pipeline',
-                challengeAr: 'تضييع الوقت في تصفح لوحات الوظائف يدوياً ومقارنة متطلبات كل وظيفة بالسيرة الذاتية يومياً، مع صعوبة تتبع الفرص المراجعة وترتيبها حسب الأولوية.',
-                challengeEn: 'Manually browsing job boards daily and comparing each listing to a CV is time-consuming and inconsistent, making it hard to prioritize the best-fit opportunities.',
-                solutionAr: 'بناء سير عمل n8n مجدول يجلب الوظائف عبر API، ويسحب ملف السيرة الذاتية PDF ويستخرج نصوصه، ثم يمرر الطرفين لنموذج AI لمقارنة المهارات وتوليد تقييم تلقائي، يتبعه توجيه النتائج إلى Google Sheets وإشعار Telegram الفوري.',
-                solutionEn: 'Built a scheduled n8n workflow that fetches job listings via API, downloads and extracts the CV/PDF, then passes both to an AI model for skills comparison and auto-ranking. Results are routed via a Switch node to Google Sheets and instant Telegram notifications.',
-                impactAr: 'توفير ساعات يومية من البحث اليدوي، مع ضمان عدم تفويت أي فرصة وظيفية مناسبة من خلال تنبيهات فورية ومنظمة.',
-                impactEn: 'Saves hours of daily manual job searching, ensures no suitable opportunity is missed, and delivers instant organized alerts with AI-ranked results.',
-                stats: [
-                    { valueAr: '13', valueEn: '13', labelAr: 'عقدة في سير العمل', labelEn: 'Workflow Nodes' },
-                    { valueAr: '78%', valueEn: '78%', labelAr: 'أعلى نسبة تطابق', labelEn: 'Top Match Score' },
-                    { valueAr: 'فوري', valueEn: 'Instant', labelAr: 'إشعار Telegram', labelEn: 'Telegram Alert' }
-                ],
-                steps: [
-                    {
-                        img: 'images/projects/ai-jobs-pipeline/step1.jpg',
-                        titleEn: '1. Full n8n Workflow Canvas',
-                        titleAr: '1. مخطط سير العمل الكامل داخل n8n',
-                        descEn: 'Complete n8n workflow showing job fetching via API, CV download & extraction, AI ranking, and Switch routing to "Suitable" (Telegram alert) or "Review" sheets.',
-                        descAr: 'مخطط التدفق داخل n8n: جلب الوظائف عبر API، سحب السيرة الذاتية وقراءتها، إرسالهما للذكاء الاصطناعي لتقييم التوافق، ثم توجيه النتائج تلقائياً إلى تبويب "مناسب" مع إشعار تليجرام أو تبويب "مراجعة".'
-                    },
-                    {
-                        img: 'images/projects/ai-jobs-pipeline/step2.jpg',
-                        titleEn: '2. Google Sheets – "Suitable" Tab',
-                        titleAr: '2. Google Sheets - تبويب "مناسب"',
-                        descEn: 'Auto-logged jobs scoring 78%+ match, showing company name, job title, AI score, missing skills, and direct application link.',
-                        descAr: 'تُسجَّل تلقائياً الوظائف التي حققت تطابقاً عالياً (78%+)، موضحةً اسم الشركة، المسمى، تقييم الذكاء الاصطناعي، المهارات الناقصة، ورابط التقديم المباشر.'
-                    },
-                    {
-                        img: 'images/projects/ai-jobs-pipeline/step3.jpg',
-                        titleEn: '3. Google Sheets – "Review" Tab',
-                        titleAr: '3. Google Sheets - تبويب "مراجعة"',
-                        descEn: 'Lower-scored or partially matching jobs stored as an organized reference without sending Telegram notifications to avoid unnecessary alerts.',
-                        descAr: 'الوظائف ذات التقييم الأقل أو غير المتطابقة كلياً تُحفظ كمرجع منظم دون إرسال إشعارات فورية تزعج المستخدم.'
-                    },
-                    {
-                        img: 'images/projects/ai-jobs-pipeline/step4.jpg',
-                        titleEn: '4. Instant Telegram Alert',
-                        titleAr: '4. إشعار Telegram الفوري',
-                        descEn: 'Telegram bot alert fires instantly upon finding a suitable job, showing company name, title, match score, AI reasoning, skill gaps, and the direct application link.',
-                        descAr: 'بمجرد العثور على وظيفة ملائمة يُرسَل إشعار فوري عبر بوت التيليجرام يتضمن اسم الشركة، المسمى، نسبة التوافق، أسباب التقييم، نقاط الضعف، ورابط التقديم المباشر.'
-                    }
-                ]
-            },
-            'proj2': {
-                companyAr: 'ذكاء اصطناعي وأتمتة',
-                companyEn: 'AI & Automation',
-                titleAr: 'نظام أتمتة وتصنيف البريد الإلكتروني بالذكاء الاصطناعي',
-                titleEn: 'AI Email Filtering & Automation Pipeline',
-                challengeAr: 'تراكم البريد الإلكتروني في صندوق وارد واحد، والاضطرار لفرز الطلبات وتوزيعها يدوياً على الإدارات المختلفة، مما يؤدي إلى تأخر الردود وفقدان المتابعة.',
-                challengeEn: 'Email accumulation in a single shared inbox, requiring manual sorting and routing of requests to different departments, causing delayed responses and lack of tracking.',
-                solutionAr: 'فرز الرسائل لحظة وصولها آلياً عبر الذكاء الاصطناعي، وتحديد وجهتها وتوثيقها فوراً في جدول كل إدارة مع إشعار الفريق المختص عبر قناتهم الخاصة على تيليجرام دون تدخل بشري.',
-                solutionEn: 'Instant automated email classification upon receipt using AI, routing and logging them into dedicated departmental Google Sheets with immediate Telegram notifications to the respective teams without human intervention.',
-                impactAr: 'رفع سرعة الاستجابة لطلبات الدعم والاستفسارات، إنهاء فوضى وتراكم البريد الوارد، وتوثيق كافة العمليات في سجلات منظمة ومحدثة لحظياً.',
-                impactEn: 'Significantly accelerating response times for support and inquiries, eliminating inbox chaos and backlog, and maintaining real-time organized documentation across all departments.',
-                stats: [
-                    { valueAr: '12', valueEn: '12', labelAr: 'عقدة في سير العمل', labelEn: 'Workflow Nodes' },
-                    { valueAr: 'Gmail', valueEn: 'Gmail', labelAr: 'مشغل البريد الوارد', labelEn: 'Email Trigger' },
-                    { valueAr: '3', valueEn: '3', labelAr: 'مسارات توجيه ذكية', labelEn: 'Routing Streams' },
-                    { valueAr: 'فوري', valueEn: 'Instant', labelAr: 'إشعار Telegram', labelEn: 'Telegram Alert' }
-                ],
-                steps: [
-                    {
-                        img: 'images/projects/ai-email-filtering/step1.jpg',
-                        titleEn: '1. Full n8n Workflow Canvas & Switch Routing',
-                        titleAr: '1. مخطط التدفق الكامل وتوجيه الطلبات داخل n8n',
-                        descEn: 'Complete n8n workflow canvas showing email ingestion via Gmail Trigger, AI content analysis, and Switch node routing into 3 dedicated streams (Technical, Administrative, Others) logging to Google Sheets and triggering instant Telegram alerts.',
-                        descAr: 'مخطط التدفق الكامل داخل n8n؛ يوضح استقبال الإيميل عبر Gmail Trigger، ثم تحليله بالذكاء الاصطناعي لفهم محتواه، يليه مسار التوجيه (Switch) الذي يقسم الطلبات تلقائياً إلى 3 مسارات (طلبات تقنية، طلبات إدارية، أخرى) لحفظ كل نوع في Google Sheets وإرسال إشعار فوري عبر Telegram للقسم المعني.'
-                    },
-                    {
-                        img: 'images/projects/ai-email-filtering/step2.jpg',
-                        titleEn: '2. Google Sheets – "Technical Requests" Tab',
-                        titleAr: '2. Google Sheets - تبويب "طلبات تقنية"',
-                        descEn: 'Google Sheets ("Technical Requests" tab) demonstrating auto-logging of an IT support ticket ("computer abruptly shut down"), capturing sender info, subject, timestamp, and issue description without manual entry.',
-                        descAr: 'جدول Google Sheets (تبويب "طلبات تقنية")؛ يوضح تسجيل طلب مشكلة فنية تلقائياً ("الجهاز فجأة طفى وانا اشتغل")، وتوثيق بيانات المرسل، الموضوع، وقت الاستلام، ومحتوى البلاغ في شيت الدعم الفني دون تدخل يدوي.'
-                    },
-                    {
-                        img: 'images/projects/ai-email-filtering/step3.jpg',
-                        titleEn: '3. Google Sheets – "Administrative Requests" Tab',
-                        titleAr: '3. Google Sheets - تبويب "طلبات إدارية"',
-                        descEn: 'Google Sheets ("Administrative Requests" tab) showing automated triage and recording of an HR leave request ("vacation request"), organized into the administrative department sheet.',
-                        descAr: 'جدول Google Sheets (تبويب "طلبات إدارية")؛ يوضح فرز وتوثيق طلب إجازة إداري آلياً ("طلب اجازة - اود طلب موافقة الإدارة على اخذ اجازة قصيرة") بكامل تفاصيله داخل التبويب الخاص بإدارة الموارد البشرية والشؤون الإدارية.'
-                    },
-                    {
-                        img: 'images/projects/ai-email-filtering/step4.jpg',
-                        titleEn: '4. Google Sheets – "Other Requests" Tab',
-                        titleAr: '4. Google Sheets - تبويب "طلبات أخرى"',
-                        descEn: 'Google Sheets ("Other Requests" tab) showing general or commercial emails (such as new quotation proposals) routed to an archive sheet for reference without triggering urgent alerts.',
-                        descAr: 'جدول Google Sheets (تبويب "طلبات أخرى")؛ يوضح توجيه الرسائل والطلبات العامة أو الخارجية (مثل إيميل "عرض اسعار المنتجات الجديدة") إلى تبويب مستقل للرجوع إليه وحفظه دون إرسال تنبيهات عاجلة.'
-                    },
-                    {
-                        img: 'images/projects/ai-email-filtering/step5.jpg',
-                        titleEn: '5. Instant Telegram Alert-Bot Notifications',
-                        titleAr: '5. إشعارات بوت Telegram الفورية (Alert-Bot)',
-                        descEn: 'Telegram Alert-Bot interface receiving instant dispatch notifications upon request triage: Alert 1 shows a new IT technical support ticket with sender details and issue description; Alert 2 shows an administrative leave request, both tagged with automated n8n signatures.',
-                        descAr: 'تُظهر واجهة محادثة بوت التيليجرام (Alert-Bot)، والتي تتلقى التنبيهات المباشرة فور تسجيل الطلبات: التنبيه الأول إشعار "طلب دعم تقني جديد" يوضح اسم وإيميل المرسل، موضوع المشكلة، والتفاصيل؛ والتنبيه الثاني إشعار "طلب إداري جديد" يحتوي بيانات طلب الإجازة بالكامل، مع تذييل تلقائي يوضح إرسال الرسالة عبر أتمتة n8n.'
-                    }
-                ]
-            }
-        };
-
-        // State for Large Gallery in Modal
-        let currentActiveProject = null;
-        let currentActiveStepIndex = 0;
-
-        function openProjectModal(projectId, initialTab = 'gallery') {
-            const modal = document.getElementById('project-modal');
-            const titleEn = document.getElementById('modal-title-en');
-            const titleAr = document.getElementById('modal-title-ar');
-            const companyBadge = document.getElementById('modal-company-badge');
-
-            const chAr = document.getElementById('modal-challenge-text-ar');
-            const chEn = document.getElementById('modal-challenge-text-en');
-            const solAr = document.getElementById('modal-solution-text-ar');
-            const solEn = document.getElementById('modal-solution-text-en');
-            const impAr = document.getElementById('modal-impact-text-ar');
-            const impEn = document.getElementById('modal-impact-text-en');
-            const statsContainer = document.getElementById('modal-stats-chips');
-            const thumbsContainer = document.getElementById('gallery-thumbs-strip');
-
-            const data = projectData[projectId];
-            if (data) {
-                currentActiveProject = data;
-                currentActiveStepIndex = 0;
-
-                titleEn.textContent = data.titleEn;
-                titleAr.textContent = data.titleAr;
-
-                if (companyBadge) {
-                    companyBadge.innerHTML = `
-                        <span class="lang-ar">🤖 ${data.companyAr}</span>
-                        <span class="lang-en">🤖 ${data.companyEn}</span>
-                    `;
-                }
-
-                // Populate Case Study Details
-                if (chAr && chEn) {
-                    chAr.textContent = data.challengeAr;
-                    chEn.textContent = data.challengeEn;
-                }
-                if (solAr && solEn) {
-                    solAr.textContent = data.solutionAr;
-                    solEn.textContent = data.solutionEn;
-                }
-                if (impAr && impEn) {
-                    impAr.textContent = data.impactAr;
-                    impEn.textContent = data.impactEn;
-                }
-
-                if (statsContainer) {
-                    statsContainer.innerHTML = '';
-                    if (data.stats && data.stats.length) {
-                        data.stats.forEach(st => {
-                            const pillHtml = `
-                                <div class="modal-stat-chip">
-                                    <strong class="stat-num lang-ar">${st.valueAr}</strong>
-                                    <strong class="stat-num lang-en">${st.valueEn}</strong>
-                                    <span class="stat-lbl lang-ar">${st.labelAr}</span>
-                                    <span class="stat-lbl lang-en">${st.labelEn}</span>
-                                </div>
-                            `;
-                            statsContainer.insertAdjacentHTML('beforeend', pillHtml);
-                        });
-                    }
-                }
-
-                // Populate Thumbnails Strip
-                if (thumbsContainer) {
-                    thumbsContainer.innerHTML = '';
-                    data.steps.forEach((step, idx) => {
-                        const thumb = document.createElement('div');
-                        thumb.className = `gallery-thumb-item ${idx === 0 ? 'active' : ''}`;
-                        thumb.title = step.titleAr;
-                        thumb.onclick = () => renderGalleryStep(idx);
-                        thumb.innerHTML = `
-                            <img src="${step.img}" alt="Step ${idx + 1}" loading="lazy" />
-                            <div class="thumb-step-num">${idx + 1}</div>
-                        `;
-                        thumbsContainer.appendChild(thumb);
-                    });
-                }
-
-                // Render First Step on Large Stage
-                renderGalleryStep(0);
-
-                // Default Tab Switch
-                switchModalTab(initialTab);
-
-                modal.classList.add('show');
-                document.body.style.overflow = 'hidden'; // Prevent background scrolling
-            }
-        }
-
-        function renderGalleryStep(index) {
-            if (!currentActiveProject || !currentActiveProject.steps || !currentActiveProject.steps.length) return;
-            if (index < 0) index = 0;
-            if (index >= currentActiveProject.steps.length) index = currentActiveProject.steps.length - 1;
-
-            currentActiveStepIndex = index;
-            const step = currentActiveProject.steps[index];
-            const total = currentActiveProject.steps.length;
-
-            const stageImg = document.getElementById('gallery-stage-img');
-            const counterText = document.getElementById('gallery-counter-text');
-            const titleEn = document.getElementById('gallery-step-title-en');
-            const titleAr = document.getElementById('gallery-step-title-ar');
-            const descEn = document.getElementById('gallery-step-desc-en');
-            const descAr = document.getElementById('gallery-step-desc-ar');
-
-            if (stageImg) {
-                stageImg.style.opacity = '0.5';
-                stageImg.src = step.img;
-                stageImg.onload = () => { stageImg.style.opacity = '1'; };
-            }
-
-            if (counterText) counterText.textContent = `${index + 1} / ${total}`;
-            if (titleEn) titleEn.textContent = step.titleEn;
-            if (titleAr) titleAr.textContent = step.titleAr;
-            if (descEn) descEn.textContent = step.descEn;
-            if (descAr) descAr.textContent = step.descAr;
-
-            // Highlight active thumbnail & scroll into view
-            const thumbs = document.querySelectorAll('.gallery-thumb-item');
-            thumbs.forEach((t, i) => {
-                if (i === index) {
-                    t.classList.add('active');
-                    t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-                } else {
-                    t.classList.remove('active');
-                }
-            });
-        }
-
-        function navigateGalleryStep(direction) {
-            if (!currentActiveProject || !currentActiveProject.steps) return;
-            const total = currentActiveProject.steps.length;
-            const nextIdx = (currentActiveStepIndex + direction + total) % total;
-            renderGalleryStep(nextIdx);
-        }
-
-        function zoomCurrentGalleryImage() {
-            if (currentActiveProject && currentActiveProject.steps && currentActiveProject.steps[currentActiveStepIndex]) {
-                openLightbox(currentActiveProject.steps[currentActiveStepIndex].img);
-            }
-        }
-
-        function switchModalTab(tab) {
-            const galleryTab = document.getElementById('tab-btn-gallery');
-            const detailsTab = document.getElementById('tab-btn-details');
-            const galleryView = document.getElementById('modal-tab-gallery-view');
-            const detailsView = document.getElementById('modal-tab-details-view');
-
-            if (tab === 'gallery') {
-                if (galleryTab) galleryTab.classList.add('active');
-                if (detailsTab) detailsTab.classList.remove('active');
-                if (galleryView) galleryView.style.display = 'block';
-                if (detailsView) detailsView.style.display = 'none';
-            } else {
-                if (detailsTab) detailsTab.classList.add('active');
-                if (galleryTab) galleryTab.classList.remove('active');
-                if (detailsView) detailsView.style.display = 'block';
-                if (galleryView) galleryView.style.display = 'none';
-            }
-        }
-
-        document.getElementById('close-modal-btn').addEventListener('click', () => {
-            const modal = document.getElementById('project-modal');
-            modal.classList.remove('show');
-            document.body.style.overflow = ''; // Restore scrolling
-        });
-
-        // Close modal on click outside
-        window.addEventListener('click', (event) => {
-            const modal = document.getElementById('project-modal');
-            if (event.target === modal) {
-                modal.classList.remove('show');
-                document.body.style.overflow = '';
-            }
-        });
-
-        // Close modal on Escape key & Arrow navigation
-        window.addEventListener('keydown', (event) => {
-            const lightbox = document.getElementById('image-lightbox');
-            const modal = document.getElementById('project-modal');
-            if (event.key === 'Escape') {
-                if (lightbox && lightbox.classList.contains('show-lightbox')) {
-                    closeLightbox();
-                    return;
-                }
-                if (modal && modal.classList.contains('show')) {
-                    modal.classList.remove('show');
-                    document.body.style.overflow = '';
-                }
-            } else if (modal && modal.classList.contains('show') && (!lightbox || !lightbox.classList.contains('show-lightbox'))) {
-                const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
-                if (event.key === 'ArrowRight') {
-                    // In RTL, ArrowRight moves backwards (visually "next" is to the left)
-                    navigateGalleryStep(isRtl ? -1 : 1);
-                } else if (event.key === 'ArrowLeft') {
-                    // In RTL, ArrowLeft moves forwards (visually "prev" is to the right)
-                    navigateGalleryStep(isRtl ? 1 : -1);
-                }
-            }
-        });
-
-        // Lightbox logic
-        function openLightbox(src) {
-            const lightbox = document.getElementById('image-lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            if (lightbox && lightboxImg) {
-                lightboxImg.src = src;
-                lightbox.classList.add('show-lightbox');
-                document.body.style.overflow = 'hidden';
-            }
-        }
-
-        function closeLightbox(e) {
-            if (e && e.target && e.target.id === 'lightbox-img') return;
-            const lightbox = document.getElementById('image-lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            if (lightbox) {
-                lightbox.classList.remove('show-lightbox');
-            }
-            if (lightboxImg) {
-                lightboxImg.src = '';
-            }
-            const modal = document.getElementById('project-modal');
-            if (!modal || !modal.classList.contains('show')) {
-                document.body.style.overflow = '';
-            }
-        }
-    </script>
-</body>
+    </body>
 
 </html>
